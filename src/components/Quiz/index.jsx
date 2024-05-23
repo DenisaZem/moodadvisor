@@ -69,13 +69,13 @@ const Quiz = () => {
 
   return (
     <div className="container">
+        <h1>Mood Quiz</h1>
       <div className="container__quiz">
-        <h1>Dotazník</h1>
         {currentQuestion === null ? (
           <div className="lastSentence-section">Dokončil jsi dotazníček.</div>
         ) : (
           <>
-            <div className="question-section">
+            <div className="question__section">
               <div className="question-count">
                 {/* Odpočítávadlo otázek: */}
                 <span>Otázka {currentQuestion + 1}</span>/{questions.length}
