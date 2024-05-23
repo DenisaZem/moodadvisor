@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import "./style.css"
+import './style.css';
 
 const questions = [
   // 0
   {
     questionText: 'Jakou máš náladičku?',
-    answerOptions:  [
+    answerOptions: [
       { answerText: 'Skvělou', nextQuestionIndex: 1 },
       { answerText: 'Dobrou', nextQuestionIndex: 4 },
       { answerText: 'Ujde to', nextQuestionIndex: 4 },
@@ -68,30 +68,40 @@ const Quiz = () => {
   };
 
   return (
-    <div className='container'>
-      <h1>Dotazník</h1>
-      {currentQuestion === null ? (
-        <div className='lastSentence-section'>
-          Dokončil jsi dotazníček.
-        </div>
-      ) : (
-        <>
-          <div className='question-section'>
-            <div className='question-count'>
-              {/* Odpočítávadlo otázek: */}
-              <span>Otázka {currentQuestion + 1}</span>/{questions.length}
+    <div className="container">
+      <div className="container__quiz">
+        <h1>Dotazník</h1>
+        {currentQuestion === null ? (
+          <div className="lastSentence-section">Dokončil jsi dotazníček.</div>
+        ) : (
+          <>
+            <div className="question-section">
+              <div className="question-count">
+                {/* Odpočítávadlo otázek: */}
+                <span>Otázka {currentQuestion + 1}</span>/{questions.length}
+              </div>
+              <div className="question-text">
+                {questions[currentQuestion].questionText}
+              </div>
             </div>
-            <div className='question-text'>{questions[currentQuestion].questionText}</div>
-          </div>
-          <div className='answer-section'>
-            {questions[currentQuestion].answerOptions.map((answerOption, index) => (
-              <button key={index} onClick={() => handleAnswerOptionClick(answerOption.nextQuestionIndex)}>
-                {answerOption.answerText}
-              </button>
-            ))}
-          </div>
-        </>
-      )}
+            <div className="answer__section">
+              {questions[currentQuestion].answerOptions.map(
+                (answerOption, index) => (
+                  <button
+                    key={index}
+                    className='answer__section--button'
+                    onClick={() =>
+                      handleAnswerOptionClick(answerOption.nextQuestionIndex)
+                    }
+                  >
+                    {answerOption.answerText}
+                  </button>
+                ),
+              )}
+            </div>
+          </>
+        )}
+      </div>
     </div>
   );
 };
