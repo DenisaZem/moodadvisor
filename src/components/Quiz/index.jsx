@@ -69,10 +69,25 @@ const Quiz = () => {
 
   return (
     <div className="container">
-        <h1>Mood Quiz</h1>
+      <h1>Mood Quiz</h1>
       <div className="container__quiz">
         {currentQuestion === null ? (
-          <div className="lastSentence-section">Dokončil jsi dotazníček.</div>
+          <div className="lastSentence-section">
+            <div className="lastSentence-section__title">
+              Dokončil jsi dotazníček.
+            </div>
+            <div className="lastSentence-section__recommended">
+              Text k doporučení aktivit nebo odkaz.
+            </div>
+            <div className="lastSentence-section__menu">
+              Zde můžeš pokračovat dále:
+              <div className="lastSentence-section__menu--items">
+                <a href="/music">Relax hudba</a>
+                <a href="/music">Dýchací cvičení</a>
+                <a href="/music">Nechat náhodě</a>
+              </div>
+            </div>
+          </div>
         ) : (
           <>
             <div className="question__section">
@@ -89,7 +104,7 @@ const Quiz = () => {
                 (answerOption, index) => (
                   <button
                     key={index}
-                    className='answer__section--button'
+                    className="answer__section--button"
                     onClick={() =>
                       handleAnswerOptionClick(answerOption.nextQuestionIndex)
                     }
