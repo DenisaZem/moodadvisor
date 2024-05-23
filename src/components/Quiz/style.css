@@ -2,7 +2,7 @@ body {
   display: flex;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 450px) {
 
   .container {
     display: flex;
@@ -10,8 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #e98a8a;
-    background-color: aqua;
-    height: 100vh;
+    height: 100%
   }
 
   .container__quiz {
@@ -19,14 +18,18 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: forestgreen;
+    width: 100%;
+    height: 100vh;
   }
 
   h1 {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 10px;
+    margin: 20px;
+    font-size: 50px;
+  }
+
+  .lastSentence-section {
+    font-size: 45px;
   }
 
   .question-count {
@@ -34,40 +37,44 @@ body {
     margin: 20px;
   }
 
-  .question-section {
+  .question__section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
-    background-color: salmon;
-    font-size: 30px;
+    width: 100%;
+    min-height: 200px;
+    font-size: 45px;
+    flex-wrap: wrap;
   }
 
   .question-count {
-    background-color: aqua;
-
+    margin: 10px;
+    font-size: 20px;
   }
 
   .question-text {
-    background-color: firebrick;
+    text-align: center;
   }
 
   .answer__section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 80%;
     flex-wrap: wrap;
-    background-color: sandybrown;
     margin: 30px;
   }
 
   .answer__section--button {
     background-color: blanchedalmond;
+    max-width: 100px;
+    height: 100px;
     border: none;
     border-radius: 7px;
     margin: 10px;
     width: 40%;
+    font-size: 25px;
+    cursor: pointer;
   }
 }
