@@ -3,12 +3,10 @@ import "./global.css";
 import "./i18n";
 import {
   createBrowserRouter,
-  Link,
   Outlet,
   RouterProvider,
 } from "react-router-dom";
 import React, { Suspense } from "react";
-import { useTranslation } from "react-i18next";
 import { HomePage } from "./pages/HomePage";
 import Sound from "./pages/Sound";
 import Quiz from "./components/Quiz";
@@ -22,7 +20,6 @@ export const App = () => {
   return (
     <Suspense fallback="loading">
       <Navbar />
-      {/* <HomePage /> */}
       <Outlet />
     </Suspense>
   );
