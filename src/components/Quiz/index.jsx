@@ -68,7 +68,7 @@ const Quiz = () => {
   };
 
   return (
-    <div className="container">
+    <>
       <h1>Mood Quiz</h1>
       <div className="container__quiz">
         {currentQuestion === null ? (
@@ -117,7 +117,7 @@ const Quiz = () => {
           </>
         )}
       </div>
-    </div>
+    </>
   );
 };
 
