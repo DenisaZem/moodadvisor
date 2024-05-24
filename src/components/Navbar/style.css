@@ -12,9 +12,10 @@
 .menu-icon {
   visibility: visible;
   cursor: pointer;
-  width: 100px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   color: aliceblue;
+  margin: 10px;
 }
 
 .menu {
@@ -32,6 +33,7 @@
 
 .show {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   height: 170px;
@@ -78,16 +80,12 @@
 @media screen and (min-width: 800px) {
 
   .menu-icon {
-    /* visibility: hidden; */
+    visibility: hidden;
   }
 
-  /* .menu {
+  .menu {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    color: #4A6670;
-    width: 50%;
-    background-color: salmon;
-  } */
-
+    position:static;
+  }
 }

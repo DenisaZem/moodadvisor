@@ -20,8 +20,8 @@ export const Navbar = () => {
     <nav className="nav-bar">
       <h1 className="logo">{t('logo')}</h1>
       <GiHamburgerMenu className="menu-icon" onClick={toggleMenu} />
-      <div className={`menu ${showMenu ? 'show' : ''}`}>
-        <ul>
+      {/* <div className={`menu ${showMenu ? 'show' : ''}`}> */}
+        <ul className={`menu ${showMenu ? 'show' : ''}`} >
           <li>
             <Link className="menu--item" to="/">
               {t('navigation.home')}
@@ -55,7 +55,7 @@ export const Navbar = () => {
           </li>
           </div>
         </ul>
-      </div>
+      {/* </div> */}
     </nav>
   );
 };
