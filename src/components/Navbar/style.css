@@ -13,17 +13,16 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  list-style-type: none;
   color: #4A6670;
   width: 50%;
 }
 
-.menu--item {
-  text-decoration: none; 
-  color: #4A6670; 
+.menu li {
+  list-style-type: none;
 }
 
-.menu--item a {
+.menu--item {
+  text-decoration: none; 
   color: #4A6670; 
 }
 
