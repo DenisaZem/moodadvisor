@@ -17,6 +17,10 @@
   width: 50%;
 }
 
+.menu-icon {
+  width: 100px;
+}
+
 .menu li {
   list-style-type: none;
 }

@@ -1,7 +1,7 @@
 import "./style.css";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-
+import { GiHamburgerMenu } from "react-icons/gi";
 export const Navbar = () => {
   const { t, i18n } = useTranslation();
 
@@ -13,6 +13,7 @@ export const Navbar = () => {
     <nav className="nav-bar">
       <h1 className="logo">{t("logo")}</h1>
       <ul className="menu">
+      <GiHamburgerMenu className="menu-icon" />
         <li>
           <Link className="menu--item" to="/">
             {t("navigation.home")}
