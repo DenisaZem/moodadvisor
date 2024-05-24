@@ -1,15 +1,3 @@
-HTML,body {
-  display: flex;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #e98a8a;
-}
-
 .container__quiz {
   display: flex;
   flex-direction: column;

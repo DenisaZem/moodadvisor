@@ -1,60 +1,60 @@
-import React, { useState } from 'react';
-import './style.css';
+import React, { useState } from "react";
+import "./style.css";
 
 const questions = [
   // 0
   {
-    questionText: 'Jakou máš náladičku?',
+    questionText: "Jakou máš náladičku?",
     answerOptions: [
-      { answerText: 'Skvělou', nextQuestionIndex: 1 },
-      { answerText: 'Dobrou', nextQuestionIndex: 4 },
-      { answerText: 'Ujde to', nextQuestionIndex: 4 },
-      { answerText: 'Špatnou', nextQuestionIndex: 3 },
-      { answerText: 'Velmi špatnou', nextQuestionIndex: 3 },
+      { answerText: "Skvělou", nextQuestionIndex: 1 },
+      { answerText: "Dobrou", nextQuestionIndex: 4 },
+      { answerText: "Ujde to", nextQuestionIndex: 4 },
+      { answerText: "Špatnou", nextQuestionIndex: 3 },
+      { answerText: "Velmi špatnou", nextQuestionIndex: 3 },
     ],
   },
   // 1
   {
-    questionText: 'Proč ji máš skvělou?',
+    questionText: "Proč ji máš skvělou?",
     answerOptions: [
-      { answerText: 'Proto', nextQuestionIndex: 4 },
-      { answerText: 'Nevim', nextQuestionIndex: 4 },
-      { answerText: 'Jentak', nextQuestionIndex: 4 },
-      { answerText: 'Nečum', nextQuestionIndex: 4 },
-      { answerText: 'Svítí slunce', nextQuestionIndex: 4 },
+      { answerText: "Proto", nextQuestionIndex: 4 },
+      { answerText: "Nevim", nextQuestionIndex: 4 },
+      { answerText: "Jentak", nextQuestionIndex: 4 },
+      { answerText: "Nečum", nextQuestionIndex: 4 },
+      { answerText: "Svítí slunce", nextQuestionIndex: 4 },
     ],
   },
   // 2
   {
-    questionText: 'Nevíš, jak je to možné?',
+    questionText: "Nevíš, jak je to možné?",
     answerOptions: [
-      { answerText: 'Proto', nextQuestionIndex: 4 },
-      { answerText: 'Nevim', nextQuestionIndex: 4 },
-      { answerText: 'Jentak', nextQuestionIndex: 4 },
-      { answerText: 'Nečum', nextQuestionIndex: 4 },
-      { answerText: 'Svítí slunce', nextQuestionIndex: 4 },
+      { answerText: "Proto", nextQuestionIndex: 4 },
+      { answerText: "Nevim", nextQuestionIndex: 4 },
+      { answerText: "Jentak", nextQuestionIndex: 4 },
+      { answerText: "Nečum", nextQuestionIndex: 4 },
+      { answerText: "Svítí slunce", nextQuestionIndex: 4 },
     ],
   },
   // 3
   {
-    questionText: 'Máš často špatnou náladu?',
+    questionText: "Máš často špatnou náladu?",
     answerOptions: [
-      { answerText: 'Nikdy', nextQuestionIndex: 4 },
-      { answerText: 'Občas', nextQuestionIndex: 4 },
-      { answerText: 'Často', nextQuestionIndex: 4 },
-      { answerText: 'Velmi často', nextQuestionIndex: 4 },
-      { answerText: 'Vždy', nextQuestionIndex: 4 },
+      { answerText: "Nikdy", nextQuestionIndex: 4 },
+      { answerText: "Občas", nextQuestionIndex: 4 },
+      { answerText: "Často", nextQuestionIndex: 4 },
+      { answerText: "Velmi často", nextQuestionIndex: 4 },
+      { answerText: "Vždy", nextQuestionIndex: 4 },
     ],
   },
   // 4
   {
-    questionText: 'Jak často se snažíte být přítomní v daném okamžiku?',
+    questionText: "Jak často se snažíte být přítomní v daném okamžiku?",
     answerOptions: [
-      { answerText: 'Nikdy', nextQuestionIndex: null },
-      { answerText: 'Občas', nextQuestionIndex: null },
-      { answerText: 'Často', nextQuestionIndex: null },
-      { answerText: 'Velmi často', nextQuestionIndex: null },
-      { answerText: 'Vždy', nextQuestionIndex: null },
+      { answerText: "Nikdy", nextQuestionIndex: null },
+      { answerText: "Občas", nextQuestionIndex: null },
+      { answerText: "Často", nextQuestionIndex: null },
+      { answerText: "Velmi často", nextQuestionIndex: null },
+      { answerText: "Vždy", nextQuestionIndex: null },
     ],
   },
 ];
@@ -68,7 +68,7 @@ const Quiz = () => {
   };
 
   return (
-    <>
+    <div className="container">
       <h1>Mood Quiz</h1>
       <div className="container__quiz">
         {currentQuestion === null ? (
@@ -111,13 +111,13 @@ const Quiz = () => {
                   >
                     {answerOption.answerText}
                   </button>
-                ),
+                )
               )}
             </div>
           </>
         )}
       </div>
-    </>
+    </div>
   );
 };
 

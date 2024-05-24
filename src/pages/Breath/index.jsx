@@ -2,7 +2,7 @@ import "./style.css"
 
 export const Breath = () => {
     return (
-        <div>
+        <div className="container">
             Zde bude zvuk.
         </div>
     )

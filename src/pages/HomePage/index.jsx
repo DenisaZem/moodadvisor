@@ -5,10 +5,10 @@ import "./style.css";
 
 export const HomePage = () => {
   return (
-    <div className="container">
+    <>
       {/* <Navbar /> */}
       <Quiz />
       {/* <Sounds /> */}
-    </div>
+    </>
   );
 };

@@ -1,11 +1,3 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* background-color: #f0f0f0; */
-}
-
 .controls {
   position: relative;
   margin-bottom: 20px;
