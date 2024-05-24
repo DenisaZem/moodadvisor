@@ -10,10 +10,11 @@ import {
 import React, { Suspense } from "react";
 import { useTranslation } from "react-i18next";
 import { HomePage } from "./pages/HomePage";
-import Sound from "./components/Sound";
+import Sound from "./pages/Sound";
 import Quiz from "./components/Quiz";
 import { ErrorPage } from "./pages/ErrorPage";
 import { Navbar } from "./components/Navbar";
+import { Breath } from "./pages/Breath";
 
 // import npm install react-router-dom
 
@@ -43,7 +44,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/breath",
-        element: <Sound />,
+        element: <Breath />
       },
       {
         path: "/quiz",
