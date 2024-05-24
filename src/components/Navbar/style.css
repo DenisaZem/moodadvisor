@@ -1,43 +1,48 @@
 /* navbar styles */
 
 .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 3.5rem;
-    background-color: #A0AF84;
-    border-bottom: #4A6670 1px solid;
-  }
-  
-  .menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
-    color: #4A6670;
-    width: 50%;
-  }
-  
-  .menu--item {
-    text-decoration: none; 
-    color: #4A6670; 
-  }
-  
-  .menu--item a {
-    color: #4A6670; 
-  }
-  
-  .menu--item:visited {
-    color: #4A6670;
-  }
-  
-  .menu--item:hover {
-    color: #668F80;
-  }
-  
-  .logo {
-    text-align: center;
-    font-family: Meow Script;
-    font-size: 2.5rem;
-    color: #4A6670;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+  background-color: #a0af84;
+  border-bottom: #4a6670 1px solid;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  color: #4a6670;
+  width: 50%;
+}
+
+.menu__mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu--item {
+  text-decoration: none;
+  color: #4a6670;
+}
+
+.menu--item a {
+  color: #4a6670;
+}
+
+.menu--item:visited {
+  color: #4a6670;
+}
+
+.menu--item:hover {
+  color: #668f80;
+}
+
+.logo {
+  text-align: center;
+  font-family: Meow Script;
+  font-size: 2.5rem;
+  color: #4a6670;
+}
