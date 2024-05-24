@@ -1,24 +1,45 @@
-
 /* navbar styles */
 .nav-bar {
   display: flex;
+  position: fixed;
+  top: 0;
   justify-content: space-between;
   align-items: center;
   height: 3.5rem;
+  width: 100%;
   background-color: #A0AF84;
   border-bottom: #4A6670 1px solid;
 }
 
+.menu-icon {
+  visibility: visible;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  color: aliceblue;
+}
+
+
 .menu {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  height: 100%;
+  color: #4A6670;
+  width: 50%;
+  background-color: transparent;
+  text-align: center;
+  z-index: 15;
+}
+
+.show {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: #4A6670;
+  height: 150px;
   width: 50%;
-}
-
-.menu-icon {
-  width: 100px;
+  background-color: salmon;
 }
 
 .menu li {
@@ -26,8 +47,8 @@
 }
 
 .menu--item {
-  text-decoration: none; 
-  color: #4A6670; 
+  text-decoration: none;
+  color: #4A6670;
 }
 
 .menu--item:visited {
@@ -41,6 +62,23 @@
 .logo {
   text-align: center;
   font-family: Meow Script;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #4A6670;
+}
+
+@media screen and (min-width: 800px) {
+
+  .menu-icon {
+    /* visibility: hidden; */
+  }
+
+  /* .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #4A6670;
+    width: 50%;
+    background-color: salmon;
+  } */
+
 }
