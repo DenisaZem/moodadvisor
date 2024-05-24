@@ -42,16 +42,18 @@ export const Navbar = () => {
               {t('navigation.quiz')}
             </Link>
           </li>
-          <li>
+          <div className="buttons-language">
+          <li className='button-language__cs'>
             <button type="button" onClick={() => changeLanguage('cs')}>
               cs
             </button>
           </li>
-          <li>
+          <li className='button-language__en'>
             <button type="button" onClick={() => changeLanguage('en')}>
               en
             </button>
           </li>
+          </div>
         </ul>
       </div>
     </nav>
