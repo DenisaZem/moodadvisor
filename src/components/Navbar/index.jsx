@@ -19,6 +19,11 @@ export const Navbar = () => {
   };
 
   return (
+    <div>
+      <div
+        className={showMenu ? 'background_black open' : 'background_black'}
+      ></div>
+      <div className={showMenu ? 'background open' : 'background'}></div>
     <nav className="nav-bar">
       <h1 className="logo">{t('logo')}</h1>
       {showMenu ? (
@@ -61,5 +66,6 @@ export const Navbar = () => {
         </div>
       </ul>
     </nav>
+    </div>
   );
 };

@@ -7,6 +7,43 @@
   height: 3.5rem;
   width: 100%;
   background-color: #A0AF84;
+  z-index: 50;
+}
+
+.background {
+  position: fixed;
+  top: 44px;
+  left: -4px;
+  aspect-ratio: 6 / 1;
+  transform: translate(0, -50%);
+  height: 90px;
+  background: linear-gradient(to bottom right, #A0AF84 27%, #b2b4af  39%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.background.open {
+  height: 300vh;
+  opacity: 1;
+  z-index: 15;
+}
+
+.background_black {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: black;
+  z-index: 0;
+  transition: 0.6s;
+}
+
+.background_black.open {
+  opacity: 0.7;
+  z-index: 15;
+  width: 100%;
+  height: 100%;
 }
 
 .menu-icon,
@@ -17,30 +54,33 @@
   height: 30px;
   color: aliceblue;
   margin: 10px;
+  transition: transform 0.4s ease;
+  z-index: 50;
+}
+
+.menu-icon:hover {
+  transform: scale(1.2);
 }
 
 .menu-icon-cancel {
-  transition: transform 0.4s ease;
   height: 40px;
   width: 40px;
 }
 
 .menu-icon-cancel:hover {
   transform: rotateZ(90deg);
-
 }
 
 .menu {
   display: none;
   position: absolute;
-  top: 56px;
+  top: 80px;
   right: 0;
   height: 100%;
-  color: #4A6670;
+  color: transparent;
   width: 50%;
   background-color: transparent;
   text-align: center;
-  z-index: 15;
 }
 
 .show {
@@ -50,7 +90,7 @@
   align-items: center;
   height: 170px;
   width: 50%;
-  background-color: #A0AF84
+  background-color:transparent
 }
 
 .buttons-language {
@@ -66,20 +106,21 @@
 
 .menu li {
   list-style-type: none;
-  margin: 5px;
+  font-size: 20px;
+  margin: 13px;
 }
 
 .menu--item {
   text-decoration: none;
-  color: #4A6670;
+  color: rgb(255, 253, 253);
 }
 
-.menu--item:visited {
-  color: #4A6670;
-}
+/* .menu--item:visited {
+  color: rgb(255, 253, 253);
+} */
 
 .menu--item:hover {
-  color: #668F80;
+  color: #025a3b;
 }
 
 .logo {
