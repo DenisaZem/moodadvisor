@@ -9,13 +9,25 @@
   background-color: #A0AF84;
 }
 
-.menu-icon {
+.menu-icon,
+.menu-icon-cancel  {
   visibility: visible;
   cursor: pointer;
   width: 30px;
   height: 30px;
   color: aliceblue;
   margin: 10px;
+}
+
+.menu-icon-cancel {
+  transition: transform 0.4s ease;
+  height: 40px;
+  width: 40px;
+}
+
+.menu-icon-cancel:hover {
+  transform: rotateZ(90deg);
+
 }
 
 .menu {
