@@ -13,6 +13,7 @@ import Quiz from "./components/Quiz";
 import { ErrorPage } from "./pages/ErrorPage";
 import { Navbar } from "./components/Navbar";
 import { Breath } from "./pages/Breath";
+import { SoundMenu } from "./pages/SoundMenu";
 
 // import npm install react-router-dom
 
@@ -36,8 +37,14 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "/music",
-        element: <Sound />,
+        path: "/menu-music",
+        element: <SoundMenu />,
+        children: [
+          {
+            path:"music",
+            element: <Sound />
+          }
+        ]
       },
       {
         path: "/breath",

@@ -43,7 +43,7 @@ export const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link className="menu--item" to="/music">
+          <Link className="menu--item" to="/menu-music">
             {t('navigation.music')}
           </Link>
         </li>

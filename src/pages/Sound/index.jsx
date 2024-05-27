@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import { FaPlay, FaPause, FaForward, FaBackward } from 'react-icons/fa';
-import {SoundMenu} from "../SoundMenu"
 import './style.css';
 // Potřeba importovat ikony --> npm install react-icons
 
@@ -27,7 +26,6 @@ const Sound = () => {
 
   return (
     <div className="container">
-      <SoundMenu />
       <h1>Sounds</h1>
       <audio ref={audioRef} src="/sound/Calm.mp3" />
       <div className="controls">

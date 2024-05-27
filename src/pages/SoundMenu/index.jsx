@@ -43,7 +43,8 @@ export const SoundMenu = () => {
           />
         ))}
       </div>
-      <div className="swiper-pagination"></div>
+      {/* <div className="swiper-pagination"></div> */}
+      <a href="/menu-music/music">Odkaz na detail-nefugnuje</a>
     </Swiper>
   );
 };
