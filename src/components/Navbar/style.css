@@ -123,11 +123,13 @@
   color: #025a3b;
 }
 
-.logo {
+.logo,
+.logo a {
   text-align: center;
   font-family: Meow Script;
   font-size: 2rem;
   color: #4A6670;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 800px) {

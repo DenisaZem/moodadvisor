@@ -25,7 +25,7 @@ export const Navbar = () => {
       ></div>
       <div className={showMenu ? 'background open' : 'background'}></div>
     <nav className="nav-bar">
-      <h1 className="logo">{t('logo')}</h1>
+      <h1 className="logo"><Link to="/">{t('logo')}</Link></h1>
       {showMenu ? (
         <IoClose className="menu-icon-cancel" onClick={toggleMenu} />
       ) : (
