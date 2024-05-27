@@ -3,7 +3,7 @@ import "./style.css"
 export const Breath = () => {
     return (
         <div className="container">
-            Zde bude zvuk.
+            Zde budou dechová cvičení.
         </div>
     )
 }

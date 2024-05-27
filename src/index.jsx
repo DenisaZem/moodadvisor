@@ -1,19 +1,16 @@
 import { createRoot } from "react-dom/client";
 import "./global.css";
 import "./i18n";
-import {
-  createBrowserRouter,
-  Outlet,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import React, { Suspense } from "react";
 import { HomePage } from "./pages/HomePage";
-import Sound from "./pages/Sound";
+import Sound from "./components/Sound";
 import Quiz from "./components/Quiz";
 import { ErrorPage } from "./pages/ErrorPage";
 import { Navbar } from "./components/Navbar";
-import { Breath } from "./pages/Breath";
-import { SoundMenu } from "./pages/SoundMenu";
+import { BreathPage } from "./pages/BreathPage";
+import { SoundMenu } from "./pages/SoundPage";
+import { Breath } from "./components/Breath";
 
 // import npm install react-router-dom
 
@@ -37,18 +34,20 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "/menu-music",
+        path: "/music",
         element: <SoundMenu />,
-        children: [
-          {
-            path:"music",
-            element: <Sound />
-          }
-        ]
+      },
+      {
+        path: "/music/item",
+        element: <Sound />,
       },
       {
         path: "/breath",
-        element: <Breath />
+        element: <BreathPage />,
+      },
+      {
+        path: "/breath/exercise",
+        element: <Breath />,
       },
       {
         path: "/quiz",

@@ -4,6 +4,7 @@ import {EffectCoverflow} from "swiper/modules"
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 const slides = [
   "https://media.gettyimages.com/id/1152829238/vector/mindfulness-meditation-and-yoga-background-in-pastel-vintage-colors-with-women-sit-with.jpg?b=1&s=1024x1024&w=gi&k=20&c=_zYSpX6lWyNwsGOtaiDC49YePFSKHot86Z4Ac0mgwwc=",
@@ -44,7 +45,7 @@ export const SoundMenu = () => {
         ))}
       </div>
       {/* <div className="swiper-pagination"></div> */}
-      <a href="/menu-music/music">Odkaz na detail-nefugnuje</a>
+      <Link to="/music/item" >Odkaz na detail - funguje</Link>
     </Swiper>
   );
 };
