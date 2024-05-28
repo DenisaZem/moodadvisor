@@ -1,65 +1,232 @@
 import React, { useState } from "react";
 import "./style.css";
+import { useTranslation } from "react-i18next";
 
 const questions = [
   // 0
   {
-    questionText: "Jakou máš náladičku?",
+    questionText: "quiz.0.questionText",
     answerOptions: [
-      { answerText: "Skvělou", nextQuestionIndex: 1 },
-      { answerText: "Dobrou", nextQuestionIndex: 4 },
-      { answerText: "Ujde to", nextQuestionIndex: 4 },
-      { answerText: "Špatnou", nextQuestionIndex: 3 },
-      { answerText: "Velmi špatnou", nextQuestionIndex: 3 },
+      {
+        answerText: "quiz.0.answerOptions.a.answer",
+        nextQuestionIndex: "quiz.0.answerOptions.a.nextQuestionIndex",
+      },
+      {
+        answerText: "quiz.0.answerOptions.b.answer",
+        nextQuestionIndex: "quiz.0.answerOptions.b.nextQuestionIndex",
+      },
+      {
+        answerText: "quiz.0.answerOptions.c.answer",
+        nextQuestionIndex: "quiz.0.answerOptions.c.nextQuestionIndex",
+      },
+      {
+        answerText: "quiz.0.answerOptions.d.answer",
+        nextQuestionIndex: "quiz.0.answerOptions.d.nextQuestionIndex",
+      },
+      {
+        answerText: "quiz.0.answerOptions.e.answer",
+        nextQuestionIndex: "quiz.0.answerOptions.e.nextQuestionIndex",
+      },
     ],
   },
   // 1
   {
-    questionText: "Proč ji máš skvělou?",
+    questionText: "quiz.1.questionText",
     answerOptions: [
-      { answerText: "Proto", nextQuestionIndex: 4 },
-      { answerText: "Nevim", nextQuestionIndex: 4 },
-      { answerText: "Jentak", nextQuestionIndex: 4 },
-      { answerText: "Nečum", nextQuestionIndex: 4 },
-      { answerText: "Svítí slunce", nextQuestionIndex: 4 },
+      {
+        answerText: "quiz.1.answerOptions.a.answer",
+        nextQuestionIndex: "quiz.1.answerOptions.a.nextQuestionIndex",
+      },
     ],
   },
   // 2
   {
-    questionText: "Nevíš, jak je to možné?",
+    questionText: "quiz.2.questionText",
     answerOptions: [
-      { answerText: "Proto", nextQuestionIndex: 4 },
-      { answerText: "Nevim", nextQuestionIndex: 4 },
-      { answerText: "Jentak", nextQuestionIndex: 4 },
-      { answerText: "Nečum", nextQuestionIndex: 4 },
-      { answerText: "Svítí slunce", nextQuestionIndex: 4 },
+      {
+        answerText: "quiz.2.answerOptions.a.answer",
+        nextQuestionIndex: "quiz.2.answerOptions.a.nextQuestionIndex",
+      },
+      {
+        answerText: "quiz.2.answerOptions.b.answer",
+        nextQuestionIndex: "quiz.2.answerOptions.b.nextQuestionIndex",
+      },
+      {
+        answerText: "quiz.2.answerOptions.c.answer",
+        nextQuestionIndex: "quiz.2.answerOptions.c.nextQuestionIndex",
+      },
+      {
+        answerText: "quiz.2.answerOptions.d.answer",
+        nextQuestionIndex: "quiz.2.answerOptions.d.nextQuestionIndex",
+      },
     ],
   },
   // 3
   {
-    questionText: "Máš často špatnou náladu?",
+    questionText: "quiz.3.questionText",
     answerOptions: [
-      { answerText: "Nikdy", nextQuestionIndex: 4 },
-      { answerText: "Občas", nextQuestionIndex: 4 },
-      { answerText: "Často", nextQuestionIndex: 4 },
-      { answerText: "Velmi často", nextQuestionIndex: 4 },
-      { answerText: "Vždy", nextQuestionIndex: 4 },
+      {
+        answerText: "quiz.3.answerOptions.a.answer",
+        nextQuestionIndex: "quiz.3.answerOptions.a.nextQuestionIndex",
+      },
     ],
   },
   // 4
   {
-    questionText: "Jak často se snažíte být přítomní v daném okamžiku?",
+    questionText: "quiz.4.questionText",
     answerOptions: [
-      { answerText: "Nikdy", nextQuestionIndex: null },
-      { answerText: "Občas", nextQuestionIndex: null },
-      { answerText: "Často", nextQuestionIndex: null },
-      { answerText: "Velmi často", nextQuestionIndex: null },
-      { answerText: "Vždy", nextQuestionIndex: null },
+      {
+        answerText: "quiz.4.answerOptions.a.answer",
+        nextQuestionIndex: "quiz.4.answerOptions.a.nextQuestionIndex",
+      },
+    ],
+  },
+  // 5
+  {
+    questionText: "quiz.5.questionText",
+    answerOptions: [
+      {
+        answerText: "quiz.5.answerOptions.a.answer",
+        nextQuestionIndex: "quiz.5.answerOptions.a.nextQuestionIndex",
+      },
+    ],
+  },
+  // 6
+  {
+    questionText: "quiz.6.questionText",
+    answerOptions: [
+      {
+        answerText: "quiz.6.answerOptions.a.answer",
+        nextQuestionIndex: "quiz.6.answerOptions.a.nextQuestionIndex",
+      },
+      {
+        answerText: "quiz.6.answerOptions.b.answer",
+        nextQuestionIndex: "quiz.6.answerOptions.b.nextQuestionIndex",
+      },
+      {
+        answerText: "quiz.6.answerOptions.c.answer",
+        nextQuestionIndex: "quiz.6.answerOptions.c.nextQuestionIndex",
+      },
+    ],
+  },
+  // 7
+  {
+    questionText: "quiz.7.questionText",
+    answerOptions: [
+      {
+        answerText: "quiz.7.answerOptions.a.answer",
+        nextQuestionIndex: "quiz.7.answerOptions.a.nextQuestionIndex",
+      },
+      {
+        answerText: "quiz.7.answerOptions.b.answer",
+        nextQuestionIndex: "quiz.7.answerOptions.b.nextQuestionIndex",
+      },
+    ],
+  },
+  // 8
+  {
+    questionText: "quiz.8.questionText",
+    answerOptions: [
+      {
+        answerText: "quiz.8.answerOptions.a.answer",
+        nextQuestionIndex: "quiz.8.answerOptions.a.nextQuestionIndex",
+      },
+      {
+        answerText: "quiz.8.answerOptions.b.answer",
+        nextQuestionIndex: "quiz.8.answerOptions.b.nextQuestionIndex",
+      },
+      {
+        answerText: "quiz.8.answerOptions.c.answer",
+        nextQuestionIndex: "quiz.8.answerOptions.c.nextQuestionIndex",
+      },
+    ],
+  },
+  // 9
+  {
+    questionText: "quiz.9.questionText",
+    answerOptions: [
+      {
+        answerText: "quiz.9.answerOptions.a.answer",
+        nextQuestionIndex: "quiz.9.answerOptions.a.nextQuestionIndex",
+      },
+      {
+        answerText: "quiz.9.answerOptions.b.answer",
+        nextQuestionIndex: "quiz.9.answerOptions.b.nextQuestionIndex",
+      },
+      {
+        answerText: "quiz.9.answerOptions.c.answer",
+        nextQuestionIndex: "quiz.9.answerOptions.c.nextQuestionIndex",
+      },
+    ],
+  },
+  // 10
+  {
+    questionText: "quiz.10.questionText",
+    answerOptions: [
+      {
+        answerText: "quiz.10.answerOptions.a.answer",
+        nextQuestionIndex: "quiz.10.answerOptions.a.nextQuestionIndex",
+      },
+      {
+        answerText: "quiz.10.answerOptions.b.answer",
+        nextQuestionIndex: "quiz.10.answerOptions.b.nextQuestionIndex",
+      },
+      {
+        answerText: "quiz.10.answerOptions.c.answer",
+        nextQuestionIndex: "quiz.10.answerOptions.c.nextQuestionIndex",
+      },
+    ],
+  },
+  // 11
+  {
+    questionText: "quiz.11.questionText",
+    answerOptions: [
+      {
+        answerText: "quiz.11.answerOptions.a.answer",
+        nextQuestionIndex: "quiz.11.answerOptions.a.nextQuestionIndex",
+      },
+    ],
+  },
+  // 12
+  {
+    questionText: "quiz.12.questionText",
+    answerOptions: [
+      {
+        answerText: "quiz.12.answerOptions.a.answer",
+        nextQuestionIndex: "quiz.12.answerOptions.a.nextQuestionIndex",
+      },
+    ],
+  },
+  // 13
+  {
+    questionText: "quiz.13.questionText",
+    answerOptions: [
+      {
+        answerText: "quiz.13.answerOptions.a.answer",
+        nextQuestionIndex: "quiz.13.answerOptions.a.nextQuestionIndex",
+      },
+      {
+        answerText: "quiz.13.answerOptions.b.answer",
+        nextQuestionIndex: "quiz.13.answerOptions.b.nextQuestionIndex",
+      },
+      {
+        answerText: "quiz.13.answerOptions.c.answer",
+        nextQuestionIndex: "quiz.13.answerOptions.c.nextQuestionIndex",
+      },
+      {
+        answerText: "quiz.13.answerOptions.d.answer",
+        nextQuestionIndex: "quiz.13.answerOptions.d.nextQuestionIndex",
+      },
+      {
+        answerText: "quiz.13.answerOptions.e.answer",
+        nextQuestionIndex: "quiz.13.answerOptions.e.nextQuestionIndex",
+      },
     ],
   },
 ];
 
 const Quiz = () => {
+  const { t, i18n } = useTranslation();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   // const [lastSentence, setLastSentence] = useState(false);
 
@@ -96,7 +263,7 @@ const Quiz = () => {
                 <span>Otázka {currentQuestion + 1}</span>/{questions.length}
               </div>
               <div className="question-text">
-                {questions[currentQuestion].questionText}
+                {t(questions[currentQuestion].questionText)}
               </div>
             </div>
             <div className="answer__section">
@@ -106,10 +273,10 @@ const Quiz = () => {
                     key={index}
                     className="answer__section--button"
                     onClick={() =>
-                      handleAnswerOptionClick(answerOption.nextQuestionIndex)
+                      handleAnswerOptionClick(t(answerOption.nextQuestionIndex))
                     }
                   >
-                    {answerOption.answerText}
+                    {t(answerOption.answerText)}
                   </button>
                 )
               )}
