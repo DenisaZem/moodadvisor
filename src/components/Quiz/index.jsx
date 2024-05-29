@@ -228,17 +228,22 @@ const questions = [
 const Quiz = () => {
   const { t, i18n } = useTranslation();
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  // const [lastSentence, setLastSentence] = useState(false);
+  const [lastSentence, setLastSentence] = useState(false);
 
   const handleAnswerOptionClick = (nextQuestionIndex) => {
-    setCurrentQuestion(nextQuestionIndex);
+    if (typeof nextQuestionIndex === "number") {
+      setCurrentQuestion(nextQuestionIndex);
+    } else {
+      currentQuestion;
+      setLastSentence(true);
+    }
   };
 
   return (
     <div className="container">
       <h1>Mood Quiz</h1>
       <div className="container__quiz">
-        {currentQuestion === null ? (
+        {lastSentence ? (
           <div className="lastSentence-section">
             <div className="lastSentence-section__title">
               Dokončil jsi dotazníček.
