@@ -10,6 +10,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;  */
+} 
+
+.container__mainSoundMenu {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 800px;
 }
 
 .swiper {
@@ -20,10 +28,23 @@ body {
 .swiper .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 300px;
+  width: 200px;
   height: 300px;
   -webkit-box-reflect: below 1px
     linear-gradient(transparent, transparent, #0006);
 }
+
+@media screen and (min-width: 450px) {
+
+  .container__mainSoundMenu {
+    min-height: 700px;
+  }
+
+  .swiper .swiper-slide {
+    width: 450px;
+    height: 500px;
+  }
+}
+
 
 

@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import {EffectCoverflow} from "swiper/modules"
+import { EffectCoverflow } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -19,35 +19,35 @@ const slides = [
 
 export const SoundMenu = () => {
   return (
-    <Swiper
-      grabCursor
-      centeredSlides
-      slidesPerView="auto"
-      effect="coverflow"
-      loop
-      coverflowEffect={{
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      }}
-      modules={[EffectCoverflow]}
-    >
-      <div className="swiper-wrapper">
-        {slides.map((slide) => (
-          <SwiperSlide
-            key={slide}
-            style={{
-              backgroundImage: `url(${slide})`,
-            }}
-          />
-        ))}
-      </div>
-      {/* <div className="swiper-pagination"></div> */}
-      <Link to="/music/item" >Odkaz na detail - funguje</Link>
-    </Swiper>
+    <div className="container__mainSoundMenu">
+      <Swiper
+        grabCursor
+        centeredSlides
+        slidesPerView="auto"
+        effect="coverflow"
+        loop
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        modules={[EffectCoverflow]}
+      >
+        <div className="swiper-wrapper">
+          {slides.map((slide) => (
+            <SwiperSlide
+              key={slide}
+              style={{
+                backgroundImage: `url(${slide})`,
+              }}
+            />
+          ))}
+        </div>
+        <Link to="/music/item">Odkaz na detail - funguje</Link>
+        {/* <div className="swiper-pagination"></div> */}
+      </Swiper>
+    </div>
   );
 };
-
-
