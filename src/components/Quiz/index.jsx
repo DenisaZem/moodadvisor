@@ -240,7 +240,7 @@ const Quiz = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container__mainQuiz">
       <h1>Mood Quiz</h1>
       <div className="container__quiz">
         {lastSentence ? (
