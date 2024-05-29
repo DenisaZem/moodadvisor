@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 800px;
+  min-height: 700px;
 }
 
 .swiper {
@@ -41,8 +41,8 @@ body {
   }
 
   .swiper .swiper-slide {
-    width: 450px;
-    height: 500px;
+    min-width: 350px;
+   min-height: 400px;
   }
 }
 
