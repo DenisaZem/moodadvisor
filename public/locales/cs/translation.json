@@ -6,6 +6,12 @@
     "music": "Relaxační hudba",
     "quiz": "Kvíz"
   },
+  "footer": {
+    "aboutUs": "O nás",
+    "aboutProject": "O MoodAdviseru",
+    "organization": "Czechitas",
+    "copy": "© 2024. Vytvořeno pro Czechitas, Digitální akademie: Web."
+  },
   "quiz": {
     "0": {
       "questionText": "Zdravím, s čím vám můžu pomoci? Jak se dnes cítíte?",

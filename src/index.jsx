@@ -11,6 +11,7 @@ import { Navbar } from "./components/Navbar";
 import { BreathPage } from "./pages/BreathPage";
 import { SoundMenu } from "./pages/SoundPage";
 import { Breath } from "./components/Breath";
+import { Footer } from "./components/Footer";
 
 // import npm install react-router-dom
 
@@ -19,6 +20,7 @@ export const App = () => {
     <Suspense fallback="loading">
       <Navbar />
       <Outlet />
+      <Footer />
     </Suspense>
   );
 };
