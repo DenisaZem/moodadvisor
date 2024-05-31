@@ -1,6 +1,6 @@
 import "./style.css";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import React, { useState } from "react";
@@ -23,6 +23,18 @@ export const Navbar = () => {
     setShowMenu(!showMenu);
   };
 
+  const toggleMenuHome = () => {
+    const location = useLocation();
+    const locationPath = location.pathname;
+    if (showMenu === true) {
+      toggleMenu
+    }
+
+    if (locationPath === "/") {
+      window.location.reload();
+    }
+  }
+
   return (
     <div>
       <div
@@ -31,7 +43,7 @@ export const Navbar = () => {
       <div className={showMenu ? "background open" : "background"}></div>
       <nav className="nav-bar">
         <h1 className="logo">
-          <Link to="/">{t("logo")}</Link>
+          <Link onClick={toggleMenuHome} to="/">{t("logo")}</Link>
         </h1>
         {showMenu ? (
           <IoClose className="menu-icon-cancel" onClick={toggleMenu} />
@@ -41,7 +53,7 @@ export const Navbar = () => {
         <ul className={`menu ${showMenu ? "show" : ""}`}>
           <li>
             <Link
-              onClick={showMenu ? toggleMenu : null}
+              onClick={toggleMenuHome}
               className="menu--item"
               to="/"
             >
