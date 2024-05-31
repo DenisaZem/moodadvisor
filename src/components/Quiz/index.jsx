@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import { useTranslation } from "react-i18next";
+import Bubble from "../Bubble";
 
 const questions = [
   // 0
@@ -289,6 +290,7 @@ const Quiz = () => {
           </>
         )}
       </div>
+      <Bubble />
     </div>
   );
 };
