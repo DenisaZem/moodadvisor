@@ -94,7 +94,10 @@ export const Navbar = () => {
               </button>
             </li> */}
             <li>
-              <button className="button--toggle-language" onClick={toggleLanguage}>
+              <button
+                className="button--toggle-language"
+                onClick={toggleLanguage}
+              >
                 {currentLanguage === "en" ? "Česky" : "English"}
               </button>
             </li>
