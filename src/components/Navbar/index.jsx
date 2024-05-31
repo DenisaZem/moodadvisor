@@ -9,19 +9,12 @@ export const Navbar = () => {
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language;
 
-  // const changeLanguage = (lng) => {
-  //   i18n.changeLanguage(lng);
-  // };
-
   const toggleLanguage = () => {
     if (currentLanguage === "cs") {
       i18n.changeLanguage("en");
     } else if (currentLanguage === "en") {
       i18n.changeLanguage("cs");
     }
-    // else {
-    //   i18n.changeLanguage("en")
-    // }
   };
 
   const [showMenu, setShowMenu] = useState(false);
@@ -83,16 +76,6 @@ export const Navbar = () => {
             </Link>
           </li>
           <div className="buttons-language">
-            {/* <li className="button-language__cs">
-              <button type="button" onClick={() => changeLanguage("cs")}>
-                cs
-              </button>
-            </li>
-            <li className="button-language__en">
-              <button type="button" onClick={() => changeLanguage("en")}>
-                en
-              </button>
-            </li> */}
             <li>
               <button
                 className="button--toggle-language"

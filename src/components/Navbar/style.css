@@ -100,7 +100,12 @@
 }
 
 .button--toggle-language {
-  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4a6670;
+  color: aliceblue;
+  width: 70px;
 }
 
 .menu li {
