@@ -7,12 +7,12 @@ export const Footer = () => {
 
     return (
         <footer className="footer">
-            <ul>
-                <li><Link>{t("footer.aboutUs")}</Link></li>
-                <li><Link>{t("footer.aboutProject")}</Link></li>
-                <li><a href="">{t("footer.organization")}</a></li>
+            <ul className="footer--menu">
+                <li className="footer--menu--item"><Link>{t("footer.aboutUs")}</Link></li>
+                <li className="footer--menu--item"><Link>{t("footer.aboutProject")}</Link></li>
+                <li className="footer--menu--item"><a href="">{t("footer.organization")}</a></li>
             </ul>
-            <p>
+            <p className="footer--copy">
             {t("footer.copy")}
             </p>
         </footer>
