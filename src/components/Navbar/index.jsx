@@ -33,22 +33,22 @@ export const Navbar = () => {
       )}
       <ul className={`menu ${showMenu ? 'show' : ''}`}>
         <li>
-          <Link className="menu--item" to="/">
+          <Link onClick={showMenu ? toggleMenu : null} className="menu--item" to="/">
             {t('navigation.home')}
           </Link>
         </li>
         <li>
-          <Link className="menu--item" to="/breath">
+          <Link onClick={showMenu ? toggleMenu : null} className="menu--item" to="/breath">
             {t('navigation.breath')}
           </Link>
         </li>
         <li>
-          <Link className="menu--item" to="/music">
+          <Link onClick={showMenu ? toggleMenu : null} className="menu--item" to="/music">
             {t('navigation.music')}
           </Link>
         </li>
         <li>
-          <Link className="menu--item" to="/quiz">
+          <Link onClick={showMenu ? toggleMenu : null} className="menu--item" to="/quiz">
             {t('navigation.quiz')}
           </Link>
         </li>
