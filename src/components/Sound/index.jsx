@@ -8,8 +8,8 @@ const Sound = () => {
   const ref = useRef(null);
 
   useAnimationFrame((t) => {
-    const rotate = Math.sin(t / 10000) * 200;
-    const y = (1 + Math.sin(t / 1000)) * -50;
+    const rotate = Math.sin(t / 10000) * 60;
+    const y = (1 + Math.sin(t / 1000)) * -40;
     ref.current.style.transform = `translateY(${y}px) rotateX(${rotate}deg) rotateY(${rotate}deg)`;
   });
 
@@ -40,7 +40,7 @@ const Sound = () => {
         <audio ref={audioRef} src="/components/Sound/music/zkouska.mp3" />
         <div className="controls">
           <div className="obrazek">
-          <div className={`cube ${isPlaying ? 'rotate' : ''}`} ref={ref}>
+            <div className={`cube ${isPlaying ? "rotate" : ""}`} ref={ref}>
               <div className="side front" />
               <div className="side left" />
               <div className="side right" />
@@ -49,17 +49,13 @@ const Sound = () => {
               <div className="side back" />
             </div>
           </div>
-          {/* <img
-          className={`obrazek ${isPlaying ? 'playing' : ''}`}
-          src="https://media.gettyimages.com/id/1152829238/vector/mindfulness-meditation-and-yoga-background-in-pastel-vintage-colors-with-women-sit-with.jpg?b=1&s=1024x1024&w=gi&k=20&c=_zYSpX6lWyNwsGOtaiDC49YePFSKHot86Z4Ac0mgwwc="
-          alt="obrazek"
-        /> */}
           <div className="playButtons">
             <button
               onClick={handleBackward}
               className="control-button backward"
             >
               <FaBackward />
+              <p> 5 sekund vzad</p>
             </button>
             <button
               onClick={togglePlayPause}
@@ -69,32 +65,10 @@ const Sound = () => {
             </button>
             <button onClick={handleForward} className="control-button forward">
               <FaForward />
+              <p> 5 sekund vpřed</p>
             </button>
           </div>
         </div>
-
-        {/* <audio ref={audioRef} src="/sound/Calm.mp3" />
-      <div className="controls">
-        <img
-          className={`obrazek ${isPlaying ? 'playing' : ''}`}
-          src="https://cdn.dribbble.com/users/176039/screenshots/5500538/media/e2b1dd0c440b3fdba253d7d03e0e0874.gif"
-          alt="obrazek"
-        />
-        <div className="playButtons">
-          <button onClick={handleBackward} className="control-button backward">
-            <FaBackward />
-          </button>
-          <button
-            onClick={togglePlayPause}
-            className="control-button play-pause"
-          >
-            {isPlaying ? <FaPause /> : <FaPlay />}
-          </button>
-          <button onClick={handleForward} className="control-button forward">
-            <FaForward />
-          </button>
-        </div>
-      </div> */}
       </div>
     </div>
   );
