@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -34,6 +34,18 @@ export const Navbar = () => {
       window.location.reload();
     }
   }
+
+  // for closing menu after width window change
+  useEffect(() => {
+    const closeMenuOnResize = () => {
+      setShowMenu(false);
+    };
+    window.addEventListener("resize", closeMenuOnResize);
+
+    return () => {
+      window.removeEventListener("resize", closeMenuOnResize);
+    };
+  }, [showMenu]);
 
   return (
     <div> 
