@@ -6,10 +6,10 @@ import React, { useState, useEffect } from "react";
 const Bubble = () => {
   const bubbleTextOptions = [
     "Zhluboka se nadechni",
-    "Relaxuj",
+    "Pojď se uvolnit",
     "Nadechni a vydechni",
-    "Nech si to projít hlavou",
-    "Uvolni se"
+    "Nadechni se zhluboka",
+    "Dnes je krásný den" 
   ];
 
   const [bubbleText, setBubbleText] = useState("");
@@ -24,13 +24,13 @@ const Bubble = () => {
       <motion.div
         className="bubble"
         animate={{
-          scale: [1, 1.4, 1.5, 1.3, 1],
+          scale: [1, 1.25, 1.3,  1.2, 1.5, 1.55, 1.4, 1.5,1.3,1.4],
         }}
         transition={{
-          duration: 4,
-          ease: "easeInOut",
+          duration: 6,
+          ease: "linear",
           repeat: Infinity,
-          repeatDelay: 1,
+          repeatDelay: 0,
         }}
         style={{
           width: 250,
