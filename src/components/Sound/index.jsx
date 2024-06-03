@@ -5,7 +5,7 @@ import { useAnimationFrame } from "framer-motion";
 import { useParams } from "react-router-dom";
 // Potřeba importovat ikony --> npm install react-icons
 
-const Sound = () => {
+const OneSound = () => {
   const ref = useRef(null);
   const { id } = useParams();
 
@@ -77,4 +77,4 @@ const Sound = () => {
   );
 };
 
-export default Sound;
+export default OneSound;

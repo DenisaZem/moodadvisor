@@ -55,7 +55,7 @@ const musicData = [
   },
 ];
 
-export const SoundMenu = () => {
+export const SoundPage = () => {
   return (
     <div className="container__mainSoundMenu">
       <Swiper
