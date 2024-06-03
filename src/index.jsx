@@ -40,7 +40,7 @@ const router = createBrowserRouter([
         element: <SoundMenu />,
       },
       {
-        path: "/music/item",
+        path: "/music/:id",
         element: <Sound />,
       },
       {
