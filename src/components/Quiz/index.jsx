@@ -230,12 +230,13 @@ const Quiz = () => {
   const { t, i18n } = useTranslation();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [lastSentence, setLastSentence] = useState(false);
+  const [showBubble, setShowBubble] = useState(true);
 
-  useEffect(()=>{
-    setTimeout(()=>{
-      <Bubble />
-    },3000)
-  },[])
+  useEffect(() => {
+    setTimeout(() => {
+      setShowBubble(false);
+    }, 5000);
+  }, []);
 
   const handleAnswerOptionClick = (nextQuestionIndex) => {
     if (typeof nextQuestionIndex === "number") {
@@ -248,7 +249,7 @@ const Quiz = () => {
 
   return (
     <div className="container__mainQuiz">
-        <Bubble />
+      {showBubble && <Bubble />}
       <h1>Mood Quiz</h1>
       <div className="container__quiz">
         {lastSentence ? (

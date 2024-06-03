@@ -8,7 +8,7 @@ const Bubble = () => {
       <motion.div
         className="bubble"
         animate={{
-          scale: [1, 1.1, 1.1, 0.95, 1], 
+          scale: [1, 1.4, 1.5, 1.3, 1], 
         }}
         transition={{ 
           duration: 4,
