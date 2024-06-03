@@ -1,25 +1,58 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow } from "swiper/modules";
-import obrazek1 from "./img/1.png"
-import obrazek2 from "./img/2.png"
-import obrazek3 from "./img/3.png"
-import obrazek4 from "./img/4.png"
-import obrazek5 from "./img/5.png"
-import obrazek6 from "./img/6.png"
+import obrazek1 from "./img/1.png";
+import obrazek2 from "./img/2.png";
+import obrazek3 from "./img/3.png";
+import obrazek4 from "./img/4.png";
+import obrazek5 from "./img/5.png";
+import obrazek6 from "./img/6.png";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "./style.css";
 import { Link } from "react-router-dom";
 
-const slides = [
-  obrazek1, obrazek2, obrazek3, obrazek4, obrazek5, obrazek6
-]
+// const slides = [
+//   obrazek1, obrazek2, obrazek3, obrazek4, obrazek5, obrazek6
+// ]
+
+const musicData = [
+  {
+    title: "Skladba1",
+    audioUrl: "/components/Sound/music/zkouska.mp3",
+    picture: obrazek1,
+  },
+  {
+    title: "Skladba2",
+    audioUrl: "/components/Sound/music/zkouska2.mp3",
+    picture: obrazek2,
+  },
+  {
+    title: "Skladba3",
+    audioUrl: "/components/Sound/music/zkouska3.mp3",
+    picture: obrazek3,
+  },
+  {
+    title: "Skladba4",
+    audioUrl: "/components/Sound/music/zkouska4.mp3",
+    picture: obrazek4,
+  },
+  {
+    title: "Skladba5",
+    audioUrl: "/components/Sound/music/zkouska5.mp3",
+    picture: obrazek5,
+  },
+  {
+    title: "Skladba6",
+    audioUrl: "/components/Sound/music/zkouska6.mp3",
+    picture: obrazek6,
+  },
+];
 
 export const SoundMenu = () => {
   return (
     <div className="container__mainSoundMenu">
-      <Swiper 
+      <Swiper
         grabCursor
         centeredSlides
         slidesPerView="auto"
@@ -35,20 +68,24 @@ export const SoundMenu = () => {
         modules={[EffectCoverflow]}
       >
         <div className="swiper-wrapper">
-          {slides.map((slide) => (
+          {musicData.map((slide) => (
             <SwiperSlide
-              key={slide}
+              key={slide.picture}
               style={{
-                backgroundImage: `url(${slide})`,
+                backgroundImage: `url(${slide.picture})`,
               }}
             >
-              <Link className="swiper-wrapper--link" to="/music/item">Název hudby
-              <img className="swiper-wrapper" src={slide} alt="Ikona s notami" />
+              <Link className="swiper-wrapper--link" to="/music/item">
+                {slide.title}
+                <img
+                  className="swiper-wrapper"
+                  src={slide.picture}
+                  alt="Ikona s notami"
+                />
               </Link>
             </SwiperSlide>
           ))}
         </div>
-        {/* <div className="swiper-pagination"></div> */}
       </Swiper>
     </div>
   );
