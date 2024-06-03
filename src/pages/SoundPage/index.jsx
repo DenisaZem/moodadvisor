@@ -72,6 +72,7 @@ export const SoundPage = () => {
           slideShadows: true,
         }}
         modules={[EffectCoverflow]}
+        // mousewheel={{ enabled: true, sensitivity: 1 }} // Snaha o posun menu kolečkem myší
       >
         <div className="swiper-wrapper">
           {musicData.map((slide) => (
