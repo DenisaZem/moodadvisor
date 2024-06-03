@@ -1,8 +1,28 @@
 import './style.css';
 import { motion } from "framer-motion";
+import React, { useState, useEffect } from "react";
 // instal npm install framer-motion
 
 const Bubble = () => {
+
+  const bubbleTextOptions = [
+    "Zhluboka se nadechni",
+    "Relaxuj",
+    "Nadechni a vydechni",
+    "Nech si to projít hlavou",
+    "Uvolni se"
+  ]
+
+  const [bubbleText, setBubbleText] = useState("")
+
+  useEffect(()=>{
+    const randomtext = Math.floor(Math.random() * bubbleTextOptions.length )
+    setBubbleText(randomtext)
+  })
+
+  
+
+
   return (
     <div className='background'>
       <motion.div
@@ -28,7 +48,7 @@ const Bubble = () => {
           fontWeight: "bold",
         }}
       >
-        Zhluboka se nadechni
+       {bubbleText}
       </motion.div>
     </div>
   ); 
@@ -36,23 +56,5 @@ const Bubble = () => {
 
 export default Bubble
 
-// export default function App() {
-//   return (
-//     <motion.div
-//       className="box"
-//       animate={{
-//         scale: [1, 2, 2, 1, 1],
-//         rotate: [0, 0, 180, 180, 0],
-//         borderRadius: ["0%", "0%", "50%", "50%", "0%"]
-//       }}
-//       transition={{
-//         duration: 2,
-//         ease: "easeInOut",
-//         times: [0, 0.2, 0.5, 0.8, 1],
-//         repeat: Infinity,
-//         repeatDelay: 1
-//       }}
-//     />
-//   );
-// }
+
 // https://codesandbox.io/p/sandbox/framer-motion-keyframes-0fzv21?file=%2Fsrc%2FApp.tsx%3A4%2C1-22%2C2&from-embed=
