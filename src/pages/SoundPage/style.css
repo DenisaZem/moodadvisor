@@ -23,6 +23,15 @@ body {
 .swiper { 
   padding-top: 50px;
   padding-bottom: 80px;
+
+}
+
+.swiper-wrapper--link {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5px;
+  text-decoration: none;
 }
 
 .swiper .swiper-slide {

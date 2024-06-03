@@ -41,10 +41,13 @@ export const SoundMenu = () => {
               style={{
                 backgroundImage: `url(${slide})`,
               }}
-            />
+            >
+              <Link className="swiper-wrapper--link" to="/music/item">Název hudby
+              <img className="swiper-wrapper" src={slide} alt="Ikona s notami" />
+              </Link>
+            </SwiperSlide>
           ))}
         </div>
-        <Link to="/music/item">Odkaz na detail - funguje</Link>
         {/* <div className="swiper-pagination"></div> */}
       </Swiper>
     </div>
