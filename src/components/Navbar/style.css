@@ -10,7 +10,7 @@
   z-index: 50;
 }
 
-.background {
+.background-burgerMenu {
   position: fixed;
   top: 44px;
   left: -4px;
@@ -23,7 +23,7 @@
   transition: 0.6s;
 }
 
-.background.open {
+.background-burgerMenu.open {
   height: 300vh;
   opacity: 1;
   z-index: 15;

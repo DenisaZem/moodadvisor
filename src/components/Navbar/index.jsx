@@ -36,11 +36,11 @@ export const Navbar = () => {
   }
 
   return (
-    <div>
+    <div> 
       <div
         className={showMenu ? "background_black open" : "background_black"}
       ></div>
-      <div className={showMenu ? "background open" : "background"}></div>
+      <div className={showMenu ? "background-burgerMenu open" : "background-burgerMenu"}></div>
       <nav className="nav-bar">
         <h1 className="logo">
           <Link onClick={toggleMenuHome} to="/">{t("logo")}</Link>
