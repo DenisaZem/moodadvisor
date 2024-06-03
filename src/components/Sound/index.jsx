@@ -2,10 +2,13 @@ import React, { useRef, useState } from "react";
 import { FaPlay, FaPause, FaForward, FaBackward } from "react-icons/fa";
 import "./style.css";
 import { useAnimationFrame } from "framer-motion";
+import { useParams } from "react-router-dom";
 // Potřeba importovat ikony --> npm install react-icons
 
 const Sound = () => {
   const ref = useRef(null);
+  const { id } = useParams();
+
 
   useAnimationFrame((t) => {
     const rotate = Math.sin(t / 10000) * 60;
@@ -37,7 +40,7 @@ const Sound = () => {
     <div className="container-sound">
       <h1 className="container-sound__title">Sounds</h1>
       <div className="container-sound__content">
-        <audio ref={audioRef} src="/components/Sound/music/zkouska.mp3" />
+        <audio ref={audioRef} src={`/components/Sound/music/${id}.mp3`} />
         <div className="controls">
           <div className="obrazek">
             <div className={`cube ${isPlaying ? "rotate" : ""}`} ref={ref}>

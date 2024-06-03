@@ -18,31 +18,37 @@ import { Link } from "react-router-dom";
 
 const musicData = [
   {
+    id: "01",
     title: "Skladba1",
     audioUrl: "/components/Sound/music/zkouska.mp3",
     picture: obrazek1,
   },
   {
+    id: "02",
     title: "Skladba2",
     audioUrl: "/components/Sound/music/zkouska2.mp3",
     picture: obrazek2,
   },
   {
+    id: "03",
     title: "Skladba3",
     audioUrl: "/components/Sound/music/zkouska3.mp3",
     picture: obrazek3,
   },
   {
+    id: "04",
     title: "Skladba4",
     audioUrl: "/components/Sound/music/zkouska4.mp3",
     picture: obrazek4,
   },
   {
+    id: "05",
     title: "Skladba5",
     audioUrl: "/components/Sound/music/zkouska5.mp3",
     picture: obrazek5,
   },
   {
+    id: "06",
     title: "Skladba6",
     audioUrl: "/components/Sound/music/zkouska6.mp3",
     picture: obrazek6,
@@ -75,7 +81,7 @@ export const SoundMenu = () => {
                 backgroundImage: `url(${slide.picture})`,
               }}
             >
-              <Link className="swiper-wrapper--link" to="/music/item">
+              <Link className="swiper-wrapper--link" to={`/music/${slide.id}`}>
                 {slide.title}
                 <img
                   className="swiper-wrapper"
