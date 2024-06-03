@@ -27,15 +27,15 @@ export const Navbar = () => {
     const location = useLocation();
     const locationPath = location.pathname;
     if (showMenu === true) {
-      toggleMenu
+      toggleMenu;
     }
 
     if (locationPath === "/") {
       window.location.reload();
     }
-  }
+  };
 
-  // for closing menu after width window change
+  // zavření hamburger menu při změně šířky okna
   useEffect(() => {
     const closeMenuOnResize = () => {
       setShowMenu(false);
@@ -47,15 +47,42 @@ export const Navbar = () => {
     };
   }, [showMenu]);
 
+  // zavření hamburger menu při kliknutí mimo NavBar
+  useEffect(() => {
+    const closeMenuOnOutsideClick = (e) => {
+      const isClickOnBackground =
+        e.target.classList.contains("background_black");
+      const isClickOnNavBarList = e.target.classList.contains(
+        "background-burgerMenu"
+      );
+
+      if (showMenu && isClickOnBackground && !isClickOnNavBarList) {
+        setShowMenu(false);
+      }
+    };
+
+    document.addEventListener("click", closeMenuOnOutsideClick);
+
+    return () => {
+      document.removeEventListener("click", closeMenuOnOutsideClick);
+    };
+  }, [showMenu]);
+
   return (
-    <div> 
+    <div>
       <div
         className={showMenu ? "background_black open" : "background_black"}
       ></div>
-      <div className={showMenu ? "background-burgerMenu open" : "background-burgerMenu"}></div>
+      <div
+        className={
+          showMenu ? "background-burgerMenu open" : "background-burgerMenu"
+        }
+      ></div>
       <nav className="nav-bar">
         <h1 className="logo">
-          <Link onClick={toggleMenuHome} to="/">{t("logo")}</Link>
+          <Link onClick={toggleMenuHome} to="/">
+            {t("logo")}
+          </Link>
         </h1>
         {showMenu ? (
           <IoClose className="menu-icon-cancel" onClick={toggleMenu} />
@@ -64,11 +91,7 @@ export const Navbar = () => {
         )}
         <ul className={`menu ${showMenu ? "show" : ""}`}>
           <li>
-            <Link
-              onClick={toggleMenuHome}
-              className="menu--item"
-              to="/"
-            >
+            <Link onClick={toggleMenuHome} className="menu--item" to="/">
               {t("navigation.home")}
             </Link>
           </li>
