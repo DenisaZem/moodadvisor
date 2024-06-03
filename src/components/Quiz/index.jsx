@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 import { useTranslation } from "react-i18next";
 import Bubble from "../Bubble";
@@ -231,6 +231,12 @@ const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [lastSentence, setLastSentence] = useState(false);
 
+  useEffect(()=>{
+    setTimeout(()=>{
+      <Bubble />
+    },3000)
+  },[])
+
   const handleAnswerOptionClick = (nextQuestionIndex) => {
     if (typeof nextQuestionIndex === "number") {
       setCurrentQuestion(nextQuestionIndex);
@@ -242,6 +248,7 @@ const Quiz = () => {
 
   return (
     <div className="container__mainQuiz">
+        <Bubble />
       <h1>Mood Quiz</h1>
       <div className="container__quiz">
         {lastSentence ? (
@@ -290,7 +297,6 @@ const Quiz = () => {
           </>
         )}
       </div>
-      <Bubble />
     </div>
   );
 };
