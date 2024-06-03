@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next"
 export const Footer = () => {
     const {t} = useTranslation();
 
-    return (
+    return ( 
         <footer className="footer">
             <ul className="footer--menu">
                 <li className="footer--menu--item"><Link>{t("footer.aboutUs")}</Link></li>
