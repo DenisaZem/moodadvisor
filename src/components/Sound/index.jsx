@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { FaPlay, FaPause, FaForward, FaBackward } from 'react-icons/fa';
 import './style.css';
-// Potřeba importovat ikony --> npm install react-icons
+// Potřeba importovat ikony --> npm install react-icons 
 
 const Sound = () => {
   const audioRef = useRef(null);
@@ -25,9 +25,9 @@ const Sound = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container__sound">
       <h1>Sounds</h1>
-      <audio ref={audioRef} src="/sound/Calm.mp3" />
+      <audio ref={audioRef} src="/components/Sound/music/zkouska.mp3" />
       <div className="controls">
         <img
           className={`obrazek ${isPlaying ? 'playing' : ''}`}
@@ -50,7 +50,7 @@ const Sound = () => {
         </div>
       </div>
 
-      <audio ref={audioRef} src="/sound/Calm.mp3" />
+      {/* <audio ref={audioRef} src="/sound/Calm.mp3" />
       <div className="controls">
         <img
           className={`obrazek ${isPlaying ? 'playing' : ''}`}
@@ -71,7 +71,7 @@ const Sound = () => {
             <FaForward />
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

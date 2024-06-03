@@ -1,6 +1,17 @@
-.controls {
+.container__sound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
 }
 
 .obrazek {
