@@ -13,39 +13,39 @@ import "./style.css";
 import { Link } from "react-router-dom";
 
 
-const musicData = [
+ export const musicData = [
   {
-    id: "01",
+    id: "0",
     title: "Stimulující nálada",
     audioUrl: "/components/Sound/music/zkouska.mp3",
     picture: obrazek1,
   },
   {
-    id: "02",
+    id: "1",
     title: "Meditační symfonie",
     audioUrl: "/components/Sound/music/zkouska2.mp3",
     picture: obrazek2,
   },
   {
-    id: "03",
+    id: "2",
     title: "Tóny lesa",
     audioUrl: "/components/Sound/music/zkouska3.mp3",
     picture: obrazek3,
   },
   {
-    id: "04",
+    id: "3",
     title: "Harmonická melodie",
     audioUrl: "/components/Sound/music/zkouska4.mp3",
     picture: obrazek4,
   },
   {
-    id: "05",
+    id: "4",
     title: "Party disko náladička",
     audioUrl: "/components/Sound/music/zkouska5.mp3",
     picture: obrazek5,
   },
   {
-    id: "06",
+    id: "5",
     title: "Příroda zklidující mysl",
     audioUrl: "/components/Sound/music/zkouska6.mp3",
     picture: obrazek6,

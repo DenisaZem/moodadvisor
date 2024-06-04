@@ -3,11 +3,17 @@ import { FaPlay, FaPause, FaForward, FaBackward } from "react-icons/fa";
 import "./style.css";
 import { useAnimationFrame } from "framer-motion";
 import { useParams } from "react-router-dom";
+import { musicData } from "../../pages/SoundPage/index.jsx"
+
 // Potřeba importovat ikony --> npm install react-icons
 
 const OneSound = () => {
   const ref = useRef(null);
   const { id } = useParams();
+
+  console.log(musicData)
+
+
 
 
   useAnimationFrame((t) => {
@@ -38,7 +44,7 @@ const OneSound = () => {
 
   return (
     <div className="container-sound">
-      <h1 className="container-sound__title">Sounds</h1>
+      <h1 className="container-sound__title">{musicData[id].title}</h1>
         <div className="container-sound__content--back">
           <a href="/music">Zpět na výběr hudby</a>
         </div>
