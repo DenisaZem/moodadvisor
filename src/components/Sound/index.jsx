@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react";
 import { FaPlay, FaPause, FaForward, FaBackward } from "react-icons/fa";
 import "./style.css";
-import { useAnimationFrame } from "framer-motion";
 import { useParams } from "react-router-dom";
 import { musicData } from "../../pages/SoundPage/index.jsx"
+import { Cube } from "../Cube/index.jsx";
 
 // Potřeba importovat ikony --> npm install react-icons
 
@@ -14,12 +14,7 @@ const OneSound = () => {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
  
-    useAnimationFrame((t) => {
-      const rotate = Math.sin(t / 10000) * 60;
-      const y = (1 + Math.sin(t / 1000)) * -40;
-      ref.current.style.transform = `translateY(${y}px) rotateX(${rotate}deg) rotateY(${rotate}deg)`;
-    });
-  
+    
   const togglePlayPause = () => {
     if (isPlaying) {
       audioRef.current.pause();
@@ -45,21 +40,12 @@ const OneSound = () => {
           <a href={`/music/${id - 1}`}>Vzad </a>
           <a href="/music">Zpět na výběr hudby</a>
           <a href={`/music/${id + 1}`}>Vpřed</a>
-
         </div>
       <div className="container-sound__content">
         <audio ref={audioRef} src={`/components/Sound/music/${id}.mp3`} />
         <div className="controls">
-          <div className="obrazek">
-            <div className={`cube ${isPlaying ? "rotate" : ""}`} ref={ref}>
-              <div className="side front" />
-              <div className="side left" />
-              <div className="side right" />
-              <div className="side top" />
-              <div className="side bottom" />
-              <div className="side back" />
-            </div>
-          </div>
+        <Cube  isPlaying={isPlaying} />
+
           <div className="playButtons">
             <button
               onClick={handleBackward}
