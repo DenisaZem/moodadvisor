@@ -11,20 +11,15 @@ const OneSound = () => {
   const ref = useRef(null);
   const { id } = useParams();
 
-  console.log(musicData)
-
-
-
-
-  useAnimationFrame((t) => {
-    const rotate = Math.sin(t / 10000) * 60;
-    const y = (1 + Math.sin(t / 1000)) * -40;
-    ref.current.style.transform = `translateY(${y}px) rotateX(${rotate}deg) rotateY(${rotate}deg)`;
-  });
-
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
-
+ 
+    useAnimationFrame((t) => {
+      const rotate = Math.sin(t / 10000) * 60;
+      const y = (1 + Math.sin(t / 1000)) * -40;
+      ref.current.style.transform = `translateY(${y}px) rotateX(${rotate}deg) rotateY(${rotate}deg)`;
+    });
+  
   const togglePlayPause = () => {
     if (isPlaying) {
       audioRef.current.pause();
@@ -45,8 +40,12 @@ const OneSound = () => {
   return (
     <div className="container-sound">
       <h1 className="container-sound__title">{musicData[id].title}</h1>
-        <div className="container-sound__content--back">
+        <div className="container-sound__content--buttons">
+          {/* Potřeba opravit, nesčítá se, čísla se přiávají k sobě */}
+          <a href={`/music/${id - 1}`}>Vzad </a>
           <a href="/music">Zpět na výběr hudby</a>
+          <a href={`/music/${id + 1}`}>Vpřed</a>
+
         </div>
       <div className="container-sound__content">
         <audio ref={audioRef} src={`/components/Sound/music/${id}.mp3`} />

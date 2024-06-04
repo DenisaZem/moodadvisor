@@ -4,6 +4,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.container-sound__title {
+  font-size: 35px;
+  text-align: center;
+}
+
+.container-sound__content--buttons {
+  justify-content: center;
+}
+
+.container-sound__content--buttons a {
+  margin: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
 }
 
 .container-sound__content {
@@ -23,7 +40,6 @@
   text-decoration: none;
   cursor: pointer;
 }
-
 
 .controls {  
   display: flex;
