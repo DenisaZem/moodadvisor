@@ -12,44 +12,41 @@ import "swiper/css/effect-coverflow";
 import "./style.css";
 import { Link } from "react-router-dom";
 
-// const slides = [
-//   obrazek1, obrazek2, obrazek3, obrazek4, obrazek5, obrazek6
-// ]
 
 const musicData = [
   {
     id: "01",
-    title: "Skladba1",
+    title: "Stimulující nálada",
     audioUrl: "/components/Sound/music/zkouska.mp3",
     picture: obrazek1,
   },
   {
     id: "02",
-    title: "Skladba2",
+    title: "Meditační symfonie",
     audioUrl: "/components/Sound/music/zkouska2.mp3",
     picture: obrazek2,
   },
   {
     id: "03",
-    title: "Skladba3",
+    title: "Tóny lesa",
     audioUrl: "/components/Sound/music/zkouska3.mp3",
     picture: obrazek3,
   },
   {
     id: "04",
-    title: "Skladba4",
+    title: "Harmonická melodie",
     audioUrl: "/components/Sound/music/zkouska4.mp3",
     picture: obrazek4,
   },
   {
     id: "05",
-    title: "Skladba5",
+    title: "Party disko náladička",
     audioUrl: "/components/Sound/music/zkouska5.mp3",
     picture: obrazek5,
   },
   {
     id: "06",
-    title: "Skladba6",
+    title: "Příroda zklidující mysl",
     audioUrl: "/components/Sound/music/zkouska6.mp3",
     picture: obrazek6,
   },
