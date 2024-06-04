@@ -16,6 +16,15 @@
   transform: translate(0, 60%);
 }
 
+.container-sound__content--back,
+.container-sound__content--back a  {
+  align-self: flex-start;
+  margin: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 .controls {  
   display: flex;
   flex-direction: column;

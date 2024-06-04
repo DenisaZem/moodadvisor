@@ -39,6 +39,9 @@ const OneSound = () => {
   return (
     <div className="container-sound">
       <h1 className="container-sound__title">Sounds</h1>
+        <div className="container-sound__content--back">
+          <a href="/music">Zpět na výběr hudby</a>
+        </div>
       <div className="container-sound__content">
         <audio ref={audioRef} src={`/components/Sound/music/${id}.mp3`} />
         <div className="controls">
