@@ -10,8 +10,8 @@ import { ErrorPage } from "./pages/ErrorPage";
 import { Navbar } from "./components/Navbar";
 import { BreathPage } from "./pages/BreathPage";
 import { SoundPage } from "./pages/SoundPage";
-import { Breath } from "./components/Breath";
 import { Footer } from "./components/Footer";
+import { OneBreathExercise } from "./pages/OneBreathExercise";
 
 // import npm install react-router-dom
 
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/breath/exercise",
-        element: <Breath />,
+        element: <OneBreathExercise />,
       },
       {
         path: "/quiz",

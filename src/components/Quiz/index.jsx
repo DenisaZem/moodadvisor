@@ -250,7 +250,7 @@ const Quiz = () => {
   return (
     <div className="container__mainQuiz">
       {showBubble && <Bubble />}
-      <h1>Mood Quiz</h1>
+      <h1 className="container__mainQuiz--title">Mood Quiz</h1>
       <div className="container__quiz">
         {lastSentence ? (
           <div className="lastSentence-section">

@@ -16,7 +16,7 @@
   /* height: 82vh; */
 }
 
-h1 {
+.container__mainQuiz--title {
   display: flex;
   margin: 20px;
   font-size: 50px;

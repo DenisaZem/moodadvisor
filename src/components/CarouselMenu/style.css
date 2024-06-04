@@ -1,0 +1,31 @@
+
+  .swiper-wrapper--link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 5px;
+    text-decoration: none;
+  }
+
+
+  .swiper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    -webkit-box-reflect: below 1px
+      linear-gradient(transparent, transparent, #0006);
+  }
+  
+  @media screen and (min-width: 450px) {
+  
+    .container__mainSoundMenu {
+      min-height: 700px;
+    }
+  
+    .swiper .swiper-slide {
+      min-width: 350px;
+     min-height: 400px;
+    }
+  }

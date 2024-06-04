@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
-import { Breath } from "../../components/Breath";
 import "./style.css";
+import { OneBreathExercise } from "../OneBreathExercise";
 
 export const BreathPage = () => {
   return (
     <>
-      <Breath />
+ 
+      <OneBreathExercise />
       <Link to="/breath/exercise">Na dechové cvičení</Link>
-    </>
+      </>
+
   );
 };
