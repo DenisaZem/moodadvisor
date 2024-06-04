@@ -8,7 +8,7 @@ import { Cube } from "../Cube/index.jsx";
 // Potřeba importovat ikony --> npm install react-icons
 
 const OneSound = () => {
-  const ref = useRef(null);
+  // const ref = useRef(null);
   const { id } = useParams();
 
   const audioRef = useRef(null);

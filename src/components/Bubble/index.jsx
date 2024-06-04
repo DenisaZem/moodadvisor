@@ -9,7 +9,7 @@ const Bubble = () => {
     "Pojď se uvolnit",
     "Nadechni a vydechni",
     "Nadechni se zhluboka",
-    "Dnes je krásný den" 
+    "Dnes je krásný den",
   ];
 
   const [bubbleText, setBubbleText] = useState("");
@@ -24,7 +24,7 @@ const Bubble = () => {
       <motion.div
         className="bubble"
         animate={{
-          scale: [1, 1.25, 1.3,  1.2, 1.5, 1.55, 1.4, 1.5,1.3,1.4],
+          scale: [1, 1.25, 1.3, 1.2, 1.5, 1.6, 1.4, 1.5, 1.3, 1.4],
         }}
         transition={{
           duration: 6,
@@ -33,8 +33,8 @@ const Bubble = () => {
           repeatDelay: 0,
         }}
         style={{
-          width: 250,
-          height: 250,
+          width: 290,
+          height: 290,
           borderRadius: "50%",
           display: "flex",
           justifyContent: "center",
@@ -44,7 +44,32 @@ const Bubble = () => {
           fontWeight: "bold",
         }}
       >
-        {bubbleText}
+        <motion.div
+          className="bubble1"
+          animate={{
+            scale: [1, 1.25, 1.3, 1.1, 1.2, 1.3, 1.4, 1.5, 1.3, 1.4],
+          }}
+          transition={{
+            duration: 6,
+            ease: "linear",
+            repeat: Infinity,
+            repeatDelay: 0,
+          }}
+          style={{
+            width: 200,
+            height: 200,
+            borderRadius: "50%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            color: "white",
+            fontSize: "20px",
+            fontWeight: "bold",
+            textAlign: "center"
+          }}
+          >
+          {bubbleText}
+        </motion.div>
       </motion.div>
     </div>
   );

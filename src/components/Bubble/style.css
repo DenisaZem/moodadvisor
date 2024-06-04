@@ -2,9 +2,18 @@
   position: absolute;
   top: 30%;
   left: 20%;
+  width: 500px;
+  height: 500px;
+  background: rgb(233, 45, 240);
+  z-index: 20;
+}
+
+.bubble1 {
   width: 200px;
   height: 200px;
-  background: rgb(233, 45, 240);
+  position: absolute;
+  background-color:rgb(229, 92, 233);
+  z-index: 0;
 }
 
 .background {
