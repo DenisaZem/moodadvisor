@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { FaPlay, FaPause, FaForward, FaBackward } from "react-icons/fa";
 import "./style.css";
 import { useParams } from "react-router-dom";
-import { musicData } from "../../pages/SoundPage/index.jsx"
+import { musicData } from "../../pages/SoundPage/index.jsx";
 import { Cube } from "../Cube/index.jsx";
 
 // Potřeba importovat ikony --> npm install react-icons
@@ -13,8 +13,7 @@ const OneSound = () => {
 
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
- 
-    
+
   const togglePlayPause = () => {
     if (isPlaying) {
       audioRef.current.pause();
@@ -35,16 +34,15 @@ const OneSound = () => {
   return (
     <div className="container-sound">
       <h1 className="container-sound__title">{musicData[id].title}</h1>
-        <div className="container-sound__content--buttons">
-          {/* Potřeba opravit, nesčítá se, čísla se přiávají k sobě */}
-          <a href={`/music/${id - 1}`}>Vzad </a>
-          <a href="/music">Zpět na výběr hudby</a>
-          <a href={`/music/${id + 1}`}>Vpřed</a>
-        </div>
+      <div className="container-sound__content--buttons">
+        <a href={`/music/${parseInt(id, 10) - 1}`}>Vzad</a>
+        <a href="/music">Zpět na výběr hudby</a>
+        <a href={`/music/${parseInt(id, 10) + 1}`}>Vpřed</a>
+      </div>
       <div className="container-sound__content">
         <audio ref={audioRef} src={`/components/Sound/music/${id}.mp3`} />
         <div className="controls">
-        <Cube  isPlaying={isPlaying} />
+          <Cube isPlaying={isPlaying} />
 
           <div className="playButtons">
             <button

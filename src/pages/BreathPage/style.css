@@ -1,0 +1,18 @@
+.container__breathPage {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    height: 800px;
+}
+
+.container__breathPage--title {
+    font-size: 25px;
+    margin: 30px 30px;
+}
+
+/* @media screen and (min-width: 450px) {
+
+  
+  }
+   */
