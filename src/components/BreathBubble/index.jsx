@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import React, { useState } from "react";
 
 export const BreathBubble = () => {
-  const [showBubble, setShowBubble] = useState(false);
+//   const [showBubble, setShowBubble] = useState(false);
 
   const handleButtonClick = () => {
     setShowBubble(true);
@@ -11,7 +11,7 @@ export const BreathBubble = () => {
 
   return (
     <div>
-      <motion.button
+      <motion.div
         onClick={handleButtonClick}
         className="bub"
         animate={{
@@ -37,7 +37,8 @@ export const BreathBubble = () => {
         }}
       >
         Ahoj
-      </motion.button>
+      </motion.div>
+ 
     </div>
   );
 };
