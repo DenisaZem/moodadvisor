@@ -4,7 +4,7 @@ import "./i18n";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import React, { Suspense } from "react";
 import { HomePage } from "./pages/HomePage";
-import Sound from "./components/Sound";
+import Sound from "./components/OneSound";
 import Quiz from "./components/Quiz";
 import { ErrorPage } from "./pages/ErrorPage";
 import { Navbar } from "./components/Navbar";
