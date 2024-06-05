@@ -1,38 +1,41 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./style.css";
-import { OneBreathExercise } from "../OneBreathExercise";
 import { CarouselMenu } from "../../components/CarouselMenu";
+import obrazek1 from "./img/1.png";
+import obrazek2 from "./img/2.png";
+import obrazek3 from "./img/3.png";
+
 
 export const breathData = [
   {
     id: "0",
     title: "nazev1",
-    picture: "https://www.viarasalve.cz/img/image/dychani1.jpg",
+    picture: obrazek1,
   },
   {
     id: "1",
     title: "nazev2",
-    picture: "https://www.viarasalve.cz/img/image/dychani1.jpg",
+    picture: obrazek2,
   },
   {
     id: "2",
     title: "nazev3",
-    picture: "https://www.viarasalve.cz/img/image/dychani1.jpg",
+    picture: obrazek3,
   },
   {
     id: "3",
     title: "nazev4",
-    picture: "https://www.viarasalve.cz/img/image/dychani1.jpg",
+    picture: obrazek1,
   },
   {
     id: "4",
     title: "nazev5",
-    picture: "https://www.viarasalve.cz/img/image/dychani1.jpg",
+    picture: obrazek2,
   },
   {
     id: "5",
     title: "nazev5",
-    picture: "https://www.viarasalve.cz/img/image/dychani1.jpg",
+    picture: obrazek3,
   },
 ];
 
