@@ -6,7 +6,7 @@ import "swiper/css/effect-coverflow";
 import "./style.css";
 import { Link } from "react-router-dom";
 
-export const CarouselMenu = ({ musicData }) => {
+export const CarouselMenu = ({ musicData, breathData }) => {
   return (
     <div>
       <Swiper
@@ -26,23 +26,42 @@ export const CarouselMenu = ({ musicData }) => {
         // mousewheel={{ enabled: true, sensitivity: 1 }} // Snaha o posun menu kolečkem myší
       >
         <div className="swiper-wrapper">
-          {musicData.map((slide) => (
-            <SwiperSlide
-              key={slide.picture}
-              style={{
-                backgroundImage: `url(${slide.picture})`,
-              }}
-            >
-              <Link className="swiper-wrapper--link" to={`/music/${slide.id}`}>
-                {slide.title}
-                <img
-                  className="swiper-wrapper"
-                  src={slide.picture}
-                  alt="Ikona s notami"
-                />
-              </Link>
-            </SwiperSlide>
-          ))}
+        {musicData &&
+            musicData.map((slide) => (
+              <SwiperSlide
+                key={slide.id}
+                style={{
+                  backgroundImage: `url(${slide.picture})`,
+                }}
+              >
+                <Link className="swiper-wrapper--link" to={`/music/${slide.id}`}>
+                  {slide.title}
+                  <img
+                    className="swiper-wrapper"
+                    src={slide.picture}
+                    alt="Ikona s notami"
+                  />
+                </Link>
+              </SwiperSlide>
+            ))}
+          {breathData &&
+            breathData.map((slide) => (
+              <SwiperSlide
+                key={slide.id}
+                style={{
+                  backgroundImage: `url(${slide.picture})`,
+                }}
+              >
+                <Link className="swiper-wrapper--link" to={`/breath/${slide.id}`}>
+                  {slide.title}
+                  <img
+                    className="swiper-wrapper"
+                    src={slide.picture}
+                    alt="Ikona s notami"
+                  />
+                </Link>
+              </SwiperSlide>
+            ))}
         </div>
       </Swiper>
     </div>
