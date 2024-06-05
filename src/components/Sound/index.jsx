@@ -35,9 +35,9 @@ const OneSound = () => {
     <div className="container-sound">
       <h1 className="container-sound__title">{musicData[id].title}</h1>
       <div className="container-sound__content--buttons">
-        <a href={`/music/${parseInt(id, 10) - 1}`}>Vzad</a>
+        <a href={`/music/${Number(id) === 0 ? 5 : Number(id) - 1}`}>Vzad</a>
         <a href="/music">Zpět na výběr hudby</a>
-        <a href={`/music/${parseInt(id, 10) + 1}`}>Vpřed</a>
+        <a href={`/music/${Number(id) === 5 ? 0 : Number(id) + 1}`}>Vpřed</a>
       </div>
       <div className="container-sound__content">
         <audio ref={audioRef} src={`/components/Sound/music/${id}.mp3`} />
