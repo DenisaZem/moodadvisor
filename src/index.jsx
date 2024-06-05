@@ -48,7 +48,7 @@ const router = createBrowserRouter([
         element: <BreathPage />,
       },
       {
-        path: "/breath/exercise",
+        path: "/breath/:id",
         element: <OneBreathExercise />,
       },
       {
