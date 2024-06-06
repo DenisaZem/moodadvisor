@@ -26,7 +26,7 @@ export const CarouselMenu = ({ musicData, breathData }) => {
         // mousewheel={{ enabled: true, sensitivity: 1 }} // Snaha o posun menu kolečkem myší
       >
         <div className="swiper-wrapper">
-        {musicData &&
+          {musicData &&
             musicData.map((slide) => (
               <SwiperSlide
                 key={slide.id}
@@ -34,7 +34,10 @@ export const CarouselMenu = ({ musicData, breathData }) => {
                   backgroundImage: `url(${slide.picture})`,
                 }}
               >
-                <Link className="swiper-wrapper--link" to={`/music/${slide.id}`}>
+                <Link
+                  className="swiper-wrapper--link"
+                  to={`/music/${slide.id}`}
+                >
                   {slide.title}
                   <img
                     className="swiper-wrapper"
@@ -52,7 +55,10 @@ export const CarouselMenu = ({ musicData, breathData }) => {
                   backgroundImage: `url(${slide.picture})`,
                 }}
               >
-                <Link className="swiper-wrapper--link" to={`/breath/${slide.id}`}>
+                <Link
+                  className="swiper-wrapper--link"
+                  to={`/breath/${slide.id}`}
+                >
                   {slide.title}
                   <img
                     className="swiper-wrapper"

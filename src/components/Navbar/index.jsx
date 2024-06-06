@@ -122,15 +122,6 @@ export const Navbar = () => {
               {t("navigation.exercises")}
             </Link>
           </li>
-          <li>
-            <Link
-              onClick={showMenu ? toggleMenu : null}
-              className="menu--item"
-              to="/quiz"
-            >
-              {t("navigation.quiz")}
-            </Link>
-          </li>
           <div className="buttons-language">
             <li>
               <button

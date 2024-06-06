@@ -1,0 +1,51 @@
+.container {
+margin-bottom: 30px;
+}
+
+.exercise-title {
+  font-size: 25px;
+  margin: 30px 30px;
+  text-align: center;
+}
+
+.exercise-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+.exercise-menu--tile {
+  display: flex;
+}
+
+.exercise-menu--tile:hover {
+    opacity: 50%;
+}
+
+.container__exerciseLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45vw;
+  height: 45vw;
+  background-color: #a0af84;
+}
+
+@media screen and (min-width: 450px) {
+  .exercise-menu {
+    flex-direction: row;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+
+  .container__exerciseLink {
+    width: 30vw;
+    height: 30vw;
+  }
+
+  .exercise-menu--tile {
+    display: block;
+  }
+}

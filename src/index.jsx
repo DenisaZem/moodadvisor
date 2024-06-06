@@ -13,6 +13,7 @@ import { SoundPage } from "./pages/SoundPage";
 import { Footer } from "./components/Footer";
 import { OneBreathExercise } from "./components/OneBreathExercise";
 import { ExercisesPage } from "./pages/ExercisesPage";
+import { FiveSenses } from "./components/FiveSenses";
 
 // import npm install react-router-dom
 
@@ -54,7 +55,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/exercises",
-        element: <ExercisesPage />
+        element: <ExercisesPage />,
+      },
+      {
+        path: "/exercises/senses",
+        element: <FiveSenses />
+      },
+      {
+        path: "/exercises/counting",
+        element: <FiveSenses />
+      },
+      {
+        path: "/exercises/map",
+        element: <FiveSenses />
       },
       {
         path: "/quiz",
