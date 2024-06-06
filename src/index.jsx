@@ -11,7 +11,7 @@ import { Navbar } from "./components/Navbar";
 import { BreathPage } from "./pages/BreathPage";
 import { SoundPage } from "./pages/SoundPage";
 import { Footer } from "./components/Footer";
-import { OneBreathExercise } from "./pages/OneBreathExercise";
+import { OneBreathExercise } from "./components/OneBreathExercise";
 
 // import npm install react-router-dom
 

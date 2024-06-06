@@ -1,4 +1,4 @@
-import { BreathBubble } from "../../components/BreathBubble";
+import { BreathBubble } from "../BreathBubble";
 import  { useState } from "react";
 import "./style.css";
 
