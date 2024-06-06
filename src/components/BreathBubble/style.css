@@ -1,9 +1,5 @@
-.bub {
-    /* position: absolute;
-    top: 30%;
-    left: 50%; */
+.bubbleBreath {
     width: 500px;
     height: 500px;
     background: rgb(44, 3, 46);
-    z-index: 20;
 }
