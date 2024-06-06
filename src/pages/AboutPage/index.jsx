@@ -1,8 +1,11 @@
 import "./style.css";
 import zarovka from "./img/zarovka.jpg"
 import note from "./img/note.jpg"
+import { useTranslation } from "react-i18next";
 
 export const AboutPage = () => {
+    const {t} = useTranslation();
+
   return (
     <div className="container">
       <div className="AboutProject">
@@ -13,11 +16,11 @@ export const AboutPage = () => {
               src={zarovka}
               alt="zarovka"
             />
-            <h2 className="about-project--name">MoodAdviser</h2>
+            <h2 className="about-project--name">{t("about.title")}</h2>
           </div>
           <div className="about-project__container2">
             <p className="about__project--title">
-                Projekt MoodAdviser vznikl jako závěrečný projekt pro Digitální Akademii: Web 2024 od Czechitas. Jedná se o webovou aplikaci, která uživateli pomocí zábavného klikacího kvízu poradí nebo připomene aktivity a techniky, které by mu mohly pomoci se zvládnutím jejich aktuální nálady. Důležitou součástí aplikace je také několik jednoduchých relaxačních metod a cvičení, knihovna relaxační hudby a dechová cvičení.
+                {t("about.description")}
             </p>
             <img
               className="about__project--noteImg"

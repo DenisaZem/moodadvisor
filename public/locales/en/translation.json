@@ -1,10 +1,22 @@
 {
-    "logo": "MoodAdviser",
-    "navigation": {
-      "home": "Home",
-      "breath": "Breathwork",
-      "music": "Music",
-      "exercises": "Exercises", 
-      "quiz": "Quiz"
+  "logo": "MoodAdviser",
+  "navigation": {
+    "home": "Home",
+    "breath": "Breathwork",
+    "music": "Music",
+    "exercises": "Exercises",
+    "quiz": "Quiz"
+  },
+  "aboutUs": {
+    "denisa": {
+      "title": "Denisa",
+      "subtitle": "This one wants a job.",
+      "description": "Denisa enjoys spending time outdoors. It helps her relax. She also likes programming, and she hopes to turn it into her job. She finds coding interesting because it lets her create things. Her dream is to use her programming skills to do something meaningful, maybe even combining them with her love for nature."
+    },
+    "sarka": {
+      "title": "Šárka",
+      "subtitle": "And this one too!",
+      "description": "Šárka is an eager Junior Front-End Developer enjoying every step of her journey of learning about the code, mainly JavaScript and Python, and about all the fun ways to use it. She has years of experience in Localization Quality Assurance in Wargaming, which means a trained eye for detail and goals set to perfection."
     }
+  }
 }

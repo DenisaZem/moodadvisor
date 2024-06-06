@@ -4,7 +4,7 @@
     "home": "Domů",
     "breath": "Dech",
     "music": "Hudba",
-    "exercises": "Cvičení", 
+    "exercises": "Cvičení",
     "quiz": "Kvíz"
   },
   "footer": {
@@ -106,7 +106,7 @@
         "b": {
           "answer": "Relaxační hudba",
           "nextQuestionIndex": null
-        }, 
+        },
         "c": {
           "answer": "Kam dál?",
           "nextQuestionIndex": null
@@ -219,6 +219,22 @@
           "nextQuestionIndex": null
         }
       }
+    }
+  },
+  "about": {
+    "title": "MoodAdviser",
+    "description": "Projekt MoodAdviser vznikl jako závěrečný projekt pro Digitální Akademii: Web 2024 od Czechitas. Jedná se o webovou aplikaci, která uživateli pomocí zábavného klikacího kvízu poradí nebo připomene aktivity a techniky, které by mu mohly pomoci se zvládnutím jejich aktuální nálady. Důležitou součástí aplikace je také několik jednoduchých relaxačních metod a cvičení, knihovna relaxační hudby a dechová cvičení."
+  },
+  "aboutUs": {
+    "denisa": {
+      "title": "Denisa",
+      "subtitle": "Tahle by ráda práci.",
+      "description": "Denisa ráda tráví čas venku. Pomáhá jí to se uvolnit. Také ráda programuje a doufá, že si v tomto oboru najde práci. Kódování ji baví, protože jím může vytvářet nové věci. Jejím snem je využívat své programovací schopnosti ke konání dobra, možná dokonce i spojit je s její láskou k přírodě."
+    },
+    "sarka": {
+      "title": "Šárka",
+      "subtitle": "A tahle taky!",
+      "description": "Šárka je nadšená Junior Front-End Developerka, která si užívá každý krok na své cestě k ovládnutí kódu, především v JavaScriptu a Pythonu, a baví ji, kolika kreativními způsoby lze programování využít. Má roky zkušeností v Localization Quality Assurance v herní společnosti Wargaming, což značí vytrénovaný cit pro detail a spokojenost pouze s tou nejlépe odvedenou prací."
     }
   }
 }
