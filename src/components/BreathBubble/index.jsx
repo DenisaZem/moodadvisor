@@ -6,19 +6,22 @@ import { useParams } from "react-router-dom";
 import dataBreathExercise from "./dataBreathExrecise";
 
 export const BreathBubble = () => {
+  const { id } = useParams();
 
-  const [currentText, setCurrentText] = useState(item.text)
+  const [currentText, setCurrentText] = useState(dataBreathExercise[id].text[0])
+
+  const text1 = dataBreathExercise[id].text[0]
+  const text2 =dataBreathExercise[id].text[1]
 
   useEffect(()=>{
     setTimeout(()=>{
-      
-    })
+      setCurrentText(text2)
+    },2000)
   })
 
 
 
 
-  const { id } = useParams();
   return (
     <div>
             <motion.div
