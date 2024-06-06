@@ -1,15 +1,26 @@
 import "./style.css";
 import { motion } from "framer-motion";
+import React, { useState, useEffect } from "react";
 import dataBreathExrecise from "./dataBreathExrecise";
 import { useParams } from "react-router-dom";
 import dataBreathExercise from "./dataBreathExrecise";
 
 export const BreathBubble = () => {
+
+  const [currentText, setCurrentText] = useState(item.text)
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      
+    })
+  })
+
+
+
+
   const { id } = useParams();
   return (
     <div>
-   
-
             <motion.div
               key={dataBreathExrecise[id].id}
               className="bubbleBreath"
@@ -35,7 +46,8 @@ export const BreathBubble = () => {
                 textAlign: "center",
               }}
             >
-              {dataBreathExrecise[id].text}
+              {currentText}
+              {/* {dataBreathExrecise[id].text} */}
             </motion.div>
 
      
