@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .breathExercise__title {
@@ -11,18 +10,24 @@
 }
 
 .breathExercise__content {
-    min-height: 400px;
+    min-height: 500px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .breathExercise__button {
     border-radius: 200px;
     min-height: 100px;
     min-width: 100px;
+    margin: 60px 0 20px 0;
     border: none;
-    background-color: blueviolet;
+    background-color: rgb(244, 97, 146);
     font-size: 1.5rem;
+}
 
-
+.breathExercise__bubbleSpace {
+    justify-self: end;
+    min-width: 500;
 }

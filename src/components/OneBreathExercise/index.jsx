@@ -18,11 +18,13 @@ export const OneBreathExercise = () => {
     <div className="container__breathExercise">
       <h1 className="breathExercise__title">Nadpis</h1>
       <div className="breathExercise__content">
+        <div className="breathExercise__bubbleSpace">
+          {showBubble && <BreathBubble />}
+        </div>
         <button className="breathExercise__button" onClick={handleButtonClick}>
           {showBubble ? "Ukončit" : "Začít"}
         </button>
       </div>
-      {showBubble && <BreathBubble />}
     </div>
   );
 };
