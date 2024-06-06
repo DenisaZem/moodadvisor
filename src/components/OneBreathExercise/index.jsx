@@ -1,21 +1,26 @@
 import { BreathBubble } from "../BreathBubble";
-import  { useState } from "react";
+import { useState } from "react";
 import "./style.css";
 
 export const OneBreathExercise = () => {
   const [showBubble, setShowBubble] = useState(false);
+  const [offBubble, setOffBubble] = useState(false);
 
   const handleButtonClick = () => {
-    setShowBubble(true);
+    if (showBubble) {
+      setShowBubble(false);
+    } else {
+      setShowBubble(true);
+    }
   };
 
   return (
     <div className="container__breathExercise">
       <h1 className="breathExercise__title">Nadpis</h1>
-      <div className="zkouska">
-      <button className="breathExercise__button" onClick={handleButtonClick}>
-        Začít
-      </button>
+      <div className="breathExercise__content">
+        <button className="breathExercise__button" onClick={handleButtonClick}>
+          {showBubble ? "Ukončit" : "Začít"}
+        </button>
       </div>
       {showBubble && <BreathBubble />}
     </div>

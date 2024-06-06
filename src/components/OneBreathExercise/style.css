@@ -10,10 +10,10 @@
     margin: 20px;
 }
 
-.zkouska {
-    min-height: 300px;
+.breathExercise__content {
+    min-height: 400px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .breathExercise__button {
