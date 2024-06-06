@@ -4,8 +4,8 @@ const dataBreathExercise = [
     title: "tady nazev pro id 0",
     scale: [1, 1.25, 1.3, 1.1, 1.2, 1.3, 1.4, 1.5, 1.3, 1.4],
     text: ["nádech", "výdech"],
-    time1: 2000,
-    time2: 3000
+    time1: 3000,
+    time2: 4000
   },
   {
     id: 1,
@@ -13,7 +13,7 @@ const dataBreathExercise = [
     scale: [1, 1.25, 1.3, 1.1, 1.2, 1.3, 1.4, 1.5, 1.3, 1.4],
     text: ["nádech", "výdech"],
     time1: 2000,
-    time2: 3000
+    time2: 5000
   },
   {
     id: 2,
