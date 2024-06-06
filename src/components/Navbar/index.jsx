@@ -117,6 +117,15 @@ export const Navbar = () => {
             <Link
               onClick={showMenu ? toggleMenu : null}
               className="menu--item"
+              to="/exercises"
+            >
+              {t("navigation.exercises")}
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={showMenu ? toggleMenu : null}
+              className="menu--item"
               to="/quiz"
             >
               {t("navigation.quiz")}

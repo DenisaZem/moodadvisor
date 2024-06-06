@@ -2,8 +2,9 @@
   "logo": "MoodAdviser",
   "navigation": {
     "home": "Domů",
-    "breath": "Dechová cvičení",
-    "music": "Relaxační hudba",
+    "breath": "Dech",
+    "music": "Hudba",
+    "exercises": "Cvičení", 
     "quiz": "Kvíz"
   },
   "footer": {

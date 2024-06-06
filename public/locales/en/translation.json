@@ -3,7 +3,8 @@
     "navigation": {
       "home": "Home",
       "breath": "Breathwork",
-      "music": "Relaxing Music",
+      "music": "Music",
+      "exercises": "Exercises", 
       "quiz": "Quiz"
     }
 }

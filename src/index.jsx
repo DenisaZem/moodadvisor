@@ -12,6 +12,7 @@ import { BreathPage } from "./pages/BreathPage";
 import { SoundPage } from "./pages/SoundPage";
 import { Footer } from "./components/Footer";
 import { OneBreathExercise } from "./components/OneBreathExercise";
+import { ExercisesPage } from "./pages/ExercisesPage";
 
 // import npm install react-router-dom
 
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: "/breath/:id",
         element: <OneBreathExercise />,
+      },
+      {
+        path: "/exercises",
+        element: <ExercisesPage />
       },
       {
         path: "/quiz",
