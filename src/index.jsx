@@ -16,6 +16,8 @@ import { ExercisesPage } from "./pages/ExercisesPage";
 import { FiveSenses } from "./components/FiveSenses";
 import { Counting } from "./components/Counting";
 import { Map } from "./components/Map";
+import { AboutPage } from "./pages/AboutPage";
+import { AboutUsPage } from "./pages/AboutUsPage";
 
 // import npm install react-router-dom
 
@@ -61,19 +63,23 @@ const router = createBrowserRouter([
       },
       {
         path: "/exercises/senses",
-        element: <FiveSenses />
+        element: <FiveSenses />,
       },
       {
         path: "/exercises/counting",
-        element: <Counting />
+        element: <Counting />,
       },
       {
         path: "/exercises/map",
-        element: <Map />
+        element: <Map />,
       },
       {
-        path: "/quiz",
-        element: <Quiz />,
+        path: "/about",
+        element: <AboutPage />,
+      },
+      {
+        path: "/about-us",
+        element: <AboutUsPage />,
       },
     ],
   },

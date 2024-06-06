@@ -1,0 +1,51 @@
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 0 auto;
+  }
+  
+  .about-us--title {
+    width: 95%;
+    display: flex;
+    padding: 10px 10px 0;
+    text-align: right;
+    background-color: #668f80;
+  }
+  
+  .about-us--title--name {
+    font-size: 2rem;
+    color: #320C40;
+  }
+  
+  .about-us--title--name__sarka {
+    color: #4a6670;
+  }
+  
+  .about-us--title--name__deni {
+    color: #c3b59f;
+  }
+  
+  .about-us--title--img {
+    width: 25%;
+    object-fit: contain;
+  }
+  
+  .about-us--title--text {
+    margin: 0px 4rem 0rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .about-us--title--sarka {
+    text-align: left;
+    background-color: #a0af84;
+    border-bottom: 100px solid #668f80;
+  }
+  
+  .about-us--title--paragraph {
+    color: #320C40;
+  }
+  

@@ -8,9 +8,9 @@ export const Footer = () => {
     return ( 
         <footer className="footer">
             <ul className="footer--menu">
-                <li className="footer--menu--item"><Link>{t("footer.aboutUs")}</Link></li>
-                <li className="footer--menu--item"><Link>{t("footer.aboutProject")}</Link></li>
-                <li className="footer--menu--item"><a href="">{t("footer.organization")}</a></li>
+                <li className="footer--menu--item"><Link to="/about-us">{t("footer.aboutUs")}</Link></li>
+                <li className="footer--menu--item"><Link to="/about">{t("footer.aboutProject")}</Link></li>
+                <li className="footer--menu--item"><a href="https://www.czechitas.cz/">{t("footer.organization")}</a></li>
             </ul>
             <p className="footer--copy">
             {t("footer.copy")}
