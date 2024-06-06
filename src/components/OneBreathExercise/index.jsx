@@ -19,7 +19,7 @@ export const OneBreathExercise = () => {
 
   return (
     <div className="container__breathExercise">
-      <h1>{dataBreathExrecise[id].title}</h1>
+      <h1 className="breathExercise__title">{dataBreathExrecise[id].title}</h1>
       {/* <h1 className="breathExercise__title">{dataBreathExrecise}</h1> */}
       <div className="breathExercise__content">
         <div className="breathExercise__bubbleSpace">

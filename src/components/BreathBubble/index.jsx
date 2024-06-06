@@ -2,6 +2,7 @@ import "./style.css";
 import { motion } from "framer-motion";
 import dataBreathExrecise from "./dataBreathExrecise";
 import { useParams } from "react-router-dom";
+import dataBreathExercise from "./dataBreathExrecise";
 
 export const BreathBubble = () => {
   const { id } = useParams();
@@ -13,7 +14,7 @@ export const BreathBubble = () => {
               key={dataBreathExrecise[id].id}
               className="bubbleBreath"
               animate={{
-                scale: [1, 1.25, 1.3, 1.1, 1.2, 1.3, 1.4, 1.5, 1.3, 1.4],
+                scale: dataBreathExercise[id].scale,
               }}
               transition={{
                 duration: 6,
