@@ -1,0 +1,28 @@
+.container__breathExercise {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.breathExercise__title {
+    margin: 20px;
+}
+
+.zkouska {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.breathExercise__button {
+    border-radius: 200px;
+    min-height: 100px;
+    min-width: 100px;
+    border: none;
+    background-color: blueviolet;
+    font-size: 1.5rem;
+
+
+}

@@ -26,7 +26,7 @@ export const App = () => {
     <Suspense fallback="loading">
       <Navbar />
       <Outlet />
-      <Footer />
+      {/* <Footer /> */}
     </Suspense>
   );
 };

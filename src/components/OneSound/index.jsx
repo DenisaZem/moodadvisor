@@ -28,7 +28,7 @@ const OneSound = () => {
   };
 
   const handleBackward = () => {
-    audioRef.current.currentTime -= 5;
+    audioRef.current.currentTime -= 5; 
   };
 
   return (

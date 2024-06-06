@@ -6,7 +6,7 @@ export const BreathBubble = () => {
 //   const [showBubble, setShowBubble] = useState(false);
 
   const handleButtonClick = () => {
-    setShowBubble(true);
+    setShowBubble(true); 
   };
 
   return (

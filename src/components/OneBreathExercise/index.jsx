@@ -10,11 +10,13 @@ export const OneBreathExercise = () => {
   };
 
   return (
-    <div>
-      <h1>Nadpis</h1>
-      <button onClick={handleButtonClick}>
-        Klikni a začne dýchací cvičení
+    <div className="container__breathExercise">
+      <h1 className="breathExercise__title">Nadpis</h1>
+      <div className="zkouska">
+      <button className="breathExercise__button" onClick={handleButtonClick}>
+        Začít
       </button>
+      </div>
       {showBubble && <BreathBubble />}
     </div>
   );
