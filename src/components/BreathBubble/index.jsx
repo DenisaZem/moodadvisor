@@ -7,11 +7,11 @@ import dataBreathExercise from "./dataBreathExrecise";
 
 export const BreathBubble = () => {
   const { id } = useParams();
-
-  const [currentText, setCurrentText] = useState(dataBreathExercise[id].text[0])
-
   const text1 = dataBreathExercise[id].text[0]
   const text2 =dataBreathExercise[id].text[1]
+
+  const [currentText, setCurrentText] = useState(text1)
+  
 
   useEffect(()=>{
     setTimeout(()=>{
@@ -19,8 +19,11 @@ export const BreathBubble = () => {
     },2000)
   })
 
-
-
+  useEffect(()=>{
+    setTimeout(()=>{
+      setCurrentText(text1)
+    },3000)
+  })
 
   return (
     <div>
