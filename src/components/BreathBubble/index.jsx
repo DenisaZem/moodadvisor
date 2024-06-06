@@ -16,13 +16,13 @@ export const BreathBubble = () => {
   useEffect(()=>{
     setTimeout(()=>{
       setCurrentText(text2)
-    },2000)
+    },dataBreathExercise[id].time1)
   })
 
   useEffect(()=>{
     setTimeout(()=>{
       setCurrentText(text1)
-    },3000)
+    },dataBreathExercise[id].time2)
   })
 
   return (
