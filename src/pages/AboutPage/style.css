@@ -1,0 +1,41 @@
+.AboutProject {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 70px;
+  }
+  
+  .AboutProject__title {
+    max-width: 800px;
+  }
+  
+  .about-project__container1,
+  .about-project__container2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #668F80;
+  }
+  
+  .about-project--name {
+    width: 100%;
+    text-align: start;
+    font-size: 4.5rem;
+    color: #320C40;
+    font-family: Meow Script;
+  }
+  
+  .about__project--zarovkaImg,
+  .about__project--noteImg {
+    width: 30%;
+  }
+  
+  .about__project--title {
+    margin: 5px;
+    width: 50%;
+    height: 50%;
+    text-align: justify;
+    color: #472836;
+  }
+  
