@@ -227,7 +227,7 @@ const questions = [
 ];
 
 const Quiz = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [lastSentence, setLastSentence] = useState(false);
   const [showBubble, setShowBubble] = useState(true);
