@@ -33,9 +33,9 @@ export const Counting = () => {
       <h1>Počítání</h1>
       <p>Zaměřte se na tato jednoduchá matematická cvičení.</p>
       <form action="">
-        <label htmlFor="">
+        <label className="counting-label">
           {numbers[0]} + {numbers[1]} =
-        </label>
+        </label><br></br>
         <input
           onChange={handleChange}
           onKeyDown={(e) => {

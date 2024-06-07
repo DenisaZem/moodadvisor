@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counting-label {
+    font-size: 6rem;
+}
+
+input {
+    width: 50vw;
+    height: 30vw;
+    font-size: 6rem;
+    color: pink;
+    text-align: center;
+}
+
