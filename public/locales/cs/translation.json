@@ -93,8 +93,7 @@
             "answer": "Procházka po okolí"
           },
           {
-            "answer": "Relaxační hudba",
-            "link": "/music/5"
+            "answer": "Relaxační hudba"
           },
           {
             "answer": "Kam dál?"
@@ -116,16 +115,13 @@
         "questionText": "V případě úzkosti je důležitá první pomoc – znalost technik, které pomáhají úzkost zmírnit v okamžiku, kdy ji prožíváme nejintenzivněji. Zvolte si jednu z následujících technik:",
         "answerOptions": [
           {
-            "answer": "Dechové cvičení",
-            "link": "/breath"
+            "answer": "Dechové cvičení"
           },
           {
-            "answer": "Metoda pěti smyslů",
-            "link": "/exercises/senses"
+            "answer": "Metoda pěti smyslů"
           },
           {
-            "answer": "Počítání ?",
-            "link": "/exercises/counting"
+            "answer": "Počítání ?"
           }
         ]
       },

@@ -83,7 +83,7 @@ const questions = [
         nextQuestionIndex: null,
       },
       {
-        link: "quiz.questions.6.answerOptions.1.link",
+        link: "/music/5",
         nextQuestionIndex: null,
       },
       {
@@ -106,15 +106,15 @@ const questions = [
   {
     answerOptions: [
       {
-        link: "quiz.questions.8.answerOptions.0.link",
+        link: "/breath",
         nextQuestionIndex: null,
       },
       {
-        link: "quiz.questions.8.answerOptions.1.link",
+        link: "/exercises/senses",
         nextQuestionIndex: null,
       },
       {
-        link: "quiz.questions.8.answerOptions.2.link",
+        link: "/exercises/counting",
         nextQuestionIndex: null,
       },
     ],
