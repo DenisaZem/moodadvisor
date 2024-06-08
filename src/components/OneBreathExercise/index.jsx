@@ -1,6 +1,6 @@
 import { BreathBubble } from "../BreathBubble";
 import { useState } from "react";
-import dataBreathExrecise from "../BreathBubble/dataBreathExrecise";
+import {dataBreathExercise} from "../BreathBubble/dataBreathExercise";
 import { useParams } from "react-router-dom";
 import "./style.css";
 
@@ -19,7 +19,7 @@ export const OneBreathExercise = () => {
 
   return (
     <div className="container__breathExercise">
-      <h1 className="breathExercise__title">{dataBreathExrecise[id].title}</h1>
+      <h1 className="breathExercise__title">{dataBreathExercise[id].title}</h1>
       {/* <h1 className="breathExercise__title">{dataBreathExrecise}</h1> */}
       <div className="breathExercise__content">
         <div className="breathExercise__bubbleSpace">
