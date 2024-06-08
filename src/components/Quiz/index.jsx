@@ -188,7 +188,6 @@ const questions = [
 const Quiz = () => {
   const { t } = useTranslation();
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [lastSentence, setLastSentence] = useState(false);
   const [showBubble, setShowBubble] = useState(true);
   const navigate = useNavigate();
 
@@ -201,10 +200,8 @@ const Quiz = () => {
   const handleAnswerOptionClick = (nextQuestionIndex, link) => {
     if (link) {
       navigate(link);
-    } else if (typeof nextQuestionIndex === "number") {
-      setCurrentQuestion(nextQuestionIndex);
     } else {
-      setLastSentence(true);
+      setCurrentQuestion(nextQuestionIndex);
     }
   };
 
@@ -227,7 +224,7 @@ const Quiz = () => {
       {showBubble && <Bubble handleClick={handleClick} />}
       {/* <h1 className="container__mainQuiz--title">Mood Quiz</h1> */}
       <div className="container__quiz">
-        {lastSentence ? (
+        {currentQuestion === null ? (
           <div className="lastSentence-section">
             {/* <div className="lastSentence-section__title">
               Dokončil jsi dotazníček.
