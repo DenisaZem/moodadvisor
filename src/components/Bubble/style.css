@@ -2,6 +2,9 @@
 
 .bubble {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 0;
   bottom: 0;
   right: 0;
@@ -15,8 +18,8 @@
 
 .bubble__outsite {
   position: absolute;
-  top: 30%;
-  left: 20%;
+  /* top: 50%; */
+  /* left: 20%; */
   width: 200px;
   height: 200px;
   background: rgb(37, 23, 38);

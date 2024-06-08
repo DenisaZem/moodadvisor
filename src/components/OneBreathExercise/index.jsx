@@ -11,7 +11,7 @@ export const OneBreathExercise = () => {
 
   const handleButtonClick = () => {
     if (showBubble) {
-      setShowBubble(false);
+      setShowBubble(false); 
     } else {
       setShowBubble(true);
     }

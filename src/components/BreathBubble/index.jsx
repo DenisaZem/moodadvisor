@@ -11,7 +11,7 @@ export const BreathBubble = () => {
 
   const [currentText, setCurrentText] = useState(text1);
 
-  useEffect(() => {
+  useEffect(() => { 
     setTimeout(() => {
       setCurrentText(text2);
     }, dataBreathExercise[id].time1);
@@ -26,7 +26,7 @@ export const BreathBubble = () => {
   return (
     <div>
       <motion.div
-        key={dataBreathExrecise[id].id}
+        key={dataBreathExercise[id].id}
         className="bubbleBreath"
         animate={{
           scale: dataBreathExercise[id].scale,

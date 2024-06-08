@@ -46,7 +46,7 @@ export const BreathPage = () => {
       <CarouselMenu breathData={breathData} />
     </div>
   );
-};
+}; 
 
 {
   /* <Link to="/breath/exercise">Na dechové cvičení</Link> */
