@@ -9,7 +9,6 @@ import music from "./img/3.png";
 const questions = [
   // 0
   {
-    questionText: "quiz.0.questionText",
     answerOptions: [
       {
         answerText: "quiz.0.answerOptions.a.answer",
@@ -35,7 +34,6 @@ const questions = [
   },
   // 1
   {
-    questionText: "quiz.1.questionText",
     answerOptions: [
       {
         answerText: "quiz.1.answerOptions.a.answer",
@@ -45,7 +43,6 @@ const questions = [
   },
   // 2
   {
-    questionText: "quiz.2.questionText",
     answerOptions: [
       {
         answerText: "quiz.2.answerOptions.a.answer",
@@ -67,7 +64,6 @@ const questions = [
   },
   // 3
   {
-    questionText: "quiz.3.questionText",
     answerOptions: [
       {
         answerText: "quiz.3.answerOptions.a.answer",
@@ -77,7 +73,6 @@ const questions = [
   },
   // 4
   {
-    questionText: "quiz.4.questionText",
     answerOptions: [
       {
         answerText: "quiz.4.answerOptions.a.answer",
@@ -87,7 +82,6 @@ const questions = [
   },
   // 5
   {
-    questionText: "quiz.5.questionText",
     answerOptions: [
       {
         answerText: "quiz.5.answerOptions.a.answer",
@@ -97,7 +91,6 @@ const questions = [
   },
   // 6
   {
-    questionText: "quiz.6.questionText",
     answerOptions: [
       {
         answerText: "quiz.6.answerOptions.a.answer",
@@ -116,7 +109,6 @@ const questions = [
   },
   // 7
   {
-    questionText: "quiz.7.questionText",
     answerOptions: [
       {
         answerText: "quiz.7.answerOptions.a.answer",
@@ -130,7 +122,6 @@ const questions = [
   },
   // 8
   {
-    questionText: "quiz.8.questionText",
     answerOptions: [
       {
         answerText: "quiz.8.answerOptions.a.answer",
@@ -151,7 +142,6 @@ const questions = [
   },
   // 9
   {
-    questionText: "quiz.9.questionText",
     answerOptions: [
       {
         answerText: "quiz.9.answerOptions.a.answer",
@@ -169,7 +159,6 @@ const questions = [
   },
   // 10
   {
-    questionText: "quiz.10.questionText",
     answerOptions: [
       {
         answerText: "quiz.10.answerOptions.a.answer",
@@ -187,7 +176,6 @@ const questions = [
   },
   // 11
   {
-    questionText: "quiz.11.questionText",
     answerOptions: [
       {
         answerText: "quiz.11.answerOptions.a.answer",
@@ -197,7 +185,6 @@ const questions = [
   },
   // 12
   {
-    questionText: "quiz.12.questionText",
     answerOptions: [
       {
         answerText: "quiz.12.answerOptions.a.answer",
@@ -207,7 +194,6 @@ const questions = [
   },
   // 13
   {
-    questionText: "quiz.13.questionText",
     answerOptions: [
       {
         answerText: "quiz.13.answerOptions.a.answer",
@@ -286,7 +272,7 @@ const Quiz = () => {
             <div className="question__section">
     
               <div className="question-text">
-                {t(questions[currentQuestion].questionText)}
+                {t(`quiz.${currentQuestion}.questionText`)}
               </div>
             </div>
             <div className="answer__section">
