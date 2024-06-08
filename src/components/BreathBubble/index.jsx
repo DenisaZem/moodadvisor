@@ -14,14 +14,19 @@ export const BreathBubble = () => {
   useEffect(() => { 
     setTimeout(() => {
       setCurrentText(text2);
-    }, dataBreathExercise[id].time1);
-  });
+    }, dataBreathExercise[id].time1)
 
-  useEffect(() => {
     setTimeout(() => {
       setCurrentText(text1);
     }, dataBreathExercise[id].time2);
-  });
+
+  },[]);
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setCurrentText(text1);
+  //   }, dataBreathExercise[id].time2);
+  // });
 
   return (
     <div>
@@ -32,7 +37,7 @@ export const BreathBubble = () => {
           scale: dataBreathExercise[id].scale,
         }}
         transition={{
-          duration: 6,
+          duration: 20,
           ease: "linear",
           repeat: Infinity,
           repeatDelay: 0,

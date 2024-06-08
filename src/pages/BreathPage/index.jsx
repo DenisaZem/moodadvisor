@@ -9,7 +9,7 @@ import obrazek3 from "./img/3.png";
 export const breathData = [
   {
     id: "0",
-    title: "nazev1",
+    title: "Nepanikař",
     picture: obrazek1,
   },
   {
