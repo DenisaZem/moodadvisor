@@ -40,7 +40,7 @@ const OneSound = () => {
         <a href={`/music/${Number(id) === 5 ? 0 : Number(id) + 1}`}>Vpřed</a>
       </div>
       <div className="container-sound__content">
-        <audio ref={audioRef} src={`/components/Sound/music/${id}.mp3`} />
+        <audio ref={audioRef} src={`/components/OneSound/music/${id}.mp3`} />
         <div className="controls">
           <Cube isPlaying={isPlaying} />
 

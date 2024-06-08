@@ -258,7 +258,7 @@ const Quiz = () => {
 
   return (
     <div className="container__mainQuiz">
-      {/* {showBubble && <Bubble />} */}
+      {showBubble && <Bubble />}
       {/* <h1 className="container__mainQuiz--title">Mood Quiz</h1> */}
       <div className="container__quiz">
         {lastSentence ? (
