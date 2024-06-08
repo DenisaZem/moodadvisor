@@ -11,24 +11,19 @@ const questions = [
   {
     answerOptions: [
       {
-        answerText: "quiz.questions.0.answerOptions.a.answer",
-        nextQuestionIndex: "quiz.questions.0.answerOptions.a.nextQuestionIndex",
+        nextQuestionIndex: 1,
       },
       {
-        answerText: "quiz.questions.0.answerOptions.b.answer",
-        nextQuestionIndex: "quiz.questions.0.answerOptions.b.nextQuestionIndex",
+        nextQuestionIndex: 2,
       },
       {
-        answerText: "quiz.questions.0.answerOptions.c.answer",
-        nextQuestionIndex: "quiz.questions.0.answerOptions.c.nextQuestionIndex",
+        nextQuestionIndex: 7,
       },
       {
-        answerText: "quiz.questions.0.answerOptions.d.answer",
-        nextQuestionIndex: "quiz.questions.0.answerOptions.d.nextQuestionIndex",
+        nextQuestionIndex: 10,
       },
       {
-        answerText: "quiz.questions.0.answerOptions.e.answer",
-        nextQuestionIndex: "quiz.questions.0.answerOptions.e.nextQuestionIndex",
+        nextQuestionIndex: 13,
       },
     ],
   },
@@ -36,8 +31,7 @@ const questions = [
   {
     answerOptions: [
       {
-        answerText: "quiz.questions.1.answerOptions.a.answer",
-        nextQuestionIndex: "quiz.questions.1.answerOptions.a.nextQuestionIndex",
+        nextQuestionIndex: null,
       },
     ],
   },
@@ -45,20 +39,16 @@ const questions = [
   {
     answerOptions: [
       {
-        answerText: "quiz.questions.2.answerOptions.a.answer",
-        nextQuestionIndex: "quiz.questions.2.answerOptions.a.nextQuestionIndex",
+        nextQuestionIndex: 3,
       },
       {
-        answerText: "quiz.questions.2.answerOptions.b.answer",
-        nextQuestionIndex: "quiz.questions.2.answerOptions.b.nextQuestionIndex",
+        nextQuestionIndex: 4,
       },
       {
-        answerText: "quiz.questions.2.answerOptions.c.answer",
-        nextQuestionIndex: "quiz.questions.2.answerOptions.c.nextQuestionIndex",
+        nextQuestionIndex: 5,
       },
       {
-        answerText: "quiz.questions.2.answerOptions.d.answer",
-        nextQuestionIndex: "quiz.questions.2.answerOptions.d.nextQuestionIndex",
+        nextQuestionIndex: 6,
       },
     ],
   },
@@ -66,8 +56,7 @@ const questions = [
   {
     answerOptions: [
       {
-        answerText: "quiz.questions.3.answerOptions.a.answer",
-        nextQuestionIndex: "quiz.questions.3.answerOptions.a.nextQuestionIndex",
+        nextQuestionIndex: null,
       },
     ],
   },
@@ -75,8 +64,7 @@ const questions = [
   {
     answerOptions: [
       {
-        answerText: "quiz.questions.4.answerOptions.a.answer",
-        nextQuestionIndex: "quiz.questions.4.answerOptions.a.nextQuestionIndex",
+        nextQuestionIndex: null,
       },
     ],
   },
@@ -84,8 +72,7 @@ const questions = [
   {
     answerOptions: [
       {
-        answerText: "quiz.questions.5.answerOptions.a.answer",
-        nextQuestionIndex: "quiz.questions.5.answerOptions.a.nextQuestionIndex",
+        nextQuestionIndex: null,
       },
     ],
   },
@@ -93,17 +80,14 @@ const questions = [
   {
     answerOptions: [
       {
-        answerText: "quiz.questions.6.answerOptions.a.answer",
-        nextQuestionIndex: "quiz.questions.6.answerOptions.a.nextQuestionIndex",
+        nextQuestionIndex: null,
       },
       {
-        answerText: "quiz.questions.6.answerOptions.b.answer",
-        link:"quiz.questions.6.answerOptions.b.link",
-        nextQuestionIndex: "quiz.questions.6.answerOptions.b.nextQuestionIndex",
+        link: "quiz.questions.6.answerOptions.1.link",
+        nextQuestionIndex: null,
       },
       {
-        answerText: "quiz.questions.6.answerOptions.c.answer",
-        nextQuestionIndex: "quiz.questions.6.answerOptions.c.nextQuestionIndex",
+        nextQuestionIndex: null,
       },
     ],
   },
@@ -111,12 +95,10 @@ const questions = [
   {
     answerOptions: [
       {
-        answerText: "quiz.questions.7.answerOptions.a.answer",
-        nextQuestionIndex: "",
+        nextQuestionIndex: 8,
       },
       {
-        answerText: "quiz.questions.7.answerOptions.b.answer",
-        nextQuestionIndex: "quiz.questions.7.answerOptions.b.nextQuestionIndex",
+        nextQuestionIndex: 9,
       },
     ],
   },
@@ -124,19 +106,16 @@ const questions = [
   {
     answerOptions: [
       {
-        answerText: "quiz.questions.8.answerOptions.a.answer",
-        link:"quiz.questions.8.answerOptions.a.link",
-        nextQuestionIndex: "quiz.questions.8.answerOptions.a.nextQuestionIndex",
+        link: "quiz.questions.8.answerOptions.0.link",
+        nextQuestionIndex: null,
       },
       {
-        answerText: "quiz.questions.8.answerOptions.b.answer",
-        link:"quiz.questions.8.answerOptions.b.link",
-        nextQuestionIndex: "quiz.questions.8.answerOptions.b.nextQuestionIndex",
+        link: "quiz.questions.8.answerOptions.1.link",
+        nextQuestionIndex: null,
       },
       {
-        answerText: "quiz.questions.8.answerOptions.c.answer",
-        link:"quiz.questions.8.answerOptions.c.link",
-        nextQuestionIndex: "quiz.questions.8.answerOptions.c.nextQuestionIndex",
+        link: "quiz.questions.8.answerOptions.2.link",
+        nextQuestionIndex: null,
       },
     ],
   },
@@ -144,16 +123,13 @@ const questions = [
   {
     answerOptions: [
       {
-        answerText: "quiz.questions.9.answerOptions.a.answer",
-        nextQuestionIndex: "quiz.questions.9.answerOptions.a.nextQuestionIndex",
+        nextQuestionIndex: null,
       },
       {
-        answerText: "quiz.questions.9.answerOptions.b.answer",
-        nextQuestionIndex: "quiz.questions.9.answerOptions.b.nextQuestionIndex",
+        nextQuestionIndex: null,
       },
       {
-        answerText: "quiz.questions.9.answerOptions.c.answer",
-        nextQuestionIndex: "quiz.questions.9.answerOptions.c.nextQuestionIndex",
+        nextQuestionIndex: null,
       },
     ],
   },
@@ -161,16 +137,13 @@ const questions = [
   {
     answerOptions: [
       {
-        answerText: "quiz.questions.10.answerOptions.a.answer",
-        nextQuestionIndex: "quiz.questions.10.answerOptions.a.nextQuestionIndex",
+        nextQuestionIndex: null,
       },
       {
-        answerText: "quiz.questions.10.answerOptions.b.answer",
-        nextQuestionIndex: "quiz.questions.10.answerOptions.b.nextQuestionIndex",
+        nextQuestionIndex: 11,
       },
       {
-        answerText: "quiz.questions.10.answerOptions.c.answer",
-        nextQuestionIndex: "quiz.questions.10.answerOptions.c.nextQuestionIndex",
+        nextQuestionIndex: 12,
       },
     ],
   },
@@ -178,8 +151,7 @@ const questions = [
   {
     answerOptions: [
       {
-        answerText: "quiz.questions.11.answerOptions.a.answer",
-        nextQuestionIndex: "quiz.questions.11.answerOptions.a.nextQuestionIndex",
+        nextQuestionIndex: null,
       },
     ],
   },
@@ -187,8 +159,7 @@ const questions = [
   {
     answerOptions: [
       {
-        answerText: "quiz.questions.12.answerOptions.a.answer",
-        nextQuestionIndex: "quiz.questions.12.answerOptions.a.nextQuestionIndex",
+        nextQuestionIndex: null,
       },
     ],
   },
@@ -196,24 +167,19 @@ const questions = [
   {
     answerOptions: [
       {
-        answerText: "quiz.questions.13.answerOptions.a.answer",
-        nextQuestionIndex: "quiz.questions.13.answerOptions.a.nextQuestionIndex",
+        nextQuestionIndex: null,
       },
       {
-        answerText: "quiz.questions.13.answerOptions.b.answer",
-        nextQuestionIndex: "quiz.questions.13.answerOptions.b.nextQuestionIndex",
+        nextQuestionIndex: null,
       },
       {
-        answerText: "quiz.questions.13.answerOptions.c.answer",
-        nextQuestionIndex: "quiz.questions.13.answerOptions.c.nextQuestionIndex",
+        nextQuestionIndex: null,
       },
       {
-        answerText: "quiz.questions.13.answerOptions.d.answer",
-        nextQuestionIndex: "quiz.questions.13.answerOptions.d.nextQuestionIndex",
+        nextQuestionIndex: null,
       },
       {
-        answerText: "quiz.questions.13.answerOptions.e.answer",
-        nextQuestionIndex: "quiz.questions.13.answerOptions.e.nextQuestionIndex",
+        nextQuestionIndex: null,
       },
     ],
   },
@@ -252,9 +218,9 @@ const Quiz = () => {
     }
   }, [showBubble]);
 
-  const handleClick =()=>{
-    setShowBubble(false)
-  }
+  const handleClick = () => {
+    setShowBubble(false);
+  };
 
   return (
     <div className="container__mainQuiz">
@@ -298,12 +264,14 @@ const Quiz = () => {
                     className="answer__section--button"
                     onClick={() =>
                       handleAnswerOptionClick(
-                        t(answerOption.nextQuestionIndex),
+                        answerOption.nextQuestionIndex,
                         t(answerOption.link)
                       )
                     }
                   >
-                    {t(answerOption.answerText)}
+                    {t(
+                      `quiz.questions.${currentQuestion}.answerOptions.${index}.answer`
+                    )}
                   </button>
                 )
               )}
