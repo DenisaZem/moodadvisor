@@ -6,37 +6,22 @@ import { useTranslation } from "react-i18next";
 const steps = [
   // 0
   {
-    stepText: "senses.steps.0.text",
-    stepDescription: "senses.steps.0.description",
-    stepButton: "senses.steps.0.button",
     nextStepIndex: 1,
   },
   // 1
   {
-    stepText: "senses.steps.1.text",
-    stepDescription: "senses.steps.1.description",
-    stepButton: "senses.steps.1.button",
     nextStepIndex: 2,
   },
   // 2
   {
-    stepText: "senses.steps.2.text",
-    stepDescription: "senses.steps.2.description",
-    stepButton: "senses.steps.2.button",
     nextStepIndex: 3,
   },
   // 3
   {
-    stepText: "senses.steps.3.text",
-    stepDescription: "senses.steps.3.description",
-    stepButton: "senses.steps.3.button",
     nextStepIndex: 4,
   },
   // 4
   {
-    stepText: "senses.steps.4.text",
-    stepDescription: "senses.steps.4.description",
-    stepButton: "senses.steps.4.button",
     nextStepIndex: null,
   },
 ];
@@ -73,16 +58,16 @@ export const FiveSenses = () => {
         </div>
       ) : (
         <div className="step-section">
-          <h3 className="step-text">{t(steps[currentStep].stepText)}</h3>
+          <h3 className="step-text">{t(`senses.steps.${currentStep}.text`)}</h3>
           <p className="step-description">
-            {t(steps[currentStep].stepDescription)}
+            {t(`senses.steps.${currentStep}.description`)}
           </p>
 
           <button
             className="step-button"
             onClick={() => handleStepClick(steps[currentStep].nextStepIndex)}
           >
-            {t(steps[currentStep].stepButton)}
+            {t(`senses.steps.${currentStep}.button`)}
           </button>
         </div>
       )}
