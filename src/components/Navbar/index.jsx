@@ -7,7 +7,7 @@ import React, { useState, useEffect } from "react";
 
 export const Navbar = () => {
   const { t, i18n } = useTranslation();
-  const currentLanguage = i18n.language;
+  const currentLanguage = i18n.resolvedLanguage;
 
   const toggleLanguage = () => {
     if (currentLanguage === "cs") {
