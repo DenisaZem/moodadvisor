@@ -60,7 +60,7 @@ export const FiveSenses = () => {
   };
 
   return (
-    <div className="container">
+    <div className="five-senses--container">
       <h1>Metoda pěti smyslů</h1>
       {lastStep ? (
         <div className="final-step">
@@ -76,7 +76,7 @@ export const FiveSenses = () => {
             Pro další úlevu od úzkosti můžete vyzkoušet cvičení s počítáním nebo
             některou z vedených meditací dostupných na internetu.
           </p>
-          <Link to="/exercises/counting">Počítání</Link>
+          <Link className="final-step--button" to="/exercises/counting">Počítání</Link>
         </div>
       ) : (
         <div className="step-section">

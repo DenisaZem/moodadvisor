@@ -1,0 +1,42 @@
+.five-senses--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px auto;
+    text-align: center;
+    min-height: 70vh;
+    width: 80vw;
+    gap: 25px;
+}
+
+.final-step,
+.step-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.step-button {
+    background-color: #4a6670;
+    line-height: 1.5;
+    color: #a0af84;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 13rem;
+    height: 5rem;
+}
+
+.final-step--button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4a6670;
+    background-color: #a0af84;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 13rem;
+    height: 5rem;
+}
