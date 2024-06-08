@@ -18,15 +18,16 @@ import { Counting } from "./components/Counting";
 import { Map } from "./components/Map";
 import { AboutPage } from "./pages/AboutPage";
 import { AboutUsPage } from "./pages/AboutUsPage";
+import { Layout } from "./components/Layout";
 
 // import npm install react-router-dom
 
 export const App = () => {
   return (
     <Suspense fallback="loading">
-      <Navbar />
-      <Outlet />
-      <Footer />
+      <Layout>
+        <Outlet/>
+      </Layout>
     </Suspense>
   );
 };

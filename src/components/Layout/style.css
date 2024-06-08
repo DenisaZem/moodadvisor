@@ -1,0 +1,19 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+    overflow-x: auto;
+}
+
+
+.layout__navbar {
+
+}
+
+.layout__content{
+    flex: 1 0 auto;
+}
+
+.layout__footer {
+
+}

@@ -284,10 +284,7 @@ const Quiz = () => {
         ) : (
           <>
             <div className="question__section">
-              {/* <div className="question-count"> */}
-              {/* Odpočítávadlo otázek: */}
-              {/* <span>Otázka {currentQuestion + 1}</span>/{questions.length} */}
-              {/* </div> */}
+    
               <div className="question-text">
                 {t(questions[currentQuestion].questionText)}
               </div>
