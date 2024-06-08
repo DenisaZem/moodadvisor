@@ -25,10 +25,10 @@ const Bubble = ({ handleClick }) => {
       <motion.div
         className="bubble__outside"
         animate={{
-          scale: [1, 1.25, 1.3, 1.2, 1.5, 1.6, 1.4, 1.5, 1.3, 1.4],
+          scale: [1.4],
         }}
         transition={{
-          duration: 6,
+          duration: 10,
           ease: "linear",
           repeat: Infinity,
           repeatDelay: 0,
@@ -46,10 +46,10 @@ const Bubble = ({ handleClick }) => {
         <motion.div
           className="bubble__inside"
           animate={{
-            scale: [1, 1.25, 1.3, 1.1, 1.2, 1.3, 1.4, 1.5, 1.3, 1.4],
+            scale: [1, 1.2, 1.3, 1.4, 1.4, 1.4, 1.3, 1.2, 1.1, 1.1],
           }}
           transition={{
-            duration: 6,
+            duration: 10,
             ease: "linear",
             repeat: Infinity,
             repeatDelay: 0,
