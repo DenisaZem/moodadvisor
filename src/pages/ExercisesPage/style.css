@@ -18,6 +18,13 @@ margin-bottom: 30px;
 
 .exercise-menu--tile {
   display: flex;
+  flex-direction: row;
+
+}
+
+.exercise-menu--tile:nth-child(even) {
+  flex-direction: row-reverse;
+
 }
 
 .exercise-menu--tile:hover {
@@ -46,6 +53,18 @@ margin-bottom: 30px;
   }
 
   .exercise-menu--tile {
-    display: block;
+
+    flex-direction: column;
+  
   }
+
+  .exercise-menu--tile:nth-child(even) {
+
+    flex-direction: column-reverse;
+  
+  }
+
+  /* .exercise-menu--tile {
+    display: block;
+  } */
 }
