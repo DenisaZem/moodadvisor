@@ -283,5 +283,10 @@
         "stepIndex": null
       }
     }
-  }
+  },
+  "exercises": [
+    "Pět smyslů",
+    "Počítání",
+    "Plánovač tras"
+  ]
 }

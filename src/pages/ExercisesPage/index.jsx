@@ -2,30 +2,32 @@ import "./style.css";
 import obrazek1 from "./img/1.png";
 import obrazek2 from "./img/2.png";
 import obrazek3 from "./img/3.png";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export const exercisesData = [
+  // 0
   {
-    id: "0",
-    title: "Pět smyslů",
+    title: "exercises.0",
     url: "senses",
     picture: obrazek1,
   },
+  // 1
   {
-    id: "1",
-    title: "Počítání",
+    title: "exercises.1",
     url: "counting",
     picture: obrazek2,
   },
+  // 2
   {
-    id: "2",
-    title: "Plánovač tras",
+    title: "exercises.2",
     url: "map",
     picture: obrazek3,
   },
 ];
 
 export const ExercisesPage = () => {
+  const {t} = useTranslation();
   return (
     <div className="container">
       <h1 className="exercise-title">Cvičení</h1>
@@ -40,7 +42,7 @@ export const ExercisesPage = () => {
                 className="container__exerciseLink"
                 alt="picture"
               />
-              <div className="container__exerciseLink">{exercisesData[0].title}</div>
+              <div className="container__exerciseLink">{t(exercisesData[0].title)}</div>
             </Link>
 
             <Link
@@ -48,7 +50,7 @@ export const ExercisesPage = () => {
               className="exercise-menu--tile"
               href=""
             >
-              <div className="container__exerciseLink">{exercisesData[1].title}</div>
+              <div className="container__exerciseLink">{t(exercisesData[1].title)}</div>
               <img
                 src={exercisesData[1].picture}
                 className="container__exerciseLink"
@@ -66,7 +68,7 @@ export const ExercisesPage = () => {
                 className="container__exerciseLink"
                 alt="picture"
               />
-              <div className="container__exerciseLink">{exercisesData[2].title}</div>
+              <div className="container__exerciseLink">{t(exercisesData[2].title)}</div>
             </Link>
 
       </div>
