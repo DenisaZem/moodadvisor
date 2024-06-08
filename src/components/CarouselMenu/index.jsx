@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export const CarouselMenu = ({ musicData, breathData }) => {
   return (
-    <div>
+    <div className="container__carouselMenu">
       <Swiper
         grabCursor
         centeredSlides
