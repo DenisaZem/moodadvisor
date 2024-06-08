@@ -37,7 +37,7 @@ export const Counting = () => {
         <label className="counting-label">
           {numbers[0]} + {numbers[1]} =
         </label><br></br>
-        <input
+        <input className="counting-input"
           onChange={handleChange}
           onKeyDown={(e) => {
             if (e.key === "Enter") handleAnswer();

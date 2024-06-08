@@ -15,12 +15,13 @@ form {
     font-size: 6rem;
 }
 
-input {
+.counting-input {
     width: 50vw;
     height: 30vw;
     font-size: 6rem;
     color: pink;
     text-align: center;
+    appearance: none;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -31,7 +32,6 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
+.counting-input[type=number] {
+  appearance: textfield;
 }
-
