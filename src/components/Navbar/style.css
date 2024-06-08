@@ -11,7 +11,7 @@
 }
 
 .background-burgerMenu {
-  position: fixed;
+  position: sticky;
   top: 44px;
   left: -4px;
   aspect-ratio: 6 / 1;
