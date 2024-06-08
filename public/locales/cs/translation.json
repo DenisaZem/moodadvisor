@@ -44,6 +44,7 @@
       "answerOptions": {
         "a": {
           "answer": "Deník vděčnosti",
+          "link":"",
           "nextQuestionIndex": null
         }
       }
@@ -101,10 +102,11 @@
       "answerOptions": {
         "a": {
           "answer": "Procházka po okolí",
-          "nextQuestionIndex": null
+          "nextQuestionIndex": ""
         },
         "b": {
           "answer": "Relaxační hudba",
+          "link":"/music/5",
           "nextQuestionIndex": null
         },
         "c": {
@@ -131,14 +133,17 @@
       "answerOptions": {
         "a": {
           "answer": "Dechové cvičení",
+          "link":"/breath",
           "nextQuestionIndex": null
         },
         "b": {
           "answer": "Metoda pěti smyslů",
+          "link":"/exercises/senses",
           "nextQuestionIndex": null
         },
         "c": {
           "answer": "Počítání ?",
+          "link":"/exercises/counting",
           "nextQuestionIndex": null
         }
       }

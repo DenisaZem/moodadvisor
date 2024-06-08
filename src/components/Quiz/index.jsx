@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./style.css";
 import { useTranslation } from "react-i18next";
 import Bubble from "../Bubble";
+import { useNavigate } from "react-router-dom"; 
 import breath from "./img/1.png";
 import music from "./img/3.png";
 
@@ -104,6 +105,7 @@ const questions = [
       },
       {
         answerText: "quiz.6.answerOptions.b.answer",
+        link:"quiz.6.answerOptions.b.link",
         nextQuestionIndex: "quiz.6.answerOptions.b.nextQuestionIndex",
       },
       {
@@ -118,7 +120,7 @@ const questions = [
     answerOptions: [
       {
         answerText: "quiz.7.answerOptions.a.answer",
-        nextQuestionIndex: "quiz.7.answerOptions.a.nextQuestionIndex",
+        nextQuestionIndex: "",
       },
       {
         answerText: "quiz.7.answerOptions.b.answer",
@@ -132,14 +134,17 @@ const questions = [
     answerOptions: [
       {
         answerText: "quiz.8.answerOptions.a.answer",
+        link:"quiz.8.answerOptions.a.link",
         nextQuestionIndex: "quiz.8.answerOptions.a.nextQuestionIndex",
       },
       {
         answerText: "quiz.8.answerOptions.b.answer",
+        link:"quiz.8.answerOptions.b.link",
         nextQuestionIndex: "quiz.8.answerOptions.b.nextQuestionIndex",
       },
       {
         answerText: "quiz.8.answerOptions.c.answer",
+        link:"quiz.8.answerOptions.c.link",
         nextQuestionIndex: "quiz.8.answerOptions.c.nextQuestionIndex",
       },
     ],
@@ -233,6 +238,7 @@ const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [lastSentence, setLastSentence] = useState(false);
   const [showBubble, setShowBubble] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setTimeout(() => {
@@ -240,14 +246,15 @@ const Quiz = () => {
     }, 5000);
   }, []);
 
-  const handleAnswerOptionClick = (nextQuestionIndex) => {
-    if (typeof nextQuestionIndex === "number") {
-      setCurrentQuestion(nextQuestionIndex);
-    } else {
-      currentQuestion;
-      setLastSentence(true);
-    }
-  };
+  const handleAnswerOptionClick = (nextQuestionIndex, link) => {
+        if (link) {
+          navigate(link);
+        } else if (typeof nextQuestionIndex === "number") {
+          setCurrentQuestion(nextQuestionIndex);
+        } else {
+          setLastSentence(true);
+        }
+      };
 
   return (
     <div className="container__mainQuiz">
@@ -292,7 +299,7 @@ const Quiz = () => {
                     key={index}
                     className="answer__section--button"
                     onClick={() =>
-                      handleAnswerOptionClick(t(answerOption.nextQuestionIndex))
+                      handleAnswerOptionClick(t(answerOption.nextQuestionIndex),t(answerOption.link))
                     }
                   >
                     {t(answerOption.answerText)}
@@ -300,6 +307,8 @@ const Quiz = () => {
                 )
               )}
             </div>
+
+    
           </>
         )}
       </div>
@@ -308,3 +317,6 @@ const Quiz = () => {
 };
 
 export default Quiz;
+
+
+
