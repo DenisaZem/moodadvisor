@@ -9,35 +9,35 @@ const steps = [
     stepText: "senses.steps.0.text",
     stepDescription: "senses.steps.0.description",
     stepButton: "senses.steps.0.button",
-    nextStepIndex: "senses.steps.0.stepIndex",
+    nextStepIndex: 1,
   },
   // 1
   {
     stepText: "senses.steps.1.text",
     stepDescription: "senses.steps.1.description",
     stepButton: "senses.steps.1.button",
-    nextStepIndex: "senses.steps.1.stepIndex",
+    nextStepIndex: 2,
   },
   // 2
   {
     stepText: "senses.steps.2.text",
     stepDescription: "senses.steps.2.description",
     stepButton: "senses.steps.2.button",
-    nextStepIndex: "senses.steps.2.stepIndex",
+    nextStepIndex: 3,
   },
   // 3
   {
     stepText: "senses.steps.3.text",
     stepDescription: "senses.steps.3.description",
     stepButton: "senses.steps.3.button",
-    nextStepIndex: "senses.steps.3.stepIndex",
+    nextStepIndex: 4,
   },
   // 4
   {
     stepText: "senses.steps.4.text",
     stepDescription: "senses.steps.4.description",
     stepButton: "senses.steps.4.button",
-    nextStepIndex: "senses.steps.4.stepIndex",
+    nextStepIndex: null,
   },
 ];
 
@@ -80,7 +80,7 @@ export const FiveSenses = () => {
 
           <button
             className="step-button"
-            onClick={() => handleStepClick(t(steps[currentStep].nextStepIndex))}
+            onClick={() => handleStepClick(steps[currentStep].nextStepIndex)}
           >
             {t(steps[currentStep].stepButton)}
           </button>
