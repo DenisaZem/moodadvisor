@@ -194,7 +194,7 @@ const Quiz = () => {
   useEffect(() => {
     setTimeout(() => {
       setShowBubble(false);
-    }, 5000);
+    }, 6000);
   }, []);
 
   const handleAnswerOptionClick = (nextQuestionIndex, link) => {

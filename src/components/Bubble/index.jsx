@@ -5,19 +5,12 @@ import { IoClose } from "react-icons/io5";
 // instal npm install framer-motion
 
 const Bubble = ({ handleClick }) => {
-  const bubbleTextOptions = [
-    "Zhluboka se nadechni",
-    "Pojď se uvolnit",
-    "Nadechni a vydechni",
-    "Nadechni se zhluboka",
-    "Dnes je krásný den",
-  ];
-
-  const [bubbleText, setBubbleText] = useState("");
+  const [bubbleText, setBubbleText] = useState("Nádech");
 
   useEffect(() => {
-    const TextIndex = Math.floor(Math.random() * bubbleTextOptions.length);
-    setBubbleText(bubbleTextOptions[TextIndex]);
+    setTimeout(() => {
+      setBubbleText("Výdech");
+    }, 3000);
   });
 
   return (
@@ -28,7 +21,7 @@ const Bubble = ({ handleClick }) => {
           scale: [1.4],
         }}
         transition={{
-          duration: 10,
+          duration: 6,
           ease: "linear",
           repeat: Infinity,
           repeatDelay: 0,
@@ -46,10 +39,10 @@ const Bubble = ({ handleClick }) => {
         <motion.div
           className="bubble__inside"
           animate={{
-            scale: [1, 1.2, 1.3, 1.4, 1.4, 1.4, 1.3, 1.2, 1.1, 1.1],
+            scale: [1, 1.2, 1.3, 1.4, 1.3, 1.2, 1.1],
           }}
           transition={{
-            duration: 10,
+            duration: 6,
             ease: "linear",
             repeat: Infinity,
             repeatDelay: 0,
@@ -67,6 +60,49 @@ const Bubble = ({ handleClick }) => {
         >
           {bubbleText}
         </motion.div>
+      </motion.div>
+      <motion.div
+        className="bar__fixed"
+        animate={{
+          scale: [1.5],
+        }}
+        transition={{
+          duration: 6,
+          ease: "linear",
+          repeat: Infinity,
+          repeatDelay: 0,
+        }}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          color: "white",
+          fontSize: "10px",
+          fontWeight: "bold",
+          textAlign: "center",
+        }}
+      >
+        <motion.div
+          className="bar__progress"
+          animate={{
+            scale: [1, 1.1, 1.2, 1.3, 1.4, 1.5],
+          }}
+          transition={{
+            duration: 6,
+            ease: "linear",
+            repeat: Infinity,
+            repeatDelay: 0,
+          }}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            color: "white",
+            fontSize: "10px",
+            fontWeight: "bold",
+            textAlign: "center",
+          }}
+        ></motion.div>
       </motion.div>
       <IoClose className="bubble__close" onClick={handleClick} />
       {/* <div className="bubble__close" onClick={handleClick}>
