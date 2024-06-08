@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./style.css";
 import { useTranslation } from "react-i18next";
 import Bubble from "../Bubble";
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom";
 import breath from "./img/1.png";
 import music from "./img/3.png";
 
@@ -98,7 +98,7 @@ const questions = [
       },
       {
         answerText: "quiz.6.answerOptions.b.answer",
-        link:"quiz.6.answerOptions.b.link",
+        link: "quiz.6.answerOptions.b.link",
         nextQuestionIndex: "quiz.6.answerOptions.b.nextQuestionIndex",
       },
       {
@@ -125,17 +125,17 @@ const questions = [
     answerOptions: [
       {
         answerText: "quiz.8.answerOptions.a.answer",
-        link:"quiz.8.answerOptions.a.link",
+        link: "quiz.8.answerOptions.a.link",
         nextQuestionIndex: "quiz.8.answerOptions.a.nextQuestionIndex",
       },
       {
         answerText: "quiz.8.answerOptions.b.answer",
-        link:"quiz.8.answerOptions.b.link",
+        link: "quiz.8.answerOptions.b.link",
         nextQuestionIndex: "quiz.8.answerOptions.b.nextQuestionIndex",
       },
       {
         answerText: "quiz.8.answerOptions.c.answer",
-        link:"quiz.8.answerOptions.c.link",
+        link: "quiz.8.answerOptions.c.link",
         nextQuestionIndex: "quiz.8.answerOptions.c.nextQuestionIndex",
       },
     ],
@@ -233,18 +233,32 @@ const Quiz = () => {
   }, []);
 
   const handleAnswerOptionClick = (nextQuestionIndex, link) => {
-        if (link) {
-          navigate(link);
-        } else if (typeof nextQuestionIndex === "number") {
-          setCurrentQuestion(nextQuestionIndex);
-        } else {
-          setLastSentence(true);
-        }
-      };
+    if (link) {
+      navigate(link);
+    } else if (typeof nextQuestionIndex === "number") {
+      setCurrentQuestion(nextQuestionIndex);
+    } else {
+      setLastSentence(true);
+    }
+  };
+
+  // Tento useEffect se musí přenést do komponenty, vždy kde bude bublina
+  // Proti scrollování během zjevení bubliny
+  useEffect(() => {
+    if (showBubble) {
+      document.body.classList.add("active-modal");
+    } else {
+      document.body.classList.remove("active-modal");
+    }
+  }, [showBubble]);
+
+  const handleClick =()=>{
+    setShowBubble(false)
+  }
 
   return (
     <div className="container__mainQuiz">
-      {showBubble && <Bubble />}
+      {showBubble && <Bubble handleClick={handleClick} />}
       {/* <h1 className="container__mainQuiz--title">Mood Quiz</h1> */}
       <div className="container__quiz">
         {lastSentence ? (
@@ -252,7 +266,9 @@ const Quiz = () => {
             {/* <div className="lastSentence-section__title">
               Dokončil jsi dotazníček.
             </div> */}
-            <div className="lastSentence-section__recommended">{t("quiz.last")}</div>
+            <div className="lastSentence-section__recommended">
+              {t("quiz.last")}
+            </div>
             <div className="lastSentence-section__menu">
               <div className="lastSentence-section__menu--items">
                 <a href="/breath">
@@ -270,7 +286,6 @@ const Quiz = () => {
         ) : (
           <>
             <div className="question__section">
-    
               <div className="question-text">
                 {t(`quiz.${currentQuestion}.questionText`)}
               </div>
@@ -282,7 +297,10 @@ const Quiz = () => {
                     key={index}
                     className="answer__section--button"
                     onClick={() =>
-                      handleAnswerOptionClick(t(answerOption.nextQuestionIndex),t(answerOption.link))
+                      handleAnswerOptionClick(
+                        t(answerOption.nextQuestionIndex),
+                        t(answerOption.link)
+                      )
                     }
                   >
                     {t(answerOption.answerText)}
@@ -290,8 +308,6 @@ const Quiz = () => {
                 )
               )}
             </div>
-
-    
           </>
         )}
       </div>
@@ -300,6 +316,3 @@ const Quiz = () => {
 };
 
 export default Quiz;
-
-
-

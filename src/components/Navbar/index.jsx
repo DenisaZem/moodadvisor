@@ -35,6 +35,15 @@ export const Navbar = () => {
     }
   };
 
+   // zákaz scrolování během otevřeného hamburger menu
+   useEffect(() => {
+    if (showMenu) {
+      document.body.classList.add("active-modal");
+    } else {
+      document.body.classList.remove("active-modal");
+    }
+  }, [showMenu]);
+
   // zavření hamburger menu při změně šířky okna
   useEffect(() => {
     const closeMenuOnResize = () => {

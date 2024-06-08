@@ -1,4 +1,7 @@
 /* Mobile first width 430px */
+body.active-modal {
+  overflow-y: hidden;
+}
 
 .container__mainQuiz {
   display: flex;
@@ -7,7 +10,7 @@
   justify-content: center;
 }
 
-.container__quiz {
+.container__quiz { 
   display: flex;
   flex-direction: column;
   align-items: center;

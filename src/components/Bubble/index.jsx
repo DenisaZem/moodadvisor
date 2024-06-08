@@ -1,9 +1,10 @@
 import "./style.css";
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
+import { IoClose } from "react-icons/io5";
 // instal npm install framer-motion
 
-const Bubble = () => {
+const Bubble = ({ handleClick }) => {
   const bubbleTextOptions = [
     "Zhluboka se nadechni",
     "Pojď se uvolnit",
@@ -39,7 +40,7 @@ const Bubble = () => {
           alignItems: "center",
           color: "white",
           fontSize: "20px",
-          fontWeight: "bold", 
+          fontWeight: "bold",
         }}
       >
         <motion.div
@@ -61,12 +62,16 @@ const Bubble = () => {
             color: "white",
             fontSize: "10px",
             fontWeight: "bold",
-            textAlign: "center"
+            textAlign: "center",
           }}
-          >
+        >
           {bubbleText}
         </motion.div>
       </motion.div>
+      <IoClose className="bubble__close" onClick={handleClick} />
+      {/* <div className="bubble__close" onClick={handleClick}>
+        Zavřít
+      </div> */}
     </div>
   );
 };
