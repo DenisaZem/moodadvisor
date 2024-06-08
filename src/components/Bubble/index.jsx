@@ -20,9 +20,9 @@ const Bubble = () => {
   });
 
   return (
-    <div className="background">
+    <div className="bubble">
       <motion.div
-        className="bubble"
+        className="bubble__outsite"
         animate={{
           scale: [1, 1.25, 1.3, 1.2, 1.5, 1.6, 1.4, 1.5, 1.3, 1.4],
         }}
@@ -33,8 +33,6 @@ const Bubble = () => {
           repeatDelay: 0,
         }}
         style={{
-          width: 290,
-          height: 290,
           borderRadius: "50%",
           display: "flex",
           justifyContent: "center",
@@ -45,7 +43,7 @@ const Bubble = () => {
         }}
       >
         <motion.div
-          className="bubble1"
+          className="bubble__insite"
           animate={{
             scale: [1, 1.25, 1.3, 1.1, 1.2, 1.3, 1.4, 1.5, 1.3, 1.4],
           }}
@@ -56,14 +54,12 @@ const Bubble = () => {
             repeatDelay: 0,
           }}
           style={{
-            width: 200,
-            height: 200,
             borderRadius: "50%",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
             color: "white",
-            fontSize: "20px",
+            fontSize: "10px",
             fontWeight: "bold",
             textAlign: "center"
           }}

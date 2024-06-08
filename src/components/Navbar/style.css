@@ -9,9 +9,7 @@
 }
 
 .navbar__backgrounds {
-  overflow: hidden;
-
-
+  overflow-y: hidden;
 }
 
 .navbar__content {
