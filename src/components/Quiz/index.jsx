@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./style.css";
 import { useTranslation } from "react-i18next";
 import Bubble from "../Bubble";
+import breath from "./img/1.png";
+import music from "./img/3.png";
 
 const questions = [
   // 0
@@ -249,33 +251,36 @@ const Quiz = () => {
 
   return (
     <div className="container__mainQuiz">
-      {showBubble && <Bubble />}
-      <h1 className="container__mainQuiz--title">Mood Quiz</h1>
+      {/* {showBubble && <Bubble />} */}
+      {/* <h1 className="container__mainQuiz--title">Mood Quiz</h1> */}
       <div className="container__quiz">
         {lastSentence ? (
           <div className="lastSentence-section">
-            <div className="lastSentence-section__title">
+            {/* <div className="lastSentence-section__title">
               Dokončil jsi dotazníček.
-            </div>
-            <div className="lastSentence-section__recommended">
-              Text k doporučení aktivit nebo odkaz.
-            </div>
+            </div> */}
+            <div className="lastSentence-section__recommended">Můžeš také zkusit</div>
             <div className="lastSentence-section__menu">
-              Zde můžeš pokračovat dále:
               <div className="lastSentence-section__menu--items">
-                <a href="/music">Relax hudba</a>
-                <a href="/music">Dýchací cvičení</a>
-                <a href="/music">Nechat náhodě</a>
+                <a href="/breath">
+                  <img src={breath} alt="breath" />
+                </a>
+                <a href="/music">
+                  <img src={music} alt="music" />
+                </a>
+                <a href="/exercises">
+                  <img src={music} alt="exercises" />
+                </a>
               </div>
             </div>
           </div>
         ) : (
           <>
             <div className="question__section">
-              <div className="question-count">
-                {/* Odpočítávadlo otázek: */}
-                <span>Otázka {currentQuestion + 1}</span>/{questions.length}
-              </div>
+              {/* <div className="question-count"> */}
+              {/* Odpočítávadlo otázek: */}
+              {/* <span>Otázka {currentQuestion + 1}</span>/{questions.length} */}
+              {/* </div> */}
               <div className="question-text">
                 {t(questions[currentQuestion].questionText)}
               </div>
