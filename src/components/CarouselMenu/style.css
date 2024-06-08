@@ -25,7 +25,7 @@
   @media screen and (min-width: 450px) {
   
     .container__mainSoundMenu {
-      min-height: 700px;
+      /* min-height: 700px; */
     }
   
     .swiper .swiper-slide {
