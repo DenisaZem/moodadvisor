@@ -266,7 +266,7 @@ const Quiz = () => {
             {/* <div className="lastSentence-section__title">
               Dokončil jsi dotazníček.
             </div> */}
-            <div className="lastSentence-section__recommended">Můžeš také zkusit</div>
+            <div className="lastSentence-section__recommended">{t("quiz.last")}</div>
             <div className="lastSentence-section__menu">
               <div className="lastSentence-section__menu--items">
                 <a href="/breath">
