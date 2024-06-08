@@ -17,7 +17,8 @@ export const Counting = () => {
 
   useEffect(() => newNumbers(), []);
 
-  const handleAnswer = () => {
+  const handleAnswer = (event) => {
+    event.preventDefault();
     const total = numbers[0] + numbers[1];
     if (total === Number(answer)) {
         console.log("dobře!")
