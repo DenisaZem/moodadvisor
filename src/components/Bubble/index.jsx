@@ -23,7 +23,7 @@ const Bubble = ({ handleClick }) => {
   return (
     <div className="bubble">
       <motion.div
-        className="bubble__outsite"
+        className="bubble__outside"
         animate={{
           scale: [1, 1.25, 1.3, 1.2, 1.5, 1.6, 1.4, 1.5, 1.3, 1.4],
         }}
@@ -44,7 +44,7 @@ const Bubble = ({ handleClick }) => {
         }}
       >
         <motion.div
-          className="bubble__insite"
+          className="bubble__inside"
           animate={{
             scale: [1, 1.25, 1.3, 1.1, 1.2, 1.3, 1.4, 1.5, 1.3, 1.4],
           }}
