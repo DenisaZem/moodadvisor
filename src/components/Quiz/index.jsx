@@ -31,6 +31,7 @@ const questions = [
   {
     answerOptions: [
       {
+        link: "/exercises/journal",
         nextQuestionIndex: null,
       },
     ],
