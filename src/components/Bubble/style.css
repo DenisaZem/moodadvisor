@@ -48,15 +48,23 @@
 }
 
 .bar__fixed {
-  width: 200px;
+  border-radius: 5px;
+  width: 150px;
   height: 10px;
   background-color: white;
   z-index: 0;
 }
 
 .bar__progress {
-  width: 200px;
-  height: 20px;
+  border-radius: 5px;
+  width: 97px;
+  height: 5px;
   background-color: blueviolet;
   z-index: 20;
+}
+
+.bar {
+  position: fixed;
+  z-index: 50;
+  bottom: 25%;
 }

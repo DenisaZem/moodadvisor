@@ -14,32 +14,12 @@ const Bubble = ({ handleClick }) => {
   });
 
   return (
-    <div className="bubble">
-      <motion.div
-        className="bubble__outside"
-        animate={{
-          scale: [1.4],
-        }}
-        transition={{
-          duration: 6,
-          ease: "linear",
-          repeat: Infinity,
-          repeatDelay: 0,
-        }}
-        style={{
-          borderRadius: "50%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          color: "white",
-          fontSize: "20px",
-          fontWeight: "bold",
-        }}
-      >
+    <>
+      <div className="bubble">
         <motion.div
-          className="bubble__inside"
+          className="bubble__outside"
           animate={{
-            scale: [1, 1.2, 1.3, 1.4, 1.3, 1.2, 1.1],
+            scale: [1.4],
           }}
           transition={{
             duration: 6,
@@ -53,39 +33,46 @@ const Bubble = ({ handleClick }) => {
             justifyContent: "center",
             alignItems: "center",
             color: "white",
-            fontSize: "10px",
+            fontSize: "20px",
             fontWeight: "bold",
-            textAlign: "center",
           }}
         >
-          {bubbleText}
+          <motion.div
+            className="bubble__inside"
+            animate={{
+              scale: [1, 1.2, 1.3, 1.4, 1.3, 1.2, 1.1],
+            }}
+            transition={{
+              duration: 6,
+              ease: "linear",
+              repeat: Infinity,
+              repeatDelay: 0,
+            }}
+            style={{
+              borderRadius: "50%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "white",
+              fontSize: "10px",
+              fontWeight: "bold",
+              textAlign: "center",
+            }}
+          >
+            {bubbleText}
+          </motion.div>
         </motion.div>
-      </motion.div>
-      <motion.div
-        className="bar__fixed"
-        animate={{
-          scale: [1.5],
-        }}
-        transition={{
-          duration: 6,
-          ease: "linear",
-          repeat: Infinity,
-          repeatDelay: 0,
-        }}
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          color: "white",
-          fontSize: "10px",
-          fontWeight: "bold",
-          textAlign: "center",
-        }}
-      >
+
+        <IoClose className="bubble__close" onClick={handleClick} />
+        {/* <div className="bubble__close" onClick={handleClick}>
+        Zavřít
+      </div> */}
+      </div>
+      <div className="bar">
         <motion.div
-          className="bar__progress"
+          className="bar__fixed"
           animate={{
-            scale: [1, 1.1, 1.2, 1.3, 1.4, 1.5],
+            scale: [1.5],
           }}
           transition={{
             duration: 6,
@@ -98,17 +85,29 @@ const Bubble = ({ handleClick }) => {
             justifyContent: "center",
             alignItems: "center",
             color: "white",
-            fontSize: "10px",
-            fontWeight: "bold",
-            textAlign: "center",
           }}
-        ></motion.div>
-      </motion.div>
-      <IoClose className="bubble__close" onClick={handleClick} />
-      {/* <div className="bubble__close" onClick={handleClick}>
-        Zavřít
-      </div> */}
-    </div>
+        >
+          <motion.div
+            className="bar__progress"
+            animate={{
+              scale: [1, 1.1, 1.2, 1.3, 1.4, 1.5],
+            }}
+            transition={{
+              from: 1,
+              duration: 6,
+              ease: "linear",
+              repeat: Infinity,
+              repeatDelay: 0,
+            }}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          ></motion.div>
+        </motion.div>
+      </div>
+    </>
   );
 };
 
