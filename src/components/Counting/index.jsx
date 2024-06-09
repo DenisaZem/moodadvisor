@@ -33,10 +33,10 @@ export const Counting = () => {
   };
 
   return (
-    <div className="container">
-      <h1>{t("counting.title")}</h1>
-      <h3>{t("counting.subtitle")}</h3>
-      <p>{t("counting.description")}</p>
+    <div className="container-counting">
+      <h1 className="counting-title">{t("counting.title")}</h1>
+      <h3 className="counting-subtitle">{t("counting.subtitle")}</h3>
+      <p className="counting-description">{t("counting.description")}</p>
       <form onSubmit={(e) => e.preventDefault()}>
         <label className="counting-label">
           {numbers[0]} + {numbers[1]} =

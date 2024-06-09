@@ -1,27 +1,29 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container-counting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .counting-label {
-    font-size: 6rem;
+  font-size: 4rem;
+  padding: 35px;
 }
 
 .counting-input {
-    width: 50vw;
-    height: 30vw;
-    font-size: 6rem;
-    color: pink;
-    text-align: center;
-    appearance: none;
+  width: 50vw;
+  height: 30vw;
+  font-size: 4rem;
+  color: pink;
+  text-align: center;
+  appearance: none;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -32,6 +34,6 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-.counting-input[type=number] {
+.counting-input[type="number"] {
   appearance: textfield;
 }
