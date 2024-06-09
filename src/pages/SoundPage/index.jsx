@@ -7,12 +7,11 @@ import obrazek5 from "./img/5.png";
 import obrazek6 from "./img/6.png";
 import { CarouselMenu } from "../../components/CarouselMenu";
 
-
- export const musicData = [
+export const musicData = [
   {
     id: "0",
     title: "Stimulující nálada",
-    picture: obrazek1, 
+    picture: obrazek1,
   },
   {
     id: "1",

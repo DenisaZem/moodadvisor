@@ -112,8 +112,10 @@ body.active-modal {
 .answer__section--button {
   background-color: blanchedalmond;
   box-shadow: 1px black;
-  min-width: 80;
-  max-height: 80px;
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 250px;
+  max-height: 250px;
   border: none;
   border-radius: 7px;
   margin: 10px;
@@ -126,10 +128,14 @@ body.active-modal {
 
 .answer__section--button:hover {
   background-color: rgb(228, 219, 205);
-
 }
 
 @media screen and (min-width: 450px) {
+
+  .question-text {
+    font-size: 30px;
+    margin: 30px;
+  }
 
 
 }
