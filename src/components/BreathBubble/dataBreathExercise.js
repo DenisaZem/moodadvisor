@@ -15,7 +15,7 @@ export const dataBreathExercise = [
   },
   {
     id: 1,
-    title: "nadpis",
+    title: "Hoď se do klidu",
     inhale: {
       scale: 1.6,
       text: "nádech",
@@ -29,30 +29,30 @@ export const dataBreathExercise = [
   },
   {
     id: 2,
-    title: "nadpis2",
+    title: "Klídeček",
     inhale: {
-      scale: 1.6,
-      text: "nádech",
-      time: 2,
+      scale: 1.5,
+      text: "pomalý nádech",
+      time: 4,
     },
     exhale: {
-      scale: 1.6,
-      text: "výdech",
+      scale: 0.6,
+      text: "rychlý výdech",
       time: 2,
     },
   },
   {
     id: 3,
-    title: "nadpis3",
+    title: "Meditace",
     inhale: {
-      scale: 1.6,
-      text: "nádech",
-      time: 2,
+      scale: 1.7,
+      text: "hluboký nádech",
+      time: 4,
     },
     exhale: {
-      scale: 0.5,
-      text: "výdech",
-      time: 2,
+      scale: 0.8,
+      text: "a teď vydechni jak nejvíce jak můžeš",
+      time: 7,
     },
   },
 ];
