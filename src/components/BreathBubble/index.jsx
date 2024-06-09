@@ -50,7 +50,6 @@ export const BreathBubble = () => {
           fontSize: "20px",
           fontWeight: "bold",
           textAlign: "center",
-          // background - color: breathData.color
         }}
       >
         <motion.div
@@ -73,8 +72,7 @@ export const BreathBubble = () => {
             fontSize: "20px",
             fontWeight: "bold",
             textAlign: "center",
-            color: breathData.color,
-            // background: {inhaling ? text1 : text2}
+            backgroundColor: breathData.color
           }}
         >
           {breathData.text}
