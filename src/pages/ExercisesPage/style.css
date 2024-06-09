@@ -1,5 +1,6 @@
-.container {
-margin-bottom: 30px;
+.exercisesPage {
+  margin-bottom: 30px;
+  padding: 10px;
 }
 
 .exercise-title {
@@ -24,7 +25,6 @@ margin-bottom: 30px;
 
 .exercise-menu--tile:nth-child(even) {
   flex-direction: row-reverse;
-
 }
 
 .exercise-menu--tile:hover {
@@ -35,8 +35,8 @@ margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45vw;
-  height: 45vw;
+  width: 50%;
+  aspect-ratio: 1 / 1;
   background-color: #a0af84;
 }
 
@@ -48,20 +48,15 @@ margin-bottom: 30px;
   }
 
   .container__exerciseLink {
-    width: 30vw;
-    height: 30vw;
+    width: 100%;
   }
 
   .exercise-menu--tile {
-
     flex-direction: column;
-  
   }
 
   .exercise-menu--tile:nth-child(even) {
-
     flex-direction: column-reverse;
-  
   }
 
   /* .exercise-menu--tile {
