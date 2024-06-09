@@ -1,7 +1,11 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./style.css";
 
 export const GratitudeJournal = () => {
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.resolvedLanguage;
+
   const [entry, setEntry] = useState("");
   const [logs, setLogs] = useState(() => {
     const data = localStorage.getItem("gratitudeJournal");
@@ -29,6 +33,11 @@ export const GratitudeJournal = () => {
     }
   };
 
+  const handleDelete = () => {
+    localStorage.removeItem("gratitudeJournal");
+    setLogs([]);
+  };
+
   return (
     <div className="container-journal">
       <h1 className="journal-title">Deník vděčnosti</h1>
@@ -49,15 +58,24 @@ export const GratitudeJournal = () => {
           className="journal-form--textarea"
           autoFocus
         />
-        <button>Zapsat</button>
+        <span>
+          <button>Zapsat</button>
+        </span>
         {logs.map((item, index) => {
           return (
             <div key={index}>
-              {item.date.getTime()}: {item.text}
+              {new Intl.DateTimeFormat(currentLanguage, {
+                dateStyle: "short",
+                timeStyle: "short",
+              }).format(item.date)}
+              : {item.text}
             </div>
           );
         })}
       </form>
+      {logs.length !== 0 ? (
+        <button onClick={handleDelete}>Smazat vše</button>
+      ) : null}
     </div>
   );
 };
