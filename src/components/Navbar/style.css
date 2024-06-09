@@ -148,7 +148,7 @@ body.active-modal {
 .logo a {
   text-align: center;
   font-family: Meow Script;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   color: #4a6670;
   text-decoration: none;
 }
@@ -157,6 +157,11 @@ body.active-modal {
   .menu-icon {
     visibility: hidden;
   }
+
+  .logo,
+  .logo a {
+    font-size: 2.5rem;
+}
 
   .menu {
     display: flex;
