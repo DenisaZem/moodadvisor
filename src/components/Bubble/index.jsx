@@ -71,17 +71,8 @@ const Bubble = ({ handleClick }) => {
       </div> */}
       </div>
       <div className="bar">
-        <motion.div
+        <div
           className="bar__fixed"
-          animate={{
-            scale: [1.5],
-          }}
-          transition={{
-            duration: 6,
-            ease: "linear",
-            repeat: Infinity,
-            repeatDelay: 0,
-          }}
           style={{
             display: "flex",
             justifyContent: "center",
@@ -92,14 +83,12 @@ const Bubble = ({ handleClick }) => {
           <motion.div
             className="bar__progress"
             animate={{
-              scale: [1, 1.1, 1.2, 1.3, 1.4, 1.5],
+              width: "100%",
             }}
             transition={{
-              from: 1,
+              from: 0,
               duration: 6,
               ease: "linear",
-              repeat: Infinity,
-              repeatDelay: 0,
             }}
             style={{
               display: "flex",
@@ -107,7 +96,7 @@ const Bubble = ({ handleClick }) => {
               alignItems: "center",
             }}
           ></motion.div>
-        </motion.div>
+        </div>
       </div>
     </>
   );
