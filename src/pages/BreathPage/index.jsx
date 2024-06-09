@@ -6,7 +6,7 @@ import obrazek2 from "./img/2.png";
 import obrazek3 from "./img/3.png";
 
 
-export const breathData = [
+export const breathData = [ 
   {
     id: "0",
     title: "Nepanikař",
@@ -33,7 +33,7 @@ export const BreathPage = () => {
   return (
     <div className="container__breathPage">
       <h1 className="container__breathPage--title">Dechové cvičení</h1>
-      <CarouselMenu breathData={breathData} />
+      <CarouselMenu className="breathPage__carouselMenu" breathData={breathData} />
     </div>
   );
 }; 

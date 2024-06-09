@@ -1,7 +1,7 @@
 
   .container__carouselMenu {
     width: 100%;
-  }
+  } 
 
   .swiper-wrapper--link {
     display: flex;
@@ -14,8 +14,8 @@
   .swiper .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 200px;
-    height: 300px;
+    max-width: 150px;
+    max-height: 250px;
     margin: 20px;
     -webkit-box-reflect: below 1px
       linear-gradient(transparent, transparent, #0006);

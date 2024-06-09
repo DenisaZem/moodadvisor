@@ -3,7 +3,7 @@ import "./style.css"
 import { useTranslation } from "react-i18next"
 
 export const Footer = () => {
-    const {t} = useTranslation();
+    const {t} = useTranslation(); 
 
     return ( 
         <footer className="footer">
