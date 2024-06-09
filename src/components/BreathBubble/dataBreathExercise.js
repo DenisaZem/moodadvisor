@@ -2,14 +2,14 @@ export const dataBreathExercise = [
   {
     id: 0,
     inhale: {
-      scale: [1, 1.25, 1.3, 1.4],
+      scale: [1, 1.4],
       text: "nádech",
       time: 3000,
     },
     exhale: {
-      scale: [1.4, 1.3, 1.2, 1.1, 1],
+      scale: [1.4, 1],
       text: "výdech",
-      time: 4000,
+      time: 3000,
     },
   },
   {
