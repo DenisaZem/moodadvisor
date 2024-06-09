@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import "./style.css";
+import { useTranslation } from "react-i18next";
 
 export const Counting = () => {
+  const { t } = useTranslation();
   const [answer, setAnswer] = useState("");
   const [numbers, setNumbers] = useState([]);
   const [stateAnswer, setStateAnswer] = useState("");
@@ -21,20 +23,20 @@ export const Counting = () => {
   const handleAnswer = () => {
     const total = numbers[0] + numbers[1];
     if (total === Number(answer)) {
-      setStateAnswer("Výborně! Počítejte znovu!");
+      setStateAnswer(t("counting.success"));
       newNumbers();
       setAnswer("");
     } else {
-      setStateAnswer("Zkuste to znovu.");
+      setStateAnswer(t("counting.error"));
       setAnswer("");
     }
   };
 
   return (
     <div className="container">
-      <h1>Počítání</h1>
-      <h3>Zaměřte se na tato jednoduchá matematická cvičení.</h3>
-      <p>Vepište svou odpověď a stiskněte tlačítko ENTER.</p>
+      <h1>{t("counting.title")}</h1>
+      <h3>{t("counting.subtitle")}</h3>
+      <p>{t("counting.description")}</p>
       <form onSubmit={(e) => e.preventDefault()}>
         <label className="counting-label">
           {numbers[0]} + {numbers[1]} =

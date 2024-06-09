@@ -243,5 +243,12 @@
       }
     ]
   },
-  "exercises": ["Pět smyslů", "Počítání", "Plánovač tras"]
+  "exercises": ["Pět smyslů", "Počítání", "Plánovač tras"],
+  "counting": {
+    "title": "Počítání",
+    "subtitle": "Zaměřte se na tato jednoduchá matematická cvičení.",
+    "description": "Vepište svou odpověď a stiskněte tlačítko ENTER.",
+    "success": "Výborně! Počítejte znovu!",
+    "error": "Zkuste to znovu."
+  }
 }
