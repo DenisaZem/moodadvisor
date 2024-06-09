@@ -1,5 +1,11 @@
-.bubbleBreath {
+.bubbleBreath__out {
     width: 500px;
     height: 500px;
     background: rgb(44, 3, 46);
 } 
+
+.bubbleBreath__in {
+    width: 500px;
+    height: 500px;
+    background: rgb(157, 110, 160);
+}

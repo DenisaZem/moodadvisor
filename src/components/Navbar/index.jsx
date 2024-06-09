@@ -87,7 +87,7 @@ export const Navbar = () => {
           className={
             showMenu ? "background-burgerMenu open" : "background-burgerMenu"
           }
-        ></div>
+        ></div> 
       </div>
       <nav className="navbar__content">
         <h1 className="logo">

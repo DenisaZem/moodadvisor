@@ -1,9 +1,14 @@
 
 .container__mainSoundMenu {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 15%;
+  right: 0;
+  left: 0;
 }
 
 h1.container__mainSoundMenu--title {
