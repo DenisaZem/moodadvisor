@@ -18,13 +18,13 @@ export const exercisesData = [
   },
   // 2
   {
-    url: "map",
+    url: "journal",
     picture: obrazek3,
   },
 ];
 
 export const ExercisesPage = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="container">
       <h1 className="exercise-title">Cvičení</h1>
@@ -42,9 +42,11 @@ export const ExercisesPage = () => {
                 className="container__exerciseLink"
                 alt="picture"
               />
-              <div className="container__exerciseLink">{t(`exercises.${index}`)}</div>
+              <div className="container__exerciseLink">
+                {t(`exercises.${index}`)}
+              </div>
             </Link>
-          )
+          );
         })}
       </div>
     </div>
