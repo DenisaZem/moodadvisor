@@ -250,5 +250,9 @@
     "description": "Vepište svou odpověď a stiskněte tlačítko ENTER.",
     "success": "Výborně! Počítejte znovu!",
     "error": "Zkuste to znovu."
+  },
+  "bubble": {
+    "inhale": "Nádech",
+    "exhale": "Výdech"
   }
 }

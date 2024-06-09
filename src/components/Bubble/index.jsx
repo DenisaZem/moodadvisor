@@ -1,15 +1,17 @@
 import "./style.css";
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { IoClose } from "react-icons/io5";
 // instal npm install framer-motion
 
 const Bubble = ({ handleClick }) => {
-  const [bubbleText, setBubbleText] = useState("Nádech");
+  const { t } = useTranslation();
+  const [bubbleText, setBubbleText] = useState(t("bubble.inhale"));
 
   useEffect(() => {
     setTimeout(() => {
-      setBubbleText("Výdech");
+      setBubbleText(t("bubble.exhale"));
     }, 3000);
   });
 
