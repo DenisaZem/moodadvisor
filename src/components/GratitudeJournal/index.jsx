@@ -45,7 +45,7 @@ export const GratitudeJournal = () => {
         Zapište si 5 věcí, za které jste dnes vděční.
       </h3>
       <p className="journal-text">
-        Začněte pěkně hezky jednu po druhé. Pro začátek stačí i jedna jediná
+        Zapište pěkně hezky jednu po druhé. Pro začátek stačí i jedna jediná
         věc, která vás napadne.
       </p>
       <form className="journal-form" onSubmit={handleSubmit}>
