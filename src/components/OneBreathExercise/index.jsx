@@ -13,9 +13,12 @@ export const OneBreathExercise = () => {
       setShowBubble(!showBubble)
   };
 
+  const exercise = dataBreathExercise[id];
+  // const breathData = exercise[breathExercise];
+
   return (
     <div className="container__breathExercise">
-      <h1 className="breathExercise__title">{dataBreathExercise[id].title}</h1>
+      <h1 className="breathExercise__title">{exercise.title}</h1>
       {/* <h1 className="breathExercise__title">{dataBreathExrecise}</h1> */}
       <div className="breathExercise__content">
         <div className="breathExercise__bubbleSpace">

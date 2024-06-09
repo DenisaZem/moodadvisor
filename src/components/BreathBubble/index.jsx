@@ -14,23 +14,31 @@ export const BreathBubble = () => {
   const exercise = dataBreathExercise[id];
   const breathData = exercise[breathExercise];
 
+  const variants = {
+    [INHALE]: {
+      scale: exercise[INHALE].scale,
+      transition: {
+        duration: exercise[INHALE].time,
+      },
+    },
+    [EXHALE]: {
+      scale: exercise[EXHALE].scale,
+      transition: {
+        duration: exercise[EXHALE].time,
+      },
+    },
+  };
+
   useEffect(() => {
     setTimeout(() => {
       setBreathExercise(breathExercise === INHALE ? EXHALE : INHALE);
-    }, breathData.time);
+    }, breathData.time * 1000);
   }, [breathExercise, breathData]);
 
   return (
     <div>
-      <motion.div
+      <div
         className="bubbleBreath__out"
-        animate={{}}
-        transition={{
-          duration: 20,
-          ease: "linear",
-          repeat: Infinity,
-          repeatDelay: 0,
-        }}
         style={{
           width: 300,
           height: 300,
@@ -42,16 +50,15 @@ export const BreathBubble = () => {
           fontSize: "20px",
           fontWeight: "bold",
           textAlign: "center",
+          // background - color: breathData.color
         }}
       >
         <motion.div
           className="bubbleBreath__in"
-          animate={{
-            scale: breathData.scale,
-          }}
+          variants={variants}
+          animate={breathExercise}
           transition={{
-            duration: 20,
-            ease: "linear",
+            ease: "easeOut",
             repeat: Infinity,
             repeatDelay: 0,
           }}
@@ -66,12 +73,13 @@ export const BreathBubble = () => {
             fontSize: "20px",
             fontWeight: "bold",
             textAlign: "center",
+            color: breathData.color,
             // background: {inhaling ? text1 : text2}
           }}
         >
           {breathData.text}
         </motion.div>
-      </motion.div>
+      </div>
     </div>
   );
 };
