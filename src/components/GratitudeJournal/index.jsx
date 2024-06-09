@@ -58,20 +58,22 @@ export const GratitudeJournal = () => {
           className="journal-form--textarea"
           autoFocus
         />
-        <span>
-          <button>Zapsat</button>
-        </span>
-        {logs.map((item, index) => {
-          return (
-            <div key={index}>
-              {new Intl.DateTimeFormat(currentLanguage, {
-                dateStyle: "short",
-                timeStyle: "short",
-              }).format(item.date)}
-              : {item.text}
-            </div>
-          );
-        })}
+        <button>Zapsat</button>
+        <div className="logs">
+          {logs.map((item, index) => {
+            return (
+              <div className="entry-logs" key={index}>
+                <div className="entry-logs--date">
+                  {new Intl.DateTimeFormat(currentLanguage, {
+                    dateStyle: "short",
+                    timeStyle: "short",
+                  }).format(item.date)}
+                </div>
+                <div>{item.text}</div>
+              </div>
+            );
+          })}
+        </div>
       </form>
       {logs.length !== 0 ? (
         <button onClick={handleDelete}>Smazat vše</button>

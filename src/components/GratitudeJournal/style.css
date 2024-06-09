@@ -12,3 +12,24 @@
   width: 80vw;
   height: 40vw;
 }
+
+.logs {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.entry-logs {
+  padding: 10px 0;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  gap: 20px;
+  text-align: left;
+  border: 0.25px solid white;
+}
+
+.entry-logs--date {
+  font-weight: bold;
+  flex-shrink: 0;
+}
