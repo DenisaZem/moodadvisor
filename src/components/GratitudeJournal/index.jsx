@@ -3,10 +3,16 @@ import "./style.css";
 
 export const GratitudeJournal = () => {
   const [entry, setEntry] = useState("");
-  const [logs, setLogs] = useState([
-    { date: new Date(), text: "Je krásný den." },
-    { date: new Date(), text: "Jsem Bob." },
-  ]);
+  const [logs, setLogs] = useState(() => {
+    const data = localStorage.getItem("gratitudeJournal");
+    if (data === null) {
+      return [];
+    }
+
+    return JSON.parse(data, (key, value) =>
+      key === "date" ? new Date(value) : value
+    );
+  });
 
   const handleEntry = (event) => {
     setEntry(event.target.value);
@@ -16,7 +22,9 @@ export const GratitudeJournal = () => {
     event.preventDefault();
     console.log(entry);
     if (entry !== "") {
-      setLogs([...logs, { date: new Date(), text: entry }]);
+      const newLogs = [...logs, { date: new Date(), text: entry }];
+      setLogs(newLogs);
+      localStorage.setItem("gratitudeJournal", JSON.stringify(newLogs));
       setEntry("");
     }
   };
