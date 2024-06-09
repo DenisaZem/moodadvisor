@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 export const CarouselMenu = ({ musicData, breathData }) => {
   return (
     <div className="container__carouselMenu">
-      <Swiper
+      <Swiper 
         grabCursor
         centeredSlides
         slidesPerView="auto"
