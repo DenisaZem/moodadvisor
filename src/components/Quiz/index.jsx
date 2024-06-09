@@ -191,11 +191,11 @@ const Quiz = () => {
   const [showBubble, setShowBubble] = useState(true);
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setShowBubble(false);
-  //   }, 6000);
-  // }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      setShowBubble(false);
+    }, 6000);
+  }, []);
 
   const handleAnswerOptionClick = (nextQuestionIndex, link) => {
     if (link) {
