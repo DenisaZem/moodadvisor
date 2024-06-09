@@ -8,12 +8,29 @@ import { IoClose } from "react-icons/io5";
 const Bubble = ({ handleClick }) => {
   const { t } = useTranslation();
   const [bubbleText, setBubbleText] = useState(t("bubble.inhale"));
+  const [showBubble] = useState(() => {
+    const lastLoad = localStorage.getItem("lastLoad");
+    return (
+      lastLoad === null ||
+      new Date(lastLoad).getTime() < new Date().getTime() - 1000 * 10
+    );
+  });
+
+  useEffect(() => {
+    if (showBubble) {
+      localStorage.setItem("lastLoad", new Date());
+    }
+  }, [showBubble]);
 
   useEffect(() => {
     setTimeout(() => {
       setBubbleText(t("bubble.exhale"));
     }, 3000);
   });
+
+  if (!showBubble) {
+    return null;
+  }
 
   return (
     <>
