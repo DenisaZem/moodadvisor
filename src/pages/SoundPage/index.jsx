@@ -12,7 +12,7 @@ import { CarouselMenu } from "../../components/CarouselMenu";
   {
     id: "0",
     title: "Stimulující nálada",
-    picture: obrazek1,
+    picture: obrazek1, 
   },
   {
     id: "1",

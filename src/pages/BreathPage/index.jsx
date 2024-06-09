@@ -14,29 +14,19 @@ export const breathData = [
   },
   {
     id: "1",
-    title: "nazev2",
+    title: "Hoď se do klidu",
     picture: obrazek2,
   },
   {
     id: "2",
-    title: "nazev3",
+    title: "Klídeček",
     picture: obrazek3,
   },
   {
     id: "3",
-    title: "nazev4",
+    title: "Meditace",
     picture: obrazek1,
-  },
-  {
-    id: "4",
-    title: "nazev5",
-    picture: obrazek2,
-  },
-  {
-    id: "5",
-    title: "nazev5",
-    picture: obrazek3,
-  },
+  }
 ];
 
 export const BreathPage = () => {
