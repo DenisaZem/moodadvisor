@@ -33,7 +33,7 @@ const Bubble = ({ handleClick }) => {
   }
 
   return (
-    <>
+    <div className="bubble-container">
       <div className="bubble">
         <motion.div
           className="bubble__outside"
@@ -115,7 +115,7 @@ const Bubble = ({ handleClick }) => {
           ></motion.div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
