@@ -1,33 +1,35 @@
 .container__breathExercise {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .breathExercise__title {
-    margin: 20px;
+  margin: 20px;
 }
 
 .breathExercise__content {
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; 
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .breathExercise__button {
-    border-radius: 200px;
-    min-height: 100px;
-    min-width: 100px;
-    margin: 60px 0 20px 0;
-    border: none;
-    background-color: rgb(244, 97, 146);
-    font-size: 1.5rem;
+  background-color: #4a6670;
+  line-height: 1.5;
+  color: #a0af84;
+  border: none;
+  border-radius: 10px;
+  margin: 20px;
+  font-size: 1rem;
+  width: 13rem;
+  height: 5rem;
 }
 
 .breathExercise__bubbleSpace {
-    justify-self: end;
-    min-width: 500;
+  justify-self: end;
+  min-width: 500;
 }

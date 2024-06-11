@@ -72,7 +72,7 @@ export const BreathBubble = () => {
             fontSize: "20px",
             fontWeight: "bold",
             textAlign: "center",
-            backgroundColor: breathData.color
+            backgroundColor: breathData.color,
           }}
         >
           {breathData.text}

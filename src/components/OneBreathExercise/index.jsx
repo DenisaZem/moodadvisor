@@ -1,6 +1,6 @@
 import { BreathBubble } from "../BreathBubble";
 import { useState } from "react";
-import {dataBreathExercise} from "../BreathBubble/dataBreathExercise";
+import { dataBreathExercise } from "../BreathBubble/dataBreathExercise";
 import { useParams } from "react-router-dom";
 import "./style.css";
 
@@ -10,7 +10,7 @@ export const OneBreathExercise = () => {
   // const [offBubble, setOffBubble] = useState(false);
 
   const handleButtonClick = () => {
-      setShowBubble(!showBubble)
+    setShowBubble(!showBubble);
   };
 
   const exercise = dataBreathExercise[id];
@@ -19,6 +19,8 @@ export const OneBreathExercise = () => {
   return (
     <div className="container__breathExercise">
       <h1 className="breathExercise__title">{exercise.title}</h1>
+      <p className="breathExercise__description">{exercise.description}</p>
+      <p className="breathExercise__info">{exercise.info}</p>
       {/* <h1 className="breathExercise__title">{dataBreathExrecise}</h1> */}
       <div className="breathExercise__content">
         <div className="breathExercise__bubbleSpace">

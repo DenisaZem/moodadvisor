@@ -1,30 +1,32 @@
 .bubbleBreath__out {
-    background: rgb(209, 179, 179);
-
-
-
-    width: 300;
-    height: 300;
-    border-radius: "50%";
-    display: "flex";
-    justify-content: "center";
-    align-items: "center";
-    color: "white";
-    font-size: "20px";
-    font-weight: "bold";
-    text-align: "center";
-} 
+  background: rgb(209, 179, 179);
+  width: 300;
+  height: 300;
+  border-radius: "50%";
+  display: "flex";
+  justify-content: "center";
+  align-items: "center";
+  color: "white";
+  font-size: "20px";
+  font-weight: "bold";
+  text-align: "center";
+}
 
 .bubbleBreath__in {
-    background: rgb(157, 110, 160);
-    width: 200;
-    height: 200;
-    border: "50%";
-    display: "flex";
-    justify-content: "center";
-    align-items: "center";
-    color: "white";
-    font-size: "20px";
-    font-weight: "bold";
-    text-align: "center";
+  background: rgb(157, 110, 160);
+  width: 200;
+  height: 200;
+  border: "50%";
+  display: "flex";
+  justify-content: "center";
+  align-items: "center";
+  color: "white";
+  font-size: "20px";
+  font-weight: "bold";
+  text-align: "center";
+}
+
+.breathExercise__info {
+  font-size: small;
+  font-style: oblique;
 }
