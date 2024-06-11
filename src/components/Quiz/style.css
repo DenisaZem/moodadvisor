@@ -18,6 +18,15 @@ body.active-modal {
   padding: 15px;
 }
 
+.quiz-logo {
+  text-align: center;
+  font-family: Meow Script;
+  font-size: 1.8rem;
+  color: #4a6670;
+  font-size: 2.5rem;
+  margin: 20px;
+}
+
 .container__quiz {
   display: flex;
   flex-direction: column;
@@ -94,17 +103,17 @@ body.active-modal {
   width: 100%;
   font-size: 45px;
   flex-wrap: wrap;
+  text-align: center;
 }
 
-.question-count {
-  margin: 10px;
-  font-size: 20px;
+.question-subtitle {
+  font-size: 1.2rem;
 }
 
 .question-text {
   text-align: center;
   padding: 10px;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .answer__section {

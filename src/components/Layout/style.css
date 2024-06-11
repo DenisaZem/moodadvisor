@@ -1,23 +1,26 @@
 .layout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100svh;
 }
 
 .layout__navbar {
-    width: 100%;
-    padding-top: 3.5rem;
+  width: 100%;
+  padding-top: 3.5rem;
 }
 
-.layout__content{
-    flex: 1 0 auto;
-    padding: 0 10px;
-    max-width: 750px;
-    width: 100%;
+.layout__content {
+  flex: 1 0 auto;
+  padding: 0 10px;
+  max-width: 750px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .layout__footer {
-    width: 100%;
-
+  width: 100%;
 }

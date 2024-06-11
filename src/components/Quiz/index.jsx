@@ -226,6 +226,7 @@ const Quiz = () => {
         {showBubble && <Bubble handleClick={handleClick} />}
         {/* <h1 className="container__mainQuiz--title">Mood Quiz</h1> */}
         <div className="container__quiz">
+          <h1 className="quiz-logo">MoodAdviser</h1>
           {currentQuestion === null ? (
             <div className="lastSentence-section">
               {/* <div className="lastSentence-section__title">
@@ -251,6 +252,9 @@ const Quiz = () => {
           ) : (
             <>
               <div className="question__section">
+                <h2 className="question-subtitle">
+                  {t(`quiz.questions.${currentQuestion}.questionSub`)}
+                </h2>
                 <div className="question-text">
                   {t(`quiz.questions.${currentQuestion}.questionText`)}
                 </div>

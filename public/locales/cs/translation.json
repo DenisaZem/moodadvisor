@@ -14,10 +14,11 @@
     "copy": "© 2024. Vytvořeno pro Czechitas, Digitální akademie: Web."
   },
   "quiz": {
-    "last": "Můžeš také zkusit",
+    "last": "Můžete také zkusit:",
     "questions": [
       {
-        "questionText": "Zdravím, s čím vám můžu pomoci? Jak se dnes cítíte?",
+        "questionSub": "Vítejte na MoodAdviseru!",
+        "questionText": "S čím vám můžu pomoci? Jak se dnes cítíte?",
         "answerOptions": [
           {
             "answer": "Šťastně"
@@ -37,7 +38,8 @@
         ]
       },
       {
-        "questionText": "Výborně. Nastal tedy ideální čas na to, zapsat si vše, za co jste v životě vděční.",
+        "questionSub": "Výborně!",
+        "questionText": "Nastal tedy ideální čas na to, zapsat si vše, za co jste v životě vděční.",
         "answerOptions": [
           {
             "answer": "Deník vděčnosti",
@@ -46,7 +48,8 @@
         ]
       },
       {
-        "questionText": "Cítit se smutně je naprosto normální součástí života. Zkuste se zamyslet nad tím, proč přesně se cítíte smutní, a dovolte si tuto emoci procítit. Co dál?",
+        "questionSub": "Cítit se smutně je naprosto normální součástí života.",
+        "questionText": "Zkuste se zamyslet nad tím, proč přesně se cítíte smutní, a dovolte si tuto emoci procítit. Co dál?",
         "answerOptions": [
           {
             "answer": "Rozmazlím se!"
@@ -63,7 +66,8 @@
         ]
       },
       {
-        "questionText": "Možná je načase trochu se opečovat. Ať už pro vás self-care znamená cokoliv - od dobrého jídla, horké koupele a příjemné knížky až ke sportu a času stráveného s přáteli - zkuste se pořádně rozmazlit.",
+        "questionSub": "Možná je načase trochu se opečovat.",
+        "questionText": "Ať už pro vás self-care znamená cokoliv - od dobrého jídla, horké koupele a příjemné knížky až ke sportu a času stráveného s přáteli - zkuste se pořádně rozmazlit.",
         "answerOptions": [
           {
             "answer": "Kam dál?"
@@ -71,7 +75,8 @@
         ]
       },
       {
-        "questionText": "Sdílené trable jsou poloviční trable, a to platí i o smutku. Zkuste zavolat své blízké osobě, sejděte se s přáteli nebo se pomazlete svým chundelatým mazlíčkem.",
+        "questionSub": "Sdílené trable jsou poloviční trable, a to platí i o smutku.",
+        "questionText": "Zkuste zavolat své blízké osobě, sejděte se s přáteli nebo se pomazlete svým chundelatým mazlíčkem.",
         "answerOptions": [
           {
             "answer": "Kam dál?"
@@ -79,7 +84,8 @@
         ]
       },
       {
-        "questionText": "Pokuste se svůj smutek vhodným způsobem vyjádřit, dostat ho ven. Ať už budou vaším nástrojem slova, barvy a štětce nebo třeba noty, určitě se vám alespoň trochu uleví.",
+        "questionSub": "Pokuste se svůj smutek vhodným způsobem vyjádřit, dostat ho ven.",
+        "questionText": "Ať už budou vaším nástrojem slova, barvy a štětce nebo třeba noty, určitě se vám alespoň trochu uleví.",
         "answerOptions": [
           {
             "answer": "Kam dál?"
@@ -87,7 +93,8 @@
         ]
       },
       {
-        "questionText": "Zkuste se vrátit ke kořenům - a to doslova. Pobyt v přírodě a procházka na čerstvém vzduchu prokazatelně zlepšuje náladu a zvyšuje produkci dobrých hormonů. Pokud zrovna ven nemůžete, vyzkoušejte naši knihovnu relaxační hudby.",
+        "questionSub": "Zkuste se vrátit ke kořenům - a to doslova.",
+        "questionText": "Pobyt v přírodě a procházka na čerstvém vzduchu prokazatelně zlepšuje náladu a zvyšuje produkci dobrých hormonů. Pokud zrovna ven nemůžete, vyzkoušejte naši knihovnu relaxační hudby.",
         "answerOptions": [
           {
             "answer": "Procházka po okolí"
@@ -101,7 +108,8 @@
         ]
       },
       {
-        "questionText": "Z hlediska evoluce je strach jedním z mechanismů, které našim předkům pomohly přežít v extrémních podmínkách. I dnes je strach výborným průvodcem životem, varující nás před nebezpečím. Problém nastává, když nám strach přeroste přes hlavu i v běžných situacích.",
+        "questionSub": "Z hlediska evoluce je strach jedním z mechanismů, které našim předkům pomohly přežít v extrémních podmínkách.",
+        "questionText": "I dnes je strach výborným průvodcem životem, varující nás před nebezpečím. Problém nastává, když nám strach přeroste přes hlavu i v běžných situacích.",
         "answerOptions": [
           {
             "answer": "Potřebuji první pomoc."
@@ -112,7 +120,8 @@
         ]
       },
       {
-        "questionText": "V případě úzkosti je důležitá první pomoc – znalost technik, které pomáhají úzkost zmírnit v okamžiku, kdy ji prožíváme nejintenzivněji. Zvolte si jednu z následujících technik:",
+        "questionSub": "V případě úzkosti je důležitá první pomoc,",
+        "questionText": "tedy znalost technik, které pomáhají úzkost zmírnit v okamžiku, kdy ji prožíváme nejintenzivněji. Zvolte si jednu z následujících technik:",
         "answerOptions": [
           {
             "answer": "Dechové cvičení"
@@ -121,12 +130,13 @@
             "answer": "Metoda pěti smyslů"
           },
           {
-            "answer": "Počítání ?"
+            "answer": "Počítání"
           }
         ]
       },
       {
-        "questionText": "Skvělými technikami, jak lze dlouhodobě zvládat úzkost, jsou jóga a vedená meditace. Obě aktivity pomáhají uzemnit se a naučit se žít v současném okamžiku, což pomáhá zvládat úzkost z toho, co bylo, i z toho, co by mohlo být. Nejlepší na tom je, že s pomocí internetu, různých videí a aplikací můžete začít prakticky hned teď!",
+        "questionSub": "Skvělými technikami pro dlouhodobé zvládání úzkosti jsou jóga a vedená meditace. ",
+        "questionText": "Obě aktivity pomáhají uzemnit se a naučit se žít v současném okamžiku, což pomáhá zvládat úzkost z toho, co bylo, i z toho, co by mohlo být. Nejlepší na tom je, že s pomocí internetu, různých videí a aplikací můžete začít prakticky hned teď!",
         "answerOptions": [
           {
             "answer": "Jóga"
@@ -140,7 +150,8 @@
         ]
       },
       {
-        "questionText": "Za naštvaností se většinou skrývají další emoce, jimž možná v danou chvíli nechceme věnovat pozornost, je však potřeba je rozklíčovat a prozkoumat. Kromě toho je dobré najít si zdravý způsob, jak svůj vztek zpracovat.",
+        "questionSub": "Za naštvaností se často skrývají další emoce.",
+        "questionText": "Emoce, kterým možná v danou chvíli nechceme věnovat pozornost, je však potřeba je rozklíčovat a prozkoumat. Kromě toho je dobré najít si zdravý způsob, jak svůj vztek zpracovat.",
         "answerOptions": [
           {
             "answer": "Půjdu to vyběhat."
@@ -154,6 +165,7 @@
         ]
       },
       {
+        "questionSub": "Vytřást vztek z těla ven.",
         "questionText": "Skákání, hopskání tanec na oblíbenou hudbu, ale i další druhy sportů, jako třeba box, můžou pomoci se zpracováním přebytečné energie a nepříjemných pocitů. Při sportu navíc dochází k produkci dopaminu, který snižuje stres.",
         "answerOptions": [
           {
@@ -162,7 +174,8 @@
         ]
       },
       {
-        "questionText": "Ať už si sami pro sebe zakřičíte venku do propasti, doma do polštáře nebo společně se svou oblíbenou hudbou, tento terapeutický křik vám může pomoci odblokovat emoce nebo prostě jen uvolnit váš vztek ven z těla. ",
+        "questionSub": "Běžte cestou terapeutického křiku.",
+        "questionText": "Ať už si sami pro sebe zakřičíte venku do propasti, doma do polštáře nebo společně se svou oblíbenou hudbou, terapeutický křik vám může pomoci odblokovat emoce nebo prostě jen uvolnit vztek z těla ven.",
         "answerOptions": [
           {
             "answer": "Kam dál?"
@@ -170,16 +183,17 @@
         ]
       },
       {
+        "questionSub": "Najděte si svou únikovou cestu z džungle stresu.",
         "questionText": "Moderní život má nespočet výhod a vymožeností, o kterých si naši předci mohli jenom nechat zdát. Má však také mnoho úskalí a do stresu se často dostaneme tak snadno, že ani nevíme jak. Důležité je umět se zastavit a vrátit se do současného okamžiku, do vlastního těla, a uzemnit se. Zkusit můžete například aktivity, jako je:",
         "answerOptions": [
           {
             "answer": "Jóga"
           },
           {
-            "answer": "Zahradničení"
+            "answer": "Péče o květiny"
           },
           {
-            "answer": "Malování / Kreslení"
+            "answer": "Malování / kreslení"
           },
           {
             "answer": "Relaxační koupel"
