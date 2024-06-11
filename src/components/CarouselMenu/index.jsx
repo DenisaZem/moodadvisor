@@ -5,11 +5,13 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "./style.css";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export const CarouselMenu = ({ musicData, breathData }) => {
-  return ( 
+  const { t } = useTranslation();
+  return (
     <div className="container__carouselMenu">
-      <Swiper 
+      <Swiper
         grabCursor
         centeredSlides
         slidesPerView="auto"
@@ -48,7 +50,7 @@ export const CarouselMenu = ({ musicData, breathData }) => {
               </SwiperSlide>
             ))}
           {breathData &&
-            breathData.map((slide) => (
+            breathData.map((slide, index) => (
               <SwiperSlide
                 key={slide.id}
                 style={{
@@ -59,7 +61,7 @@ export const CarouselMenu = ({ musicData, breathData }) => {
                   className="swiper-wrapper--link"
                   to={`/breath/${slide.id}`}
                 >
-                  {slide.title}
+                  {t(`breath.${index}.title`)}
                   <img
                     className="swiper-wrapper"
                     src={slide.picture}

@@ -267,5 +267,44 @@
   "bubble": {
     "inhale": "Nádech",
     "exhale": "Výdech"
-  }
+  },
+  "breathPage": "Dechová cvičení",
+  "breath": [
+    {
+      "title": "Obnovující dech",
+      "description": "Dechová technika: 5-5",
+      "info": "(5 s nádech, 5 s výdech)",
+      "inhale": "Nádech",
+      "exhale": "Výdech",
+      "close": "Ukončit",
+      "start": "Začít"
+    },
+    {
+      "title": "Energizující dech",
+      "description": "Dechová technika: 4-2",
+      "info": "(4 s nádech, 2 s výdech)",
+      "inhale": "Nádech",
+      "exhale": "Výdech",
+      "close": "Ukončit",
+      "start": "Začít"
+    },
+    {
+      "title": "Soustředění",
+      "description": "Dechová technika: 4-4",
+      "info": "(4 s nádech, 4 s výdech)",
+      "inhale": "Nádech",
+      "exhale": "Výdech",
+      "close": "Ukončit",
+      "start": "Začít"
+    },
+    {
+      "title": "Relaxační dech",
+      "description": "Dechová technika: 4-6",
+      "info": "(4 s nádech, 6 s výdech)",
+      "inhale": "Nádech",
+      "exhale": "Pomalý výdech",
+      "close": "Ukončit",
+      "start": "Začít"
+    }
+  ]
 }

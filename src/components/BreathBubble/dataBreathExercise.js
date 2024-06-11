@@ -56,7 +56,7 @@ export const dataBreathExercise = [
   {
     id: 3,
     title: "Relaxační dech",
-    description: "",
+    description: "Dechová technika: 4-6",
     info: "(4 s nádech, 6 s výdech)",
     inhale: {
       scale: 1.5,
