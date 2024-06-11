@@ -46,7 +46,6 @@ export const Counting = () => {
         <input
           className="counting-input"
           value={answer}
-          autoFocus
           onChange={handleChange}
           onKeyDown={(e) => {
             if (e.key === "Enter") handleAnswer(e);

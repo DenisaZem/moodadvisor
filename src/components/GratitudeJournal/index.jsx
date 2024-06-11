@@ -56,7 +56,6 @@ export const GratitudeJournal = () => {
           value={entry}
           type="text"
           className="journal-form--textarea"
-          autoFocus
         />
         <button>Zapsat</button>
         <div className="logs">
