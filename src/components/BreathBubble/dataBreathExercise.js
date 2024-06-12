@@ -16,9 +16,6 @@ export const dataBreathExercise = [
   },
   {
     id: 1,
-    title: "Energizující dech",
-    description: "Dechová technika: 4-2",
-    info: "(4 s nádech, 2 s výdech)",
     inhale: {
       scale: 1.5,
       text: "breath.1.inhale",
@@ -34,9 +31,6 @@ export const dataBreathExercise = [
   },
   {
     id: 2,
-    title: "Soustředění",
-    description: "Dechová technika: 4-4",
-    info: "(4 s nádech, 4 s výdech)",
     inhale: {
       scale: 1.5,
       text: "breath.2.inhale",
@@ -52,9 +46,6 @@ export const dataBreathExercise = [
   },
   {
     id: 3,
-    title: "Relaxační dech",
-    description: "Dechová technika: 4-6",
-    info: "(4 s nádech, 6 s výdech)",
     inhale: {
       scale: 1.5,
       text: "breath.3.inhale",
