@@ -45,7 +45,7 @@ export const FiveSenses = () => {
       <Link className="five-senses__back" to="/exercises">
         {t("backButton")}
       </Link>
-      <h1>{t("senses.title")}</h1>
+      <h1 className="five-senses__title">{t("senses.title")}</h1>
       {lastStep ? (
         <div className="final-step">
           <h2 className="final-step--title">{t("senses.final.title")}</h2>
