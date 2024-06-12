@@ -1,34 +1,30 @@
+.container__carouselMenu {
+  width: 100%;
+}
 
-  .container__carouselMenu {
-    width: 100%;
-  } 
+.swiper-wrapper--link {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5px;
+  text-decoration: none;
+}
 
-  .swiper-wrapper--link {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 5px;
-    text-decoration: none;
-  }
+.swiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  max-width: 150px;
+  max-height: 250px;
+  min-width: 200px;
+  min-height: 250px;
+  margin: 20px;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, #0006);
+}
 
+@media screen and (min-width: 430px) {
   .swiper .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    max-width: 150px;
-    max-height: 250px;
-    margin: 20px;
-    -webkit-box-reflect: below 1px
-      linear-gradient(transparent, transparent, #0006);
+    min-width: 300px;
+    min-height: 350px;
   }
-  
-  @media screen and (min-width: 450px) {
-  
-    .container__mainSoundMenu {
-      /* min-height: 700px; */
-    }
-  
-    .swiper .swiper-slide {
-      min-width: 300px;
-     min-height: 350px;
-    }
-  }
+}
