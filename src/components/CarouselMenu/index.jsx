@@ -29,7 +29,7 @@ export const CarouselMenu = ({ musicData, breathData }) => {
       >
         <div className="swiper-wrapper">
           {musicData &&
-            musicData.map((slide) => (
+            musicData.map((slide, index) => (
               <SwiperSlide
                 key={slide.id}
                 style={{
@@ -40,7 +40,7 @@ export const CarouselMenu = ({ musicData, breathData }) => {
                   className="swiper-wrapper--link"
                   to={`/music/${slide.id}`}
                 >
-                  {slide.title}
+                  {t(`sound.${index}.title`)}
                   <img
                     className="swiper-wrapper"
                     src={slide.picture}

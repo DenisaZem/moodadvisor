@@ -4,12 +4,14 @@ import "./style.css";
 import { useParams } from "react-router-dom";
 import { musicData } from "../../pages/SoundPage/index.jsx";
 import { Cube } from "../Cube/index.jsx";
+import { useTranslation } from "react-i18next";
 
 // Potřeba importovat ikony --> npm install react-icons
 
 const OneSound = () => {
   // const ref = useRef(null);
   const { id } = useParams();
+  const { t } = useTranslation();
 
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -28,16 +30,20 @@ const OneSound = () => {
   };
 
   const handleBackward = () => {
-    audioRef.current.currentTime -= 5; 
+    audioRef.current.currentTime -= 5;
   };
 
   return (
     <div className="container-sound">
-      <h1 className="container-sound__title">{musicData[id].title}</h1>
+      <h1 className="container-sound__title">{t(`sound.${id}.title`)}</h1>
       <div className="container-sound__content--buttons">
-        <a href={`/music/${Number(id) === 0 ? 5 : Number(id) - 1}`}>Vzad</a>
-        <a href="/music">Zpět na výběr hudby</a>
-        <a href={`/music/${Number(id) === 5 ? 0 : Number(id) + 1}`}>Vpřed</a>
+        <a href={`/music/${Number(id) === 0 ? 5 : Number(id) - 1}`}>
+          {t("soundControl.0")}
+        </a>
+        <a href="/music">{t("soundControl.1")}</a>
+        <a href={`/music/${Number(id) === 5 ? 0 : Number(id) + 1}`}>
+          {t("soundControl.2")}
+        </a>
       </div>
       <div className="container-sound__content">
         <audio ref={audioRef} src={`/components/OneSound/music/${id}.mp3`} />
@@ -50,7 +56,7 @@ const OneSound = () => {
               className="control-button backward"
             >
               <FaBackward />
-              <p> 5 sekund vzad</p>
+              <p>{t("soundControl.3")}</p>
             </button>
             <button
               onClick={togglePlayPause}
@@ -60,7 +66,7 @@ const OneSound = () => {
             </button>
             <button onClick={handleForward} className="control-button forward">
               <FaForward />
-              <p> 5 sekund vpřed</p>
+              <p>{t("soundControl.4")}</p>
             </button>
           </div>
         </div>

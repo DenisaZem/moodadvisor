@@ -306,5 +306,33 @@
       "close": "Ukončit",
       "start": "Začít"
     }
+  ],
+  "soundPage": "Relaxační hudba",
+  "sound": [
+    {
+      "title": "Stimulující nálada"
+    },
+    {
+      "title": "Meditační symfonie"
+    },
+    {
+      "title": "Tóny lesa"
+    },
+    {
+      "title": "Harmonická melodie"
+    },
+    {
+      "title": "Party disko"
+    },
+    {
+      "title": "Příroda zklidující mysl"
+    }
+  ],
+  "soundControl": [
+    "Přechozí",
+    "Zpět na výběr hudby",
+    "Další",
+    "5 sekud vzad",
+    "5 sekund vpřed"
   ]
 }
