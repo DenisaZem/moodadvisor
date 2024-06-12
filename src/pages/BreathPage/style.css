@@ -6,13 +6,12 @@
 }
 
 .container__breathPage--title {
-  font-size: 20px;
-  margin: 10px;
+  font-size: 1.5rem;
   margin: 30px 30px;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 430px) {
   h1.container__breathPage--title {
-    font-size: 25px;
+    font-size: 1.8rem;
   }
 }

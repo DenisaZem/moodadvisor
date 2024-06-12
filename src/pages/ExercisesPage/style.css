@@ -4,8 +4,8 @@
 }
 
 .exercise-title {
-  font-size: 20px;
-  margin: 10px;
+  font-size: 1.5rem;
+  margin: 30px;
   text-align: center;
 }
 
@@ -20,7 +20,7 @@
 .exercise-menu--tile {
   display: flex;
   flex-direction: row;
-
+  font-size: 1rem;
 }
 
 .exercise-menu--tile:nth-child(even) {
@@ -28,7 +28,7 @@
 }
 
 .exercise-menu--tile:hover {
-    opacity: 50%;
+  opacity: 50%;
 }
 
 .container__exerciseLink {
@@ -40,7 +40,11 @@
   background-color: #a0af84;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 600px) {
+  .exercise-title {
+    font-size: 1.8rem;
+  }
+
   .exercise-menu {
     flex-direction: row;
     padding: 10px;
@@ -53,16 +57,11 @@
 
   .exercise-menu--tile {
     flex-direction: column;
-    font-size: 25px;
-    margin: 30px 30px;
+    font-size: 1rem;
     text-align: center;
   }
 
   .exercise-menu--tile:nth-child(even) {
     flex-direction: column-reverse;
   }
-
-  /* .exercise-menu--tile {
-    display: block;
-  } */
 }
