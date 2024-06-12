@@ -3,13 +3,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 60px auto;
+  position: relative;
 }
 
 .breathExercise__back {
-  display: flex;
   justify-content: flex-start;
-  text-align: left;
-  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: small;
+  border: 1px solid #4a6670;
 }
 
 .breathExercise__title {

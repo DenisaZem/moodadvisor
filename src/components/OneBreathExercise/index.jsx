@@ -31,7 +31,25 @@ export const OneBreathExercise = () => {
       {/* <h1 className="breathExercise__title">{dataBreathExrecise}</h1> */}
       <div className="breathExercise__content">
         <div className="breathExercise__bubbleSpace">
-          {showBubble && <BreathBubble />}
+          {showBubble ? (
+            <BreathBubble />
+          ) : (
+            <div
+              className="bubbleBreath__out"
+              style={{
+                width: 300,
+                height: 300,
+                borderRadius: "50%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                color: "white",
+                fontSize: "20px",
+                fontWeight: "bold",
+                textAlign: "center",
+              }}
+            ></div>
+          )}
         </div>
         <button className="breathExercise__button" onClick={handleButtonClick}>
           {showBubble ? t(`breath.${id}.close`) : t(`breath.${id}.start`)}
