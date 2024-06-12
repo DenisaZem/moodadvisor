@@ -27,7 +27,7 @@ export const ExercisesPage = () => {
   const { t } = useTranslation();
   return (
     <div className="exercisesPage">
-      <h1 className="exercise-title">Cvičení</h1>
+      <h1 className="exercise-title">{t("exercisesPage")}</h1>
       <div className="exercise-menu">
         {exercisesData.map((item, index) => {
           return (

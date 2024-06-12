@@ -24,7 +24,6 @@ export const GratitudeJournal = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(entry);
     if (entry !== "") {
       const newLogs = [...logs, { date: new Date(), text: entry }];
       setLogs(newLogs);
@@ -40,16 +39,11 @@ export const GratitudeJournal = () => {
 
   return (
     <div className="container-journal">
-      <h1 className="journal-title">Deník vděčnosti</h1>
-      <h3 className="journal-subtitle">
-        Zapište si 5 věcí, za které jste dnes vděční.
-      </h3>
-      <p className="journal-text">
-        Zapište pěkně hezky jednu po druhé. Pro začátek stačí i jedna jediná
-        věc, která vás napadne.
-      </p>
+      <h1 className="journal-title">{t("journal.title")}</h1>
+      <h3 className="journal-subtitle">{t("journal.subtitle")}</h3>
+      <p className="journal-text">{t("journal.text")}</p>
       <form className="journal-form" onSubmit={handleSubmit}>
-        <label className="journal-form--label">Dnes cítím vděčnost za:</label>{" "}
+        <label className="journal-form--label">{t("journal.label")}</label>{" "}
         <br />
         <textarea
           onChange={handleEntry}
@@ -57,7 +51,7 @@ export const GratitudeJournal = () => {
           type="text"
           className="journal-form--textarea"
         />
-        <button>Zapsat</button>
+        <button>{t("journal.addItemButton")}</button>
         <div className="logs">
           {logs.map((item, index) => {
             return (
@@ -75,7 +69,7 @@ export const GratitudeJournal = () => {
         </div>
       </form>
       {logs.length !== 0 ? (
-        <button onClick={handleDelete}>Smazat vše</button>
+        <button onClick={handleDelete}>{t("journal.deleteAllButton")}</button>
       ) : null}
     </div>
   );

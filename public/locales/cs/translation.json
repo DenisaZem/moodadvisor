@@ -256,6 +256,7 @@
       }
     ]
   },
+  "exercisesPage": "Relaxační cvičení",
   "exercises": ["Pět smyslů", "Počítání", "Deník vděčnosti"],
   "counting": {
     "title": "Počítání",
@@ -263,6 +264,14 @@
     "description": "Vepište svou odpověď a stiskněte tlačítko ENTER.",
     "success": "Výborně! Počítejte znovu!",
     "error": "Zkuste to znovu."
+  },
+  "journal": {
+    "title": "Deník vděčnosti",
+    "subtitle": "Zapište si 5 věcí, za které jste dnes vděční.",
+    "text": "Zapište pěkně hezky jednu po druhé. Pro začátek stačí i jedna jediná věc, která vás napadne.",
+    "label": "Dnes cítím vděčnost za:",
+    "addItemButton": "Zapsat",
+    "deleteAllButton": "Smazat vše"
   },
   "bubble": {
     "inhale": "Nádech",
