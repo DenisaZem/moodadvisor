@@ -1,41 +1,36 @@
-.AboutProject {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 70px;
-  }
-  
-  .AboutProject__title {
-    max-width: 800px;
-  }
-  
-  .about-project__container1,
-  .about-project__container2 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #668F80;
-  }
-  
-  .about-project--name {
-    width: 100%;
-    text-align: start;
-    font-size: 4.5rem;
-    color: #320C40;
-    font-family: Meow Script;
-  }
-  
-  .about__project--zarovkaImg,
-  .about__project--noteImg {
-    width: 30%;
-  }
-  
-  .about__project--title {
-    margin: 5px;
-    width: 50%;
-    height: 50%;
-    text-align: justify;
-    color: #472836;
-  }
-  
+.about-project--container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items: center;
+  margin: 10px;
+  padding: 15px;
+  background-color: #668f80;
+  max-width: 800px;
+}
+
+.about-project--logo {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  color: #4a6670;
+  font-family: Meow Script;
+  margin: 20px;
+}
+
+.about-project--img {
+  width: 30%;
+}
+
+.about-project--title {
+  margin: 15px;
+  /* width: 50%; */
+  /* height: 50%; */
+  text-align: justify;
+  color: #472836;
+}
+
+.about-project--imgs {
+  display: flex;
+  justify-content: center;
+}
