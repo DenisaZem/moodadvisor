@@ -7,13 +7,22 @@
   min-height: 70vh;
   width: 80vw;
   gap: 10px;
+  position: relative;
 }
 
 .counting__back {
-  display: flex;
-  justify-content: flex-start;
-  text-align: left;
-  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: small;
+  border: 1px solid #4a6670;
+}
+
+.counting-title {
+  margin: 60px 0 10px;
 }
 
 form {
@@ -24,7 +33,7 @@ form {
 
 .counting-label {
   font-size: 4rem;
-  padding: 35px;
+  padding: 10px;
 }
 
 .counting-input {
@@ -34,6 +43,10 @@ form {
   color: pink;
   text-align: center;
   appearance: none;
+}
+
+.counting-hint {
+  margin: 0 0 20px;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -46,4 +59,15 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 .counting-input[type="number"] {
   appearance: textfield;
+}
+
+@media screen and (min-width: 800px) {
+  .container-counting {
+    max-width: 100%;
+  }
+
+  .counting-input {
+    height: 200px;
+    max-width: 400px;
+  }
 }

@@ -55,7 +55,9 @@ export const GratitudeJournal = () => {
           type="text"
           className="journal-form--textarea"
         />
-        <button>{t("journal.addItemButton")}</button>
+        <button className="journal--add-button">
+          {t("journal.addItemButton")}
+        </button>
         <div className="logs">
           {logs.map((item, index) => {
             return (
@@ -73,7 +75,9 @@ export const GratitudeJournal = () => {
         </div>
       </form>
       {logs.length !== 0 ? (
-        <button onClick={handleDelete}>{t("journal.deleteAllButton")}</button>
+        <button className="journal--delete-button" onClick={handleDelete}>
+          {t("journal.deleteAllButton")}
+        </button>
       ) : null}
     </div>
   );

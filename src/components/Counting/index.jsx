@@ -46,7 +46,7 @@ export const Counting = () => {
           {numbers[0]} + {numbers[1]} =
         </label>
         <br></br>
-        <p>{stateAnswer}</p>
+        <p className="counting-hint">{stateAnswer}</p>
         <input
           className="counting-input"
           value={answer}
