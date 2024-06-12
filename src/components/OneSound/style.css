@@ -8,43 +8,46 @@
 }
 
 .container-sound__title {
-  font-size: 35px;
+  font-size: 2rem;
   text-align: center;
+  margin: 40px;
 }
 
 .container-sound__content--buttons {
-  justify-content: center;
+  font-size: 0.9rem;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .container-sound__content--buttons a {
-  margin: 20px;
+  margin: 10px;
   text-decoration: none;
   cursor: pointer;
+  text-align: center;
 }
 
 .container-sound__content {
   display: flex;
   width: 100%;
   flex-direction: column;
-  justify-content:flex-end;
+  justify-content: flex-end;
   align-items: center;
   margin-top: 20px;
   transform: translate(0, 60%);
 }
 
 .container-sound__content--back,
-.container-sound__content--back a  {
+.container-sound__content--back a {
   align-self: flex-start;
   margin: 10px;
   text-decoration: none;
   cursor: pointer;
 }
 
-.controls {  
+.controls {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-
