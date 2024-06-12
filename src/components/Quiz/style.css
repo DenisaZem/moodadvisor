@@ -11,7 +11,7 @@ body.active-modal {
 }
 
 .quiz__container {
-  background-color: #a0af84;
+  background-color: transparent;
   border-radius: 50px;
   max-width: 500px;
   margin: 15px;

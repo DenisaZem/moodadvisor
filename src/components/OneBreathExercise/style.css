@@ -3,7 +3,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
+}
+
+.breathExercise__back {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  width: 100%;
 }
 
 .breathExercise__title {
@@ -33,11 +39,4 @@
 .breathExercise__bubbleSpace {
   justify-self: end;
   min-width: 500;
-}
-
-.breathExercise__back {
-  position: absolute;
-  left: 0;
-  top: 0;
-  text-decoration: underline;
 }
