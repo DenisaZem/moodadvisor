@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 60px auto;
+  margin: 40px auto;
   position: relative;
 }
 
@@ -20,7 +20,16 @@
 }
 
 .breathExercise__title {
+  margin: 40px 20px 10px;
+  text-align: center;
+}
+
+.breathExercise__description {
   margin: 20px;
+}
+
+.breathExercise__info {
+  margin: 15px;
 }
 
 .breathExercise__content {
@@ -37,7 +46,7 @@
   color: #a0af84;
   border: none;
   border-radius: 10px;
-  margin: 20px;
+  margin: 40px;
   font-size: 1rem;
   width: 13rem;
   height: 5rem;
