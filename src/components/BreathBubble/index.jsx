@@ -78,12 +78,6 @@ export const BreathBubble = () => {
           }}
         >
           {t(breathData.text)}
-          {/* {t(
-            exercise === "inhale"
-              ? `breath.${id}.inhale`
-              : `breath.${id}.exhale`
-          )}
-          {t(exercise === "inhale" ? `inhale` : `exhale`)} */}
         </motion.div>
       </div>
     </div>

@@ -9,22 +9,18 @@ import { useTranslation } from "react-i18next";
 export const breathData = [
   {
     id: "0",
-    title: "Obnovující dech",
     picture: obrazek1,
   },
   {
     id: "1",
-    title: "Energizující dech",
     picture: obrazek2,
   },
   {
     id: "2",
-    title: "Soustředění",
     picture: obrazek3,
   },
   {
     id: "3",
-    title: "Relaxační dech",
     picture: obrazek1,
   },
 ];
