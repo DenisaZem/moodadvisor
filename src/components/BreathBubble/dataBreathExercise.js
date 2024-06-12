@@ -1,18 +1,15 @@
 export const dataBreathExercise = [
   {
     id: 0,
-    title: "Obnovující dech",
-    description: "Dechová technika: 5-5",
-    info: "(5 s nádech, 5 s výdech)",
     inhale: {
       scale: 1.5,
-      text: "Nádech",
+      text: "breath.0.inhale",
       time: 5,
       color: " rgb(127, 174, 131)",
     },
     exhale: {
       scale: 1,
-      text: "Výdech",
+      text: "breath.0.exhale",
       time: 5,
       color: "rgb(158, 176, 77)",
     },
@@ -24,13 +21,13 @@ export const dataBreathExercise = [
     info: "(4 s nádech, 2 s výdech)",
     inhale: {
       scale: 1.5,
-      text: "Nádech",
+      text: "breath.1.inhale",
       time: 4,
       color: "rgb(220, 76, 36)",
     },
     exhale: {
       scale: 1,
-      text: "Výdech",
+      text: "breath.1.exhale",
       time: 2,
       color: "rgb(179, 96, 73)",
     },
@@ -42,14 +39,14 @@ export const dataBreathExercise = [
     info: "(4 s nádech, 4 s výdech)",
     inhale: {
       scale: 1.5,
-      text: "Nádech",
+      text: "breath.2.inhale",
       time: 4,
       color: "rgb(37, 105, 107)",
     },
     exhale: {
       scale: 1,
-      text: "Výdech",
-      time: 2,
+      text: "breath.2.exhale",
+      time: 4,
       color: "rgb(93, 144, 146)",
     },
   },
@@ -60,13 +57,13 @@ export const dataBreathExercise = [
     info: "(4 s nádech, 6 s výdech)",
     inhale: {
       scale: 1.5,
-      text: "Nádech",
+      text: "breath.3.inhale",
       time: 4,
       color: "rgb(156, 141, 40)",
     },
     exhale: {
       scale: 1,
-      text: "Pomalý výdech",
+      text: "breath.3.exhale",
       time: 6,
       color: "rgb(173, 153, 21)",
     },

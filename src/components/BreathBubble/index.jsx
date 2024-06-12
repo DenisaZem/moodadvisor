@@ -3,11 +3,13 @@ import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import { dataBreathExercise } from "./dataBreathExercise";
 import { useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const INHALE = "inhale";
 const EXHALE = "exhale";
 
 export const BreathBubble = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
 
   const [breathExercise, setBreathExercise] = useState(INHALE);
@@ -75,7 +77,13 @@ export const BreathBubble = () => {
             backgroundColor: breathData.color,
           }}
         >
-          {breathData.text}
+          {t(breathData.text)}
+          {/* {t(
+            exercise === "inhale"
+              ? `breath.${id}.inhale`
+              : `breath.${id}.exhale`
+          )}
+          {t(exercise === "inhale" ? `inhale` : `exhale`)} */}
         </motion.div>
       </div>
     </div>
