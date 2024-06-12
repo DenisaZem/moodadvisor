@@ -12,7 +12,7 @@ body.active-modal {
   height: 3.5rem;
 }
 
-.navbar__backgrounds { 
+.navbar__backgrounds {
   overflow-y: hidden;
 }
 
@@ -25,9 +25,8 @@ body.active-modal {
   z-index: 15;
 }
 
-
 .background-burgerMenu {
-  position: absolute; 
+  position: absolute;
   top: 3.5rem;
   right: 0;
   transform: translate(50%, -50%) scale(0);
@@ -39,7 +38,6 @@ body.active-modal {
   transition-duration: 0.6s;
   transition-property: opacity, transform;
   z-index: 15;
-
 }
 
 .background-burgerMenu.open {
@@ -98,7 +96,6 @@ body.active-modal {
   color: transparent;
   max-width: 70%;
   background-color: transparent;
-  /* text-align: center; */
 }
 
 .show {
@@ -136,10 +133,6 @@ body.active-modal {
   color: rgb(255, 253, 253);
 }
 
-/* .menu--item:visited {
-  color: rgb(255, 253, 253);
-} */
-
 .menu--item:hover {
   color: #025a3b;
 }
@@ -158,11 +151,6 @@ body.active-modal {
   .menu-icon {
     visibility: hidden;
   }
-
-  .logo,
-  .logo a {
-    font-size: 2.5rem;
-}
 
   .menu {
     display: flex;

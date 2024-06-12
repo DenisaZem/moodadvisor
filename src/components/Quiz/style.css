@@ -148,6 +148,10 @@ body.active-modal {
     gap: 10px;
   }
 
+  .quiz {
+    margin: 70px 0;
+  }
+
   .lastSentence-section__menu a {
     width: 30%;
   }
@@ -160,6 +164,7 @@ body.active-modal {
 
   .quiz {
     gap: 50px;
+    margin: 120px 0;
   }
 
   .lastSentence-section__menu--link-text {
