@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 export const GratitudeJournal = () => {
@@ -39,6 +40,9 @@ export const GratitudeJournal = () => {
 
   return (
     <div className="container-journal">
+      <Link className="journal__back" to="/exercises">
+        {t("backButton")}
+      </Link>
       <h1 className="journal-title">{t("journal.title")}</h1>
       <h3 className="journal-subtitle">{t("journal.subtitle")}</h3>
       <p className="journal-text">{t("journal.text")}</p>

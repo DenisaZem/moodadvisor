@@ -8,6 +8,13 @@
   gap: 20px;
 }
 
+.journal__back {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  width: 100%;
+}
+
 .journal-form--textarea {
   width: 80vw;
   height: 40vw;

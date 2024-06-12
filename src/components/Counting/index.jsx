@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./style.css";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export const Counting = () => {
   const { t } = useTranslation();
@@ -34,6 +35,9 @@ export const Counting = () => {
 
   return (
     <div className="container-counting">
+      <Link className="counting__back" to="/exercises">
+        {t("backButton")}
+      </Link>
       <h1 className="counting-title">{t("counting.title")}</h1>
       <h3 className="counting-subtitle">{t("counting.subtitle")}</h3>
       <p className="counting-description">{t("counting.description")}</p>

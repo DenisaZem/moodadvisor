@@ -21,7 +21,7 @@ export const OneBreathExercise = () => {
   return (
     <div className="container__breathExercise">
       <Link className="breathExercise__back" to="/breath">
-        Zpět
+        {t("backButton")}
       </Link>
       <h1 className="breathExercise__title">{t(`breath.${id}.title`)}</h1>
       <p className="breathExercise__description">
