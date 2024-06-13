@@ -46,7 +46,8 @@ const OneSound = () => {
         </a>
       </div>
       <div className="container-sound__content">
-        <audio ref={audioRef} src={`/components/OneSound/music/${id}.mp3`} />
+      <audio ref={audioRef} src={`/music/${id}.mp3`} />
+        
         <div className="controls">
           <Cube isPlaying={isPlaying} />
 
