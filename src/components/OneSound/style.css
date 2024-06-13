@@ -1,32 +1,32 @@
 /* Mobile first width 430px */
 
-.container-sound {
+.container__onesound {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.container-sound__title {
+.onesound__title {
   font-size: 2rem;
   text-align: center;
   margin: 40px;
 }
 
-.container-sound__content--buttons {
+.onesound__content--buttons {
   font-size: 0.9rem;
   display: flex;
   flex-wrap: nowrap;
 }
 
-.container-sound__content--buttons a {
+.onesound__content--buttons a {
   margin: 10px;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
 }
 
-.container-sound__content {
+.onesound__content {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -36,15 +36,15 @@
   transform: translate(0, 60%);
 }
 
-.container-sound__content--back,
-.container-sound__content--back a {
+.onesound__content--back,
+.onesound__content--back a {
   align-self: flex-start;
   margin: 10px;
   text-decoration: none;
   cursor: pointer;
 }
 
-.controls {
+.onesound__controls {
   display: flex;
   flex-direction: column;
   justify-content: center;

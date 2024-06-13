@@ -34,9 +34,9 @@ const OneSound = () => {
   };
 
   return (
-    <div className="container-sound">
-      <h1 className="container-sound__title">{t(`sound.${id}.title`)}</h1>
-      <div className="container-sound__content--buttons">
+    <div className="container__onesound">
+      <h1 className="onesound__title">{t(`sound.${id}.title`)}</h1>
+      <div className="onesound__content--buttons">
         <a href={`/music/${Number(id) === 0 ? 5 : Number(id) - 1}`}>
           {t("soundControl.0")}
         </a>
@@ -45,10 +45,10 @@ const OneSound = () => {
           {t("soundControl.2")}
         </a> 
       </div>
-      <div className="container-sound__content">
+      <div className="onesound__content">
       <audio ref={audioRef} src={`/music/${id}.mp3`} />
         
-        <div className="controls">
+        <div className="onesound__controls">
           <Cube isPlaying={isPlaying} />
 
           <div className="playButtons">

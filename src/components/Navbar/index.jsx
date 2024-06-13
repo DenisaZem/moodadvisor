@@ -78,29 +78,29 @@ export const Navbar = () => {
   }, [showMenu]);
 
   return (
-    <div className="navbar">
+    <div className="container__navbar">
       <div className="navbar__backgrounds">
         <div
-          className={showMenu ? "background_black open" : "background_black"}
+          className={showMenu ? "background__black open" : "background__black"}
         ></div>
         <div
           className={
-            showMenu ? "background-burgerMenu open" : "background-burgerMenu"
+            showMenu ? "background__burgerMenu open" : "background__burgerMenu"
           }
         ></div> 
       </div>
       <nav className="navbar__content">
-        <h1 className="logo">
+        <h1 className="navbar__logo">
           <Link onClick={toggleMenuHome} to="/">
             {t("logo")}
           </Link>
         </h1>
         {showMenu ? (
-          <IoClose className="menu-icon-cancel" onClick={toggleMenu} />
+          <IoClose className="menu-icon--cancel" onClick={toggleMenu} />
         ) : (
           <GiHamburgerMenu className="menu-icon" onClick={toggleMenu} />
         )}
-        <ul className={`menu ${showMenu ? "show" : ""}`}>
+        <ul className={`navbar__menu ${showMenu ? "show" : ""}`}>
           <li>
             <Link onClick={toggleMenuHome} className="menu--item" to="/">
               {t("navigation.home")}

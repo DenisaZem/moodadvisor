@@ -7,7 +7,7 @@
   position: relative;
 }
 
-.breathExercise__back {
+.breathExercise--back-button {
   justify-content: flex-start;
   position: absolute;
   top: 0;

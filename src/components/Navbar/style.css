@@ -2,7 +2,7 @@ body.active-modal {
   overflow-y: hidden;
 }
 
-.navbar {
+.container__navbar{
   position: fixed;
   display: flex;
   top: 0;
@@ -27,7 +27,7 @@ body.active-modal {
   z-index: 15;
 }
 
-.background-burgerMenu {
+.background__burgerMenu {
   position: absolute;
   top: 3.5rem;
   right: 0;
@@ -46,12 +46,12 @@ body.active-modal {
   z-index: 15;
 }
 
-.background-burgerMenu.open {
+.background__burgerMenu.open {
   opacity: 1;
   transform: translate(50%, -50%) scale(1);
 }
 
-.background_black {
+.background__black {
   position: fixed;
   top: 0;
   left: 0;
@@ -61,7 +61,7 @@ body.active-modal {
   transition: 0.6s;
 }
 
-.background_black.open {
+.background__black.open {
   opacity: 0.7;
   z-index: 15;
   width: 100%;
@@ -84,7 +84,7 @@ body.active-modal {
   transform: scale(1.2);
 }
 
-.menu-icon-cancel {
+.menu-icon--cancel {
   height: 40px;
   width: 40px;
 }
@@ -93,7 +93,7 @@ body.active-modal {
   transform: rotateZ(90deg);
 }
 
-.menu {
+.navbar__menu {
   display: none;
   position: absolute;
   top: 65px;
@@ -157,8 +157,8 @@ ul.menu.show .menu--item {
   color: var(--title-secondary);
 }
 
-.logo,
-.logo a {
+.navbar__logo,
+.navbar__logo a {
   padding: 3px;
   text-align: center;
   font-family: Meow Script;
@@ -172,7 +172,7 @@ ul.menu.show .menu--item {
     visibility: hidden;
   }
 
-  .menu {
+  .navbar__menu {
     display: flex;
     align-items: center;
     position: static;
@@ -184,7 +184,7 @@ ul.menu.show .menu--item {
 }
 
 @media screen and (min-width: 1000px) {
-  .menu {
+  .navbar__menu{
     gap: 20px;
   }
 }

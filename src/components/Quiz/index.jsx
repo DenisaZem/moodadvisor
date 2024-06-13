@@ -222,7 +222,7 @@ const Quiz = () => {
   };
 
   return (
-    <div className="quiz">
+    <div className="container__quiz">
       {showBubble && <Bubble handleClick={handleClick} />}
       <h1 className="quiz-logo">MoodAdviser</h1>
       {currentQuestion === null ? (
