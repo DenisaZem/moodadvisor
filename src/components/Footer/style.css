@@ -23,6 +23,9 @@ body {
   gap: 25px;
   width: 70%;
   font-size: smaller;
+  font-family: var(--font-title);
+  font-weight: 200;
+  color: var(--background-secondary)
 }
 
 .footer--menu--item {
