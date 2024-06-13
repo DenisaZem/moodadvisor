@@ -14,7 +14,7 @@ export const Cube = ({ isPlaying }) => {
   const className = `cube ${isPlaying ? "rotate" : ""}`;
 
   return (
-    <div className="obrazek">
+    <div className="container__cube">
       <div className={className} ref={ref}>
         <div className="side front" />
         <div className="side left" />

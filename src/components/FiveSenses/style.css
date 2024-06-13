@@ -1,4 +1,4 @@
-.five-senses--container {
+.container__five-senses {
   display: flex;
   flex-direction: column;
   align-items: center;

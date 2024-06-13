@@ -41,18 +41,18 @@ export const FiveSenses = () => {
   };
 
   return (
-    <div className="five-senses--container">
+    <div className="container__five-senses">
       <Link className="five-senses__back" to="/exercises">
         {t("backButton")}
       </Link>
       <h1 className="five-senses__title">{t("senses.title")}</h1>
       {lastStep ? (
         <div className="final-step">
-          <h2 className="final-step--title">{t("senses.final.title")}</h2>
-          <p className="final-step--description">
+          <h2 className="final-step__title">{t("senses.final.title")}</h2>
+          <p className="final-step__description">
             {t("senses.final.description")}
           </p>
-          <p className="final-step--alternative">
+          <p className="final-step__alternative">
             {t("senses.final.alternative")}
           </p>
           <Link className="final-step--button" to="/exercises/counting">
