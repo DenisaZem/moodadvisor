@@ -43,7 +43,7 @@ const OneSound = () => {
         <a href="/music">{t("soundControl.1")}</a>
         <a href={`/music/${Number(id) === 5 ? 0 : Number(id) + 1}`}>
           {t("soundControl.2")}
-        </a>
+        </a> 
       </div>
       <div className="container-sound__content">
       <audio ref={audioRef} src={`/music/${id}.mp3`} />
@@ -52,7 +52,7 @@ const OneSound = () => {
           <Cube isPlaying={isPlaying} />
 
           <div className="playButtons">
-            <button
+            <button 
               onClick={handleBackward}
               className="control-button backward"
             >
