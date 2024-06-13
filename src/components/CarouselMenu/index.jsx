@@ -40,12 +40,12 @@ export const CarouselMenu = ({ musicData, breathData }) => {
                   className="swiper-wrapper--link"
                   to={`/music/${slide.id}`}
                 >
-                  {t(`sound.${index}.title`)}
                   <img
-                    className="swiper-wrapper"
+                    className="swiper-wrapper__image"
                     src={slide.picture}
                     alt="Ikona s notami"
                   />
+                  <h4 className="swiper-wrapper--title"> {t(`sound.${index}.title`)}</h4>
                 </Link>
               </SwiperSlide>
             ))}
@@ -61,12 +61,12 @@ export const CarouselMenu = ({ musicData, breathData }) => {
                   className="swiper-wrapper--link"
                   to={`/breath/${slide.id}`}
                 >
-                  {t(`breath.${index}.title`)}
                   <img
-                    className="swiper-wrapper"
+                    className="swiper-wrapper__image"
                     src={slide.picture}
                     alt="Ikona s notami"
                   />
+                  <h4 className="swiper-wrapper--title"> {t(`breath.${index}.title`)}</h4>
                 </Link>
               </SwiperSlide>
             ))}
