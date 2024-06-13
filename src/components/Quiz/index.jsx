@@ -7,7 +7,6 @@ import breath from "./img/1.png";
 import music from "./img/2.png";
 import exercie from "./img/3.png";
 
-
 const questions = [
   // 0
   {
