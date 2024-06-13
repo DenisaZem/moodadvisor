@@ -4,7 +4,9 @@ import { useTranslation } from "react-i18next";
 import Bubble from "../Bubble";
 import { useNavigate } from "react-router-dom";
 import breath from "./img/1.png";
-import music from "./img/3.png";
+import music from "./img/2.png";
+import exercie from "./img/3.png";
+
 
 const questions = [
   // 0
@@ -243,7 +245,7 @@ const Quiz = () => {
               </p>
             </a>
             <a className="lastSentence-section__menu--link" href="/exercises">
-              <img src={music} alt="exercises" />
+              <img src={exercie} alt="exercises" />
               <p className="lastSentence-section__menu--link-text">
                 {t("navigation.exercises")}
               </p>

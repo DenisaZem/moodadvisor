@@ -17,17 +17,18 @@
   gap: 10px;
 }
 
-.exercise-menu--tile {
+.exercise-menu--title {
   display: flex;
   flex-direction: row;
   font-size: 1rem;
+  text-decoration: none;
 }
 
-.exercise-menu--tile:nth-child(even) {
+.exercise-menu--title:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-.exercise-menu--tile:hover {
+.exercise-menu--title:hover {
   opacity: 50%;
 }
 
@@ -55,13 +56,13 @@
     width: 100%;
   }
 
-  .exercise-menu--tile {
+  .exercise-menu--title {
     flex-direction: column;
     font-size: 1rem;
     text-align: center;
   }
 
-  .exercise-menu--tile:nth-child(even) {
+  .exercise-menu--title:nth-child(even) {
     flex-direction: column-reverse;
   }
 }

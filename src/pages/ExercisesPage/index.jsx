@@ -34,7 +34,7 @@ export const ExercisesPage = () => {
             <Link
               key={index}
               to={`/exercises/${item.url}`}
-              className="exercise-menu--tile"
+              className="exercise-menu--title"
               href=""
             >
               <img
