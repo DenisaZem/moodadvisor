@@ -7,12 +7,15 @@ body {
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: var(--background-secondary);
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 2%, var(--background-secondary) 80%);
 }
 
 .footer--menu {
   display: flex;
-  flex-direction: column;
+  height: 100%;
   padding: 0.5rem 0;
   margin: 0 auto;
   justify-content: center;
@@ -26,7 +29,7 @@ body {
   flex-shrink: 0;
 }
 
-.footer--menu--item {
+.footer--menu--item { 
   color: var(--text);
   text-decoration: none;
 }

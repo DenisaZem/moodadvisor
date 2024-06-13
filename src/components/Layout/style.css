@@ -25,4 +25,12 @@
   .layout__content {
     max-width: 1000px;
   }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .layout__footer {
+    height: 70px;
+  }
+
 }
