@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --background-primary: #a0af84;
+  --background-secondary: #db7f8e;
+  --neutral: #fffbf5;
+  --title-primary: #668f80;
+  --title-secondary: #604d53;
+  --text: #ffdbda;
+}
 
 * {
   box-sizing: border-box;
@@ -6,12 +15,10 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #e98a8a;
 }
-
 
 li {
   list-style-type: none;
 }
-
