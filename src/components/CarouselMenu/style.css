@@ -30,9 +30,18 @@
     linear-gradient(transparent, transparent, #0006);
 }
 
+@media screen and (min-width: 430px) and (max-width: 650px) {
+  .swiper .swiper-slide {
+    max-width: 200px;
+    max-height: 350px;
+  }
+}
+
 @media screen and (min-width: 430px) {
   .swiper .swiper-slide {
     min-width: 350px;
     min-height: 500px;
+    max-width: 150px;
+    max-height: 280px;
   }
 }

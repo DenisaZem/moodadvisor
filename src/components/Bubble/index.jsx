@@ -52,7 +52,6 @@ const Bubble = ({ handleClick }) => {
             justifyContent: "center",
             alignItems: "center",
             color: "white",
-            fontSize: "20px",
             fontWeight: "bold",
           }}
         >
@@ -73,7 +72,6 @@ const Bubble = ({ handleClick }) => {
               justifyContent: "center",
               alignItems: "center",
               color: "white",
-              fontSize: "10px",
               fontWeight: "bold",
               textAlign: "center",
             }}
