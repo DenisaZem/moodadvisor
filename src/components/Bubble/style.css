@@ -1,11 +1,11 @@
-.bubble-container {
+.container__bubble {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.bubble-container__logo
+.bubble__logo
  {
   position: fixed;
   padding: 2px;
@@ -16,7 +16,7 @@
   z-index: 100;
 }
 
-.bubble {
+.bubble__content{
   position: fixed;
   display: flex;
   justify-content: center;
@@ -51,18 +51,25 @@
   font-size: 20px;
 }
 
-.bubble__close {
+.bubble__close-button {
   position: absolute;
   top: 5%;
   right: 5%;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
   transition: transform 0.4s ease;
+  color: aliceblue;
 }
 
-.bubble__close:hover {
+.bubble__close-button:hover {
   transform: rotateZ(90deg);
+}
+
+.bubble__bar {
+  position: fixed;
+  z-index: 50;
+  bottom: 25%;
 }
 
 .bar__fixed {
@@ -82,11 +89,7 @@
   z-index: 20;
 }
 
-.bar {
-  position: fixed;
-  z-index: 50;
-  bottom: 25%;
-}
+
 
 
 @media screen and (max-width: 340px) {

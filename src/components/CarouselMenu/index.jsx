@@ -25,42 +25,43 @@ export const CarouselMenu = ({ musicData, breathData }) => {
           slideShadows: true,
         }}
         modules={[EffectCoverflow]}
-        // mousewheel={{ enabled: true, sensitivity: 1 }} // Snaha o posun menu kolečkem myší
       >
         <div className="swiper-wrapper">
           {musicData &&
             musicData.map((slide, index) => (
-              <SwiperSlide
-                key={slide.id}
-              >
+              <SwiperSlide key={slide.id}>
                 <Link
-                  className="swiper-wrapper--link"
+                  className="swiper-wrapper__link"
                   to={`/music/${slide.id}`}
                 >
-                   <img
+                  <img
                     className="swiper-wrapper__image"
                     src={slide.picture}
-                    alt="Ikona s notami"
+                    alt="Položka menu zobrazující hudbu pro MoodAdviser"
                   />
-                  <h4 className="swiper-wrapper--title"> {t(`sound.${index}.title`)}</h4>
+                  <h4 className="swiper-wrapper__title">
+                    {" "}
+                    {t(`sound.${index}.title`)}
+                  </h4>
                 </Link>
               </SwiperSlide>
             ))}
           {breathData &&
             breathData.map((slide, index) => (
-              <SwiperSlide
-                key={slide.id}
-              >
+              <SwiperSlide key={slide.id}>
                 <Link
-                  className="swiper-wrapper--link"
+                  className="swiper-wrapper__link"
                   to={`/breath/${slide.id}`}
                 >
-                   <img
+                  <img
                     className="swiper-wrapper__image"
                     src={slide.picture}
-                    alt="Ikona s notami"
+                    alt="Položka menu zobrazující dechová cvičení pro MoodAdviser"
                   />
-                  <h4 className="swiper-wrapper--title"> {t(`breath.${index}.title`)}</h4>
+                  <h4 className="swiper-wrapper__title">
+                    {" "}
+                    {t(`breath.${index}.title`)}
+                  </h4>
                 </Link>
               </SwiperSlide>
             ))}

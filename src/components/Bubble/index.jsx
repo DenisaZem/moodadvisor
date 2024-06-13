@@ -33,9 +33,9 @@ const Bubble = ({ handleClick }) => {
   }
 
   return (
-    <div className="bubble-container">
-      <h1 className="bubble-container__logo">MoodAdviser</h1>
-      <div className="bubble">
+    <div className="container__bubble">
+      <h1 className="bubble__logo">MoodAdviser</h1>
+      <div className="bubble__content">
         <motion.div
           className="bubble__outside"
           animate={{
@@ -81,12 +81,12 @@ const Bubble = ({ handleClick }) => {
           </motion.div>
         </motion.div>
 
-        <IoClose className="bubble__close" onClick={handleClick} />
+        <IoClose className="bubble__close-button" onClick={handleClick} />
         {/* <div className="bubble__close" onClick={handleClick}>
         Zavřít
       </div> */}
       </div>
-      <div className="bar">
+      <div className="bubble__bar">
         <div
           className="bar__fixed"
           style={{

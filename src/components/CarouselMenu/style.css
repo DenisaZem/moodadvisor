@@ -2,14 +2,14 @@
   width: 100%;
 }
 
-.swiper-wrapper--link {
+.swiper-wrapper__link {
   display: flex;
   flex-direction: column;
   text-align: center;
   margin: 5px;
   text-decoration: none;
 }
-.swiper-wrapper--title {
+.swiper-wrapper__title {
   margin-top: 20px; 
   font-family: var(--font-title);
   font-weight: 500;
