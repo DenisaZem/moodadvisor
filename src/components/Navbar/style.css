@@ -9,7 +9,7 @@ body.active-modal {
   width: 100%;
   /* background-color: var(--background-secondary); */
   z-index: 15;
-  height: 2.8rem;
+  height: 4rem;
 
 }
 
@@ -141,6 +141,7 @@ body.active-modal {
 .menu--item {
   text-decoration: none;
   color: var(--text);
+  font-size: 1.4rem;
 }
 ul.menu.show .menu--item {
   color:rgb(33 33 33);
@@ -158,10 +159,10 @@ ul.menu.show .menu--item {
 
 .logo,
 .logo a {
-  padding: 2px;
+  padding: 3px;
   text-align: center;
   font-family: Meow Script;
-  font-size: 1.8rem;
+  font-size: 3rem;
   color: var(--text); 
   text-decoration: none;
 }
