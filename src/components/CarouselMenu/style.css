@@ -10,12 +10,16 @@
   text-decoration: none;
 }
 .swiper-wrapper--title {
-  margin: 10px; 
+  margin-top: 20px; 
+  font-family: var(--font-title);
+  font-weight: 500;
+  color: var(--background-secondary);
+  font-size: 1.3rem;
 }
 
 .swiper .swiper-slide {
   display: flex;
-  background-color: antiquewhite;
+  background-color: rgb(249, 253, 233);
   flex-direction: column;
   justify-content: center;
   background-position:center;

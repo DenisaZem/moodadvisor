@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 :root {
+  --font-title: 'Lemonada';
   /* --background-primary: #a0af84;
   --background-secondary: #db7f8e;
   --neutral: #fffbf5;
@@ -32,7 +33,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   /* background-color: var(--neutral); */
   background-image: url("./listy1.jpg");
 }

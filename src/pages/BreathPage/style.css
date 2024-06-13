@@ -8,6 +8,9 @@
 .container__breathPage--title {
   font-size: 1.5rem;
   margin: 30px 30px;
+  font-family: var(--font-title);
+  font-weight: 500;
+  color: var(--background-secondary)
 }
 
 @media screen and (min-width: 430px) {

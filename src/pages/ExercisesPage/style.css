@@ -7,6 +7,9 @@
   font-size: 1.5rem;
   margin: 30px;
   text-align: center;
+  font-family: var(--font-title);
+  font-weight: 500;
+  color: var(--background-secondary)
 }
 
 .exercise-menu {
@@ -22,6 +25,7 @@
   flex-direction: row;
   font-size: 1rem;
   text-decoration: none;
+  color: var(--background-secondary)
 }
 
 .exercise-menu--title:nth-child(even) {

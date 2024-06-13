@@ -101,6 +101,8 @@ body.active-modal {
   color: transparent;
   max-width: 70%;
   background-color: transparent;
+  font-family:var(--font-title);
+  font-weight: 100;
 }
 
 .show {

@@ -4,6 +4,9 @@ import { CarouselMenu } from "../../components/CarouselMenu";
 import obrazek1 from "./img/1.png";
 import obrazek2 from "./img/2.png";
 import obrazek3 from "./img/3.png";
+import obrazek4 from "./img/4.png";
+
+
 import { useTranslation } from "react-i18next";
 
 export const breathData = [
@@ -21,7 +24,7 @@ export const breathData = [
   },
   {
     id: "3",
-    picture: obrazek1,
+    picture: obrazek4,
   },
 ];
 
