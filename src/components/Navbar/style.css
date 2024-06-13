@@ -96,7 +96,7 @@ body.active-modal {
 .menu {
   display: none;
   position: absolute;
-  top: 80px;
+  top: 65px;
   right: 0;
   height: 100%;
   color: transparent;
@@ -119,17 +119,18 @@ body.active-modal {
 .buttons-language {
   display: flex;
   justify-content: center;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 .button--toggle-language {
-  padding: 10px;
+  padding: 5px;
   border: 1px solid var(--title-secondary);
   border-radius: 15px;
   background-color: var(--text);
   color: var(--title-secondary);
   font-weight: bold;
   width: 70px;
+  /* max-height: 10px ; */
 }
 
 .menu li {
@@ -142,8 +143,9 @@ body.active-modal {
   color: var(--text);
 }
 ul.menu.show .menu--item {
-  color:rgb(0, 0, 0);
+  color:rgb(33 33 33);
   font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .menu--item:visited {
