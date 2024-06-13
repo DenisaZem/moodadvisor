@@ -39,15 +39,15 @@ export const GratitudeJournal = () => {
   };
 
   return (
-    <div className="container-journal">
-      <Link className="journal__back" to="/exercises">
+    <div className="container__gratitude-journal">
+      <Link className="journal--back-button" to="/exercises">
         {t("backButton")}
       </Link>
-      <h1 className="journal-title">{t("journal.title")}</h1>
-      <h3 className="journal-subtitle">{t("journal.subtitle")}</h3>
-      <p className="journal-text">{t("journal.text")}</p>
-      <form className="journal-form" onSubmit={handleSubmit}>
-        <label className="journal-form--label">{t("journal.label")}</label>{" "}
+      <h1 className="journal__title">{t("journal.title")}</h1>
+      <h3 className="journal__subtitle">{t("journal.subtitle")}</h3>
+      <p className="journal__text">{t("journal.text")}</p>
+      <form className="journal__form" onSubmit={handleSubmit}>
+        <label className="journal__form--label">{t("journal.label")}</label>{" "}
         <br />
         <textarea
           onChange={handleEntry}

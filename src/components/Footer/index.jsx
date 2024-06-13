@@ -6,20 +6,20 @@ export const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="footer">
-      <ul className="footer--menu">
+    <footer className="container__footer">
+      <ul className="footer__menu">
         <li>
-          <Link className="footer--menu--item" to="/about-us">
+          <Link className="footer__menu--item" to="/about-us">
             {t("footer.aboutUs")}
           </Link>
         </li>
         <li>
-          <Link className="footer--menu--item" to="/about">
+          <Link className="footer__menu--item" to="/about">
             {t("footer.aboutProject")}
           </Link>
         </li>
         <li>
-          <a className="footer--menu--item" href="https://www.czechitas.cz/">
+          <a className="footer__menu--item" href="https://www.czechitas.cz/">
             {t("footer.organization")}
           </a>
         </li>

@@ -5,7 +5,7 @@
   margin: 60px auto;
   text-align: center;
   min-height: 70vh;
-  width: 80vw;
+  /* width: 80vw; */
   gap: 20px;
   position: relative;
 }

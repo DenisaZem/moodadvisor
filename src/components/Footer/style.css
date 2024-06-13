@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 
-.footer {
+.container__footer{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +13,7 @@ body {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 2%, var(--background-secondary) 80%);
 }
 
-.footer--menu {
+.footer__menu {
   display: flex;
   height: 100%;
   padding: 0.5rem 0;
@@ -28,25 +28,25 @@ body {
   color: var(--background-secondary)
 }
 
-.footer--menu--item {
+.footer__menu--item {
   flex-shrink: 0;
 }
 
-.footer--menu--item { 
+.footer__menu--item { 
   color: var(--text);
   text-decoration: none;
 }
 
-.footer--menu--item:visited {
+.footer__menu--item:visited {
   color: var(--text);
 }
 
-.footer--menu--item:hover {
+.footer__menu--item:hover {
   color: var(--title-secondary);
 }
 
 @media screen and (min-width: 325px) {
-  .footer--menu {
+  .footer__menu {
     flex-direction: row;
   }
 }

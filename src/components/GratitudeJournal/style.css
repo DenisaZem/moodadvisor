@@ -1,4 +1,4 @@
-.container-journal {
+.container__gratitude-journal {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,7 +9,7 @@
   position: relative;
 }
 
-.journal__back {
+.journal--back-button{
   position: absolute;
   top: 0;
   left: 0;
@@ -20,7 +20,7 @@
   border: 1px solid #4a6670;
 }
 
-.journal-title {
+.journal__title {
   margin: 60px 0 10px;
 }
 
@@ -29,7 +29,7 @@
   margin: 20px;
 }
 
-.journal-form--textarea {
+.journal__form--textarea {
   width: 80vw;
   height: 40vw;
 }
@@ -65,7 +65,7 @@
     max-width: 400px;
   }
 
-  .journal-text {
+  .journal__text {
     max-width: 500px;
   }
 }
