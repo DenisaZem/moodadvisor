@@ -7,7 +7,7 @@ body.active-modal {
   display: flex;
   top: 0;
   width: 100%;
-  background-color: #a0af84;
+  background-color: var(--background-secondary);
   z-index: 15;
   height: 2.8rem;
 }
@@ -21,7 +21,7 @@ body.active-modal {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: #7cac22;
+  background-color: var(--background-secondary);
   z-index: 15;
 }
 
@@ -32,7 +32,11 @@ body.active-modal {
   transform: translate(50%, -50%) scale(0);
   width: 200vw;
   height: 650px;
-  background: linear-gradient(to bottom right, #c3ef70 27%, #b2b4af 39%);
+  background: linear-gradient(
+    to bottom right,
+    var(--text) 27%,
+    var(--background-secondary) 39%
+  );
   border-radius: 50%;
   opacity: 0;
   transition-duration: 0.6s;
@@ -68,7 +72,7 @@ body.active-modal {
   cursor: pointer;
   width: 30px;
   height: 30px;
-  color: aliceblue;
+  color: var(--text);
   margin: 10px;
   transition: transform 0.4s ease;
   z-index: 50;
@@ -116,10 +120,11 @@ body.active-modal {
 
 .button--toggle-language {
   padding: 10px;
-  border: none;
-  border-radius: 10px;
-  background-color: #4a6670;
-  color: aliceblue;
+  border: 1px solid var(--title-secondary);
+  border-radius: 15px;
+  background-color: var(--text);
+  color: var(--title-secondary);
+  font-weight: bold;
   width: 70px;
 }
 
@@ -130,11 +135,15 @@ body.active-modal {
 
 .menu--item {
   text-decoration: none;
-  color: rgb(255, 253, 253);
+  color: var(--text);
+}
+
+.menu--item:visited {
+  color: var(--text);
 }
 
 .menu--item:hover {
-  color: #025a3b;
+  color: var(--title-secondary);
 }
 
 .logo,
@@ -143,7 +152,7 @@ body.active-modal {
   text-align: center;
   font-family: Meow Script;
   font-size: 1.8rem;
-  color: #4a6670;
+  color: var(--title-secondary);
   text-decoration: none;
 }
 
@@ -156,6 +165,10 @@ body.active-modal {
     display: flex;
     align-items: center;
     position: static;
+  }
+
+  .button--toggle-language:hover {
+    opacity: 70%;
   }
 }
 

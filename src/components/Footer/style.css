@@ -7,7 +7,7 @@ body {
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: #a0af84;
+  background-color: var(--background-secondary);
 }
 
 .footer--menu {
@@ -26,25 +26,17 @@ body {
   flex-shrink: 0;
 }
 
-.footer--copy {
-  color: #3c535c;
-  text-align: center;
-  padding: 1rem;
-  font-style: oblique;
-  font-size: small;
-}
-
-a {
-  color: #4a6670;
+.footer--menu--item {
+  color: var(--text);
   text-decoration: none;
 }
 
-a:visited {
-  color: #4a6670;
+.footer--menu--item:visited {
+  color: var(--text);
 }
 
-a:hover {
-  color: #025a3b;
+.footer--menu--item:hover {
+  color: var(--title-secondary);
 }
 
 @media screen and (min-width: 325px) {
