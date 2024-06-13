@@ -153,7 +153,7 @@ body.active-modal {
   text-align: center;
   font-family: Meow Script;
   font-size: 1.8rem;
-  color: var(--title-secondary);
+  color: var(--text); 
   text-decoration: none;
 }
 

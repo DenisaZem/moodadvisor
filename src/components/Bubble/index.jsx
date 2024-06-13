@@ -34,6 +34,7 @@ const Bubble = ({ handleClick }) => {
 
   return (
     <div className="bubble-container">
+      <h1 className="bubble-container__logo">MoodAdviser</h1>
       <div className="bubble">
         <motion.div
           className="bubble__outside"

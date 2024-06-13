@@ -2,6 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.bubble-container__logo
+ {
+  position: fixed;
+  padding: 2px;
+  margin-bottom: 110px;
+  font-family: Meow Script;
+  font-size: 6rem;
+  color: #314e43; 
+  z-index: 100;
 }
 
 .bubble {
@@ -14,7 +26,7 @@
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: rgba(214, 153, 251, 0.9);
+  background-color: #728b81d0;
   transition: 1s;
   z-index: 50;
 }
@@ -23,7 +35,7 @@
   position: absolute;
   width: 250px;
   height: 250px;
-  background: rgb(37, 23, 38);
+  background: rgb(145, 164, 157);
   z-index: 20;
 }
 
@@ -31,7 +43,7 @@
   width: 170px;
   height: 170px;
   position: absolute;
-  background-color: rgb(98, 62, 99);
+  background-color: rgb(48, 75, 57);
   z-index: 0;
   }
   
@@ -58,7 +70,7 @@
   width: 200px;
   height: 10px;
   padding: 2px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   z-index: 0;
 }
 
@@ -66,7 +78,7 @@
   border-radius: 5px;
   width: 100%;
   height: 100%;
-  background-color: blueviolet;
+  background-color: rgb(64, 105, 78);
   z-index: 20;
 }
 

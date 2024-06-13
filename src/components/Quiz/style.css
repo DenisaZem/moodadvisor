@@ -12,13 +12,14 @@ body.active-modal {
   gap: 30px;
   background-color: var(--background-primary);
   padding: 50px;
+  border-radius: 10px;
 }
 
 .quiz-logo {
   text-align: center;
   font-family: Meow Script;
-  color: #4a6670;
-  font-size: 3rem;
+  color: var( --background-secondary);
+  font-size: 4rem;
   margin: 20px;
 }
 
