@@ -1,21 +1,36 @@
-.about-us {
+.container-about-us {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px auto 10px auto;
+  margin: 20px auto;
 }
 
 .about-us--title {
   width: 95%;
   padding: 10px 20px 0;
   text-align: right;
-  background-color: #668f80;
+  background-color: var(--background-primary);
+}
+
+.about-us--item {
+  padding: 10px;
+}
+
+.about-us--link,
+.about-us--link:visited {
+  text-decoration: none;
+  color: var(--background-secondary);
+}
+
+.about-us--link:hover {
+  color: var(--neutral);
 }
 
 .about-us--title--name {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #320c40;
+  font-family: var(--font-title);
 }
 
 .about-us--title--name__sarka {
@@ -45,8 +60,8 @@
 
 .about-us--title--sarka {
   text-align: left;
-  background-color: #a0af84;
-  border-bottom: 50px solid #668f80;
+  background-color: #728b81d0;
+  /* border-bottom: 50px solid var(--background-primary); */
 }
 
 .about-us--title--paragraph {
