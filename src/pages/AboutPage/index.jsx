@@ -1,6 +1,6 @@
 import "./style.css";
-import zarovka from "./img/zarovka.jpg";
-import note from "./img/note.jpg";
+import zarovka from "./img/zarovka.png";
+import note from "./img/note.png";
 import { useTranslation } from "react-i18next";
 
 export const AboutPage = () => {
