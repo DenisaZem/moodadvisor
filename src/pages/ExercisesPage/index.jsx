@@ -26,23 +26,23 @@ export const exercisesData = [
 export const ExercisesPage = () => {
   const { t } = useTranslation();
   return (
-    <div className="exercisesPage">
-      <h1 className="exercise-title">{t("exercisesPage")}</h1>
-      <div className="exercise-menu">
+    <div className="container__exercisesPage">
+      <h1 className="exercisesPage__title">{t("exercisesPage")}</h1>
+      <div className="exercisesPage__menu">
         {exercisesData.map((item, index) => {
           return (
             <Link
               key={index}
               to={`/exercises/${item.url}`}
-              className="exercise-menu--title"
+              className="exercisesPage__menu-title"
               href=""
             >
               <img
                 src={item.picture}
-                className="container__exerciseLink"
+                className="exercisesPage--link"
                 alt="picture"
               />
-              <div className="container__exerciseLink">
+              <div className="exercisesPage--link">
                 {t(`exercises.${index}`)}
               </div>
             </Link>

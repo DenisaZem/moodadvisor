@@ -32,7 +32,7 @@ export const BreathPage = () => {
   const { t } = useTranslation();
   return (
     <div className="container__breathPage">
-      <h1 className="container__breathPage--title">{t("breathPage")}</h1>
+      <h1 className="container__breathPage-title">{t("breathPage")}</h1>
       <CarouselMenu
         className="breathPage__carouselMenu"
         breathData={breathData}

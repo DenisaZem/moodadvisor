@@ -5,7 +5,7 @@
   flex-direction: column;
 }
 
-.container__breathPage--title {
+.container__breathPage-title {
   font-size: 1.5rem;
   margin: 30px 30px;
   font-family: var(--font-title);
@@ -14,7 +14,7 @@
 }
 
 @media screen and (min-width: 430px) {
-  h1.container__breathPage--title {
+  h1.container__breathPage-title {
     font-size: 1.8rem;
   }
 }

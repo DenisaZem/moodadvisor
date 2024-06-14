@@ -28,7 +28,7 @@ body.active-modal {
   font-size: 30px;
 }
 
-.lastSentence-section {
+.quiz__lastSentence{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,12 +40,12 @@ body.active-modal {
   font-size: 30px;
 }
 
-.lastSentence-section__recommended {
+.quiz__lastSentence--recommended {
   margin: 10px 0 20px 0;
   font-size: 20px;
 }
 
-.lastSentence-section__menu {
+.quiz__lastSentence-menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,7 +54,7 @@ body.active-modal {
   margin: 20px;
 }
 
-.lastSentence-section__menu a {
+.quiz__lastSentence-menu a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,7 +66,7 @@ body.active-modal {
   margin: 5px;
 }
 
-.lastSentence-section__menu a img {
+.quiz__lastSentence-menu a img {
   width: 100%;
   cursor: pointer;
   border-radius: 50px;
@@ -77,7 +77,7 @@ body.active-modal {
   margin: 20px;
 }
 
-.question__section {
+.quiz__question-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,7 +88,7 @@ body.active-modal {
   text-align: center;
 }
 
-.question-subtitle {
+.quiz__question-section-subtitle {
   font-size: 1.2rem;
 }
 
@@ -99,7 +99,7 @@ body.active-modal {
   margin: 15px 15px 0;
 }
 
-.answer__section {
+.quiz__answer-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,7 +110,7 @@ body.active-modal {
   padding-top: 30px;
 }
 
-.answer__section--button {
+.quiz__answer-section--button {
   background-color: var(--background-secondary);
   /* box-shadow: 1px black; */
   min-width: 80px;
@@ -128,12 +128,12 @@ body.active-modal {
   /* box-shadow: 5px 10px 10px #2b2b2c; */
 }
 
-.lastSentence-section__menu--link {
+.quiz__lastSentence-menu--link {
   display: flex;
   flex-direction: column;
 }
 
-.lastSentence-section__menu--link-text {
+.quiz__lastSentence-menu--link-text {
   font-size: 0.8rem;
   margin: 5px;
 }
@@ -144,7 +144,7 @@ body.active-modal {
     font-size: 1.2rem;
   }
 
-  .lastSentence-section__menu {
+  .quiz__lastSentence-menu{
     flex-direction: row;
     margin: 10px 5px;
     gap: 10px;
@@ -155,17 +155,17 @@ body.active-modal {
     padding: 70px 0px;
   }
 
-  .lastSentence-section__menu a {
+  .quiz__lastSentence-menu a {
     width: 30%;
   }
 }
 
 @media screen and (min-width: 800px) {
-  .answer__section--button {
+  .quiz__answer-section--button {
     width: 30%;
   }
 
-  .answer__section--button:hover {
+  .quiz__answer-section--button:hover {
     opacity: 70%;
   }
 
@@ -175,18 +175,18 @@ body.active-modal {
     padding: 120px 0 20px;
   }
 
-  .lastSentence-section__menu--link-text {
+  .quiz__lastSentence-menu--link-text {
     font-size: 1rem;
     margin: 20px;
   }
 }
 
 @media screen and (min-width: 950px) {
-  .answer__section--button {
+  .quiz__answer-section--button {
     width: 15%;
   }
 
-  .answer__section {
+  .quiz__answer-section {
     width: 100%;
     gap: 15px;
   }

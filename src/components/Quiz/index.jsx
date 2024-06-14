@@ -226,26 +226,26 @@ const Quiz = () => {
       {showBubble && <Bubble handleClick={handleClick} />}
       <h1 className="quiz-logo">MoodAdviser</h1>
       {currentQuestion === null ? (
-        <div className="lastSentence-section">
-          <div className="lastSentence-section__recommended">
+        <div className="quiz__lastSentence">
+          <div className="quiz__lastSentence--recommended">
             {t("quiz.last")}
           </div>
-          <div className="lastSentence-section__menu">
-            <a className="lastSentence-section__menu--link" href="/breath">
+          <div className="quiz__lastSentence-menu">
+            <a className="quiz__lastSentence-menu-link" href="/breath">
               <img src={breath} alt="breath" />
-              <p className="lastSentence-section__menu--link-text">
+              <p className="quiz__lastSentence-menu--link-text">
                 {t("navigation.breath")}
               </p>
             </a>
-            <a className="lastSentence-section__menu--link" href="/music">
+            <a className="quiz__lastSentence-menu--link" href="/music">
               <img src={music} alt="music" />
-              <p className="lastSentence-section__menu--link-text">
+              <p className="quiz__lastSentence-menu--link-text">
                 {t("navigation.music")}
               </p>
             </a>
-            <a className="lastSentence-section__menu--link" href="/exercises">
+            <a className="quiz__lastSentence-menu--link" href="/exercises">
               <img src={exercie} alt="exercises" />
-              <p className="lastSentence-section__menu--link-text">
+              <p className="quiz__lastSentence-menu--link-text">
                 {t("navigation.exercises")}
               </p>
             </a>
@@ -253,20 +253,20 @@ const Quiz = () => {
         </div>
       ) : (
         <>
-          <div className="question__section">
-            <h2 className="question-subtitle">
+          <div className="quiz__question-section">
+            <h2 className="quiz__question-section-subtitle">
               {t(`quiz.questions.${currentQuestion}.questionSub`)}
             </h2>
             <div className="question-text">
               {t(`quiz.questions.${currentQuestion}.questionText`)}
             </div>
           </div>
-          <div className="answer__section">
+          <div className="quiz__answer-section">
             {questions[currentQuestion].answerOptions.map(
               (answerOption, index) => (
                 <button
                   key={index}
-                  className="answer__section--button"
+                  className="quiz__answer-section--button"
                   onClick={() =>
                     handleAnswerOptionClick(
                       answerOption.nextQuestionIndex,

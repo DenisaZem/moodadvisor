@@ -96,7 +96,7 @@ body.active-modal {
 .navbar__menu {
   display: none;
   position: absolute;
-  top: 65px;
+  top: 75px;
   right: 0;
   height: 100%;
   color: transparent;
@@ -104,6 +104,10 @@ body.active-modal {
   background-color: transparent;
   font-family:var(--font-title);
   font-weight: 100;
+}
+
+ul.navbar__menu {
+  padding: 20px;
 }
 
 .show {
@@ -142,6 +146,8 @@ body.active-modal {
   text-decoration: none;
   color: var(--text);
   font-size: 1.4rem;
+  padding: 10px;
+
 }
 ul.menu.show .menu--item {
   color:rgb(33 33 33);
@@ -149,12 +155,24 @@ ul.menu.show .menu--item {
   font-size: 1.2rem;
 }
 
+/* ul.menu.show .menu--item a{
+  padding: 10px;
+} */
+
 .menu--item:visited {
   color: var(--text);
 }
 
 .menu--item:hover {
-  color: var(--title-secondary);
+  color: rgb(207, 255, 207);
+}
+
+a.menu--item {
+  transition: transform 0.3s ease-in-out;
+}
+
+a.menu--item:hover {
+  transform: scale(1.1)
 }
 
 .navbar__logo,
