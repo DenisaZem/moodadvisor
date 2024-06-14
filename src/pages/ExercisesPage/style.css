@@ -42,7 +42,7 @@
   align-items: center;
   width: 50%;
   aspect-ratio: 1 / 1;
-  background-color: #a0af84;
+  background-color: #145f389f;
 }
 
 @media screen and (min-width: 600px) {
@@ -64,6 +64,10 @@
     flex-direction: column;
     font-size: 1rem;
     text-align: center;
+    color: antiquewhite;
+    font-family: var(--font-title);
+    font-weight: 200;
+    font-size: 1.5rem;
   }
 
   .exercisesPage__menu-title:nth-child(even) {

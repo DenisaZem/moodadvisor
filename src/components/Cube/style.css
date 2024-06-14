@@ -19,28 +19,28 @@
   
   .front {
     transform: rotateY(0deg) translateZ(100px);
-    background-color: #ee4444;
+    background-color: #0b6434;
     
   }
   .right {
     transform: rotateY(90deg) translateZ(100px);
-    background-color: #ffcc00;
+    background-color: #b0bab5
   }
   .back {
     transform: rotateY(180deg) translateZ(100px);
-    background-color: #ff0055;
+    background-color: #163927
   }
   .left {
     transform: rotateY(-90deg) translateZ(100px);
-    background-color: #8855ff;
+    background-color: #dffded;
   }
   .top {
     transform: rotateX(90deg) translateZ(100px);
-    background-color: #0099ff;
+    background-color: #000503;
   }
   .bottom {
     transform: rotateX(-90deg) translateZ(100px);
-    background-color: #22cc88;
+    background-color: #2c503d
   }
   
   .playButtons {

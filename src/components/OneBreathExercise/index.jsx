@@ -22,11 +22,21 @@ export const OneBreathExercise = () => {
     <div className="container__breathExercise">
     
       <h1 className="breathExercise__title">{t(`breath.${id}.title`)}</h1>
-      <Link className="breathExercise--back-button" to="/breath">
+      {/* <Link className="breathExercise--back-button" to="/breath">
         {t("backButton")}
-      </Link>
+      </Link> */}
+      <div className="breathExercise__content--buttons">
+      <a href={`/breath/${Number(id) === 0 ? 5 : Number(id) - 1}`}>
+          {t("soundControl.0")}
+        </a>
+        <a href="/breath">{t("soundControl.1")}</a>
+        <a href={`/breath/${Number(id) === 5 ? 0 : Number(id) + 1}`}>
+          {t("soundControl.2")}
+        </a> 
+      </div>
+
       <p className="breathExercise__description">
-        {t(`breath.${id}.description`)}
+        {t(`breath.${id}.description`)} 
       </p>
       <p className="breathExercise__info">{t(`breath.${id}.info`)}</p>
       {/* <h1 className="breathExercise__title">{dataBreathExrecise}</h1> */}

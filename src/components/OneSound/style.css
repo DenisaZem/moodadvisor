@@ -11,19 +11,35 @@
   font-size: 2rem;
   text-align: center;
   margin: 40px;
+  font-family: var(--font-title);
+  font-weight: 300;
 }
 
 .onesound__content--buttons {
-  font-size: 0.9rem;
   display: flex;
   flex-wrap: nowrap;
 }
 
 .onesound__content--buttons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 10px;
   text-decoration: none;
   cursor: pointer;
+  background-color: #0b6435bd;
+  text-decoration: none;
+  font-size: 0.7rem;
+  width: 7.5rem;
+  height: 4rem;
+  color: aliceblue;
+  border-radius: 80px;
   text-align: center;
+  font-family: var(--font-title);
+}
+
+.onesound__content--buttons a:hover {
+  background-color: #103b24cd;
 }
 
 .onesound__content {
@@ -50,4 +66,10 @@
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+.forward,
+.backward {
+  font-size: 0.3;
+  font-family: var(--font-title);
 }

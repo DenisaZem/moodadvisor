@@ -7,11 +7,11 @@
   position: relative;
 }
 
-
-
 .breathExercise__title {
   margin: 40px 20px 10px;
   text-align: center;
+  font-family: var(--font-title);
+  font-weight: 300; 
 }
 
 .breathExercise__description {
@@ -30,42 +30,63 @@
   flex-direction: column;
 }
 
-.breathExercise--back-button {
+/* .breathExercise--back-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--background-secondary);
-  padding: 5px;
   margin: 10px;
-  border-radius: 5px;
-  font-size: 1rem;
-  border: 1px solid #4a6670;
-  width: 7rem;
-  height: 2.5rem;
-  color: aliceblue;
   text-decoration: none;
-  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: #0b6435bd;
+  text-decoration: none;
+  font-size: 0.7rem;
+  width: 7.5rem;
+  height: 4rem;
+  color: aliceblue;
+  border-radius: 80px;
+  text-align: center;
+  font-family: var(--font-title);
+} */
+
+.breathExercise__content--buttons  {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.breathExercise__content--buttons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #0b6435bd;
+  text-decoration: none;
+  font-size: 0.7rem;
+  width: 7.5rem;
+  height: 4rem;
+  color: aliceblue;
+  border-radius: 80px;
+  text-align: center;
+  font-family: var(--font-title);
 }
 
 .breathExercise--button {
-  background-color: var(--background-secondary);
+  background-color: #0b6435bd;
   cursor: pointer;
   color: aliceblue;
   line-height: 1.5;
   border: none;
   border-radius: 80px;
   margin: 40px;
-  font-size: 1.5rem;
   width: 6.5rem;
   height: 6.5rem;
-  transition: transform 0.3s ease-in-out;
+  font-family: var(--font-title);
 }
 
-.breathExercise__button:hover,
-.breathExercise--back-button {
+.breathExercise__content--buttons a:hover,
+.breathExercise--button:hover {
   background-color: #19683e;
-  transform: scale(1.1);
-
 }
 
 .breathExercise__bubbleSpace {
