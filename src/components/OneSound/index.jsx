@@ -57,7 +57,7 @@ const OneSound = () => {
               className="control-button backward"
             >
               <FaBackward />
-              <p>{t("soundControl.3")}</p>
+
             </button>
             <button
               onClick={togglePlayPause}
@@ -67,7 +67,7 @@ const OneSound = () => {
             </button>
             <button onClick={handleForward} className="control-button forward">
               <FaForward />
-              <p>{t("soundControl.4")}</p>
+
             </button>
           </div>
         </div>
