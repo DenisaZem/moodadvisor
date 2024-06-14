@@ -24,18 +24,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
   text-decoration: none;
   cursor: pointer;
   background-color: #0b6435bd;
   text-decoration: none;
-  font-size: 0.7rem;
-  width: 7.5rem;
   height: 4rem;
   color: aliceblue;
   border-radius: 80px;
   text-align: center;
   font-family: var(--font-title);
+  margin: 5px;
+  font-size: 0.6rem;
+  width: 6.5rem;
 }
 
 .onesound__content--buttons a:hover {
@@ -72,4 +72,12 @@
 .backward {
   font-size: 0.3;
   font-family: var(--font-title);
+}
+
+@media screen and (min-width: 410px) {
+  .onesound__content--buttons a {
+    margin: 10px;
+    font-size: 0.7rem;
+    width: 7.5rem;
+  }
 }
