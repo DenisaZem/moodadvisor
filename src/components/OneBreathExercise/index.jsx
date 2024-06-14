@@ -20,21 +20,20 @@ export const OneBreathExercise = () => {
 
   return (
     <div className="container__breathExercise">
-    
       <h1 className="breathExercise__title">{t(`breath.${id}.title`)}</h1>
-{/* TADY ZMĚNIT TEXT "SOUNDCONTROL" NA "BREATHCONTROL" A NAPSAT ZPĚT NA VÝBĚR DECHU..NAPŘ */}
+      {/* TADY ZMĚNIT TEXT "SOUNDCONTROL" NA "BREATHCONTROL" A NAPSAT ZPĚT NA VÝBĚR DECHU..NAPŘ */}
       <div className="breathExercise__content--buttons">
-      <a href={`/breath/${Number(id) === 0 ? 3 : Number(id) - 1}`}>
-          {t("soundControl.0")}
+        <a href={`/breath/${Number(id) === 0 ? 3 : Number(id) - 1}`}>
+          {t("breathControl.0")}
         </a>
-        <a href="/breath">{t("soundControl.1")}</a>
+        <a href="/breath">{t("breathControl.1")}</a>
         <a href={`/breath/${Number(id) === 3 ? 0 : Number(id) + 1}`}>
-          {t("soundControl.2")}
-        </a> 
+          {t("breathControl.2")}
+        </a>
       </div>
 
       <p className="breathExercise__description">
-        {t(`breath.${id}.description`)} 
+        {t(`breath.${id}.description`)}
       </p>
       <p className="breathExercise__info">{t(`breath.${id}.info`)}</p>
       {/* <h1 className="breathExercise__title">{dataBreathExrecise}</h1> */}

@@ -2,10 +2,212 @@
   "logo": "MoodAdviser",
   "navigation": {
     "home": "Home",
-    "breath": "Breathwork",
+    "breath": "Breath",
     "music": "Music",
     "exercises": "Exercises",
     "quiz": "Quiz"
+  },
+  "footer": {
+    "aboutUs": "About Us",
+    "aboutProject": "About MoodAdviser",
+    "organization": "Czechitas"
+  },
+  "backButton": "Back",
+  "quiz": {
+    "last": "You may also like:",
+    "questions": [
+      {
+        "questionSub": "Welcome to the MoodAdviser!",
+        "questionText": "How may I help you? How are you feeling today?",
+        "answerOptions": [
+          {
+            "answer": "Happy"
+          },
+          {
+            "answer": "Sad"
+          },
+          {
+            "answer": "Anxious"
+          },
+          {
+            "answer": "Angry"
+          },
+          {
+            "answer": "Stressed out"
+          }
+        ]
+      },
+      {
+        "questionSub": "Excellent!",
+        "questionText": "It is the ideal time to write down everything in your life you are grateful for!",
+        "answerOptions": [
+          {
+            "answer": "Gratitude journal",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "questionSub": "Feeling sad is a completely normal part of life.",
+        "questionText": "Try to figure out why exactly it is that you are experiencing sadness and allow yourself to feel the emotion. What's next?",
+        "answerOptions": [
+          {
+            "answer": "I will spoil myself!"
+          },
+          {
+            "answer": "I will share."
+          },
+          {
+            "answer": "I will express myself through art."
+          },
+          {
+            "answer": "I will take a walk to nature."
+          }
+        ]
+      },
+      {
+        "questionSub": "Maybe it is time for some self-care.",
+        "questionText": "No matter what the term means to you - from a good meal, a hot bath and a lovely book, all the way to sports and time spent with your friends - try to thoroughly spoil yourself.",
+        "answerOptions": [
+          {
+            "answer": "What's next?"
+          }
+        ]
+      },
+      {
+        "questionSub": "A trouble shared is a trouble halved, and this applies to sadness as well.",
+        "questionText": "Try to call your loved one, meet with your friends or cuddle with your fluffy four-legged friend.",
+        "answerOptions": [
+          {
+            "answer": "What's next?"
+          }
+        ]
+      },
+      {
+        "questionSub": "Try to express your sadness in an appropriate way, to let it out of your body.",
+        "questionText": "No matter whether your tool of expression will be words, colors and brushes, or maybe musical notes, some relief is guaranteed.",
+        "answerOptions": [
+          {
+            "answer": "What's next?"
+          }
+        ]
+      },
+      {
+        "questionSub": "Try to get back to the roots - literally.",
+        "questionText": "An exposure to nature and a walk on fresh air is well-known to improve one's mood and increase the production of good hormones. And if you cannot make it outside right now, try our library of relaxing music.",
+        "answerOptions": [
+          {
+            "answer": "A walk in my neighborhood"
+          },
+          {
+            "answer": "Relaxing music"
+          },
+          {
+            "answer": "What's next?"
+          }
+        ]
+      },
+      {
+        "questionSub": "From the evolutionary point of view, fear is one of the mechanisms which helped our ancestors to survive in extreme environments.",
+        "questionText": "Even today, fear can be a good guide in life, warning us against a danger. The problem is when fear starts to overcome us even in the day-to-day, regular situations.",
+        "answerOptions": [
+          {
+            "answer": "I need a first aid."
+          },
+          {
+            "answer": "I will work on it."
+          }
+        ]
+      },
+      {
+        "questionSub": "In the event of an anxiety attack, the first aid",
+        "questionText": "- meaning the knowledge of techniques which can help to soften the most intense and immediate anxiety - is very important. Pick one of the following techniques:",
+        "answerOptions": [
+          {
+            "answer": "Breathing Exercises"
+          },
+          {
+            "answer": "The Method of Five Senses"
+          },
+          {
+            "answer": "Counting"
+          }
+        ]
+      },
+      {
+        "questionSub": "Two great techniques for managing anxiety in a long-term are yoga and guided meditations. ",
+        "questionText": "Both activities help to get grounded and to learn how to live in a present moment, which helps to cope with the anxious thoughts of what once were, or what might happen in the future. The best news about this is that with the help of the Internet and its many apps and videos, you can start practically immediately.",
+        "answerOptions": [
+          {
+            "answer": "Yoga"
+          },
+          {
+            "answer": "Meditation"
+          },
+          {
+            "answer": "What's next?"
+          }
+        ]
+      },
+      {
+        "questionSub": "Many times, there are other emotions hiding behind one's anger.",
+        "questionText": "It can be emotions we don't want to face at the moment, but it is important to try to detect them and explore them nonetheless. Apart from that, it is also desirable to find yourself a healthy way to process your anger.",
+        "answerOptions": [
+          {
+            "answer": "I will run it off."
+          },
+          {
+            "answer": "I will try to jump it off."
+          },
+          {
+            "answer": "I will scream."
+          }
+        ]
+      },
+      {
+        "questionSub": "To shake the anger out of your body.",
+        "questionText": "Jumping, skipping, dancing with your favorite music on, but also other sports, such as boxing, might turn out to be very helpful when it comes to processing excess energy and unpleasant feelings. Doing sports also increases the production of dopamine which decreases levels of stress.",
+        "answerOptions": [
+          {
+            "answer": "What's next?"
+          }
+        ]
+      },
+      {
+        "questionSub": "Follow the path of the therapeutic screaming.",
+        "questionText": "Whether you scream for yourself outside into an abyss, at home into your pillow, or along to your favorite music, the therapeutic screaming might help you to unblock your emotions or simply just release the anger out of your body.",
+        "answerOptions": [
+          {
+            "answer": "What's next?"
+          }
+        ]
+      },
+      {
+        "questionSub": "Find your way out from the jungle of stress.",
+        "questionText": "The modern life has countless of advantages and conveniences our ancestors could have only dreamt of. It has its own difficulties, too, and sometimes we become stressed out so easily that we cannot even recollect how. It is important to know how to stop and get back into the present moment, back into one's own body, and to ground oneself properly. You might want to try activities such as:",
+        "answerOptions": [
+          {
+            "answer": "Yoga"
+          },
+          {
+            "answer": "Plant care & Gardening"
+          },
+          {
+            "answer": "Drawing & Painting"
+          },
+          {
+            "answer": "Relaxing baths"
+          },
+          {
+            "answer": "Dancing & Music"
+          }
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": "MoodAdviser",
+    "description": "The project of MoodAdviser was created as a final project for the Digital Academy: Web 2024 by Czechitas. It is a web application which advises or reminds the user via a fun clicking quiz of activities and techniques which could help to raise their spirit and improve their current mood. An integral part of the app consists also of a couple of simple relaxing methods and exercises, a music library, and breathing exercises."
   },
   "aboutUs": {
     "denisa": {
@@ -18,5 +220,124 @@
       "subtitle": "And this one too!",
       "description": "Šárka is an eager Junior Front-End Developer enjoying every step of her journey of learning about the code, mainly JavaScript and Python, and about all the fun ways to use it. She has years of experience in Localization Quality Assurance in Wargaming, which means a trained eye for detail and goals set to perfection."
     }
-  }
+  },
+  "senses": {
+    "title": "The Method of Five Senses",
+    "final": {
+      "title": "You have successfully completed the method of five senses!",
+      "description": "It is a good idea to keep this method in mind and come back to it whenever possible. Deep breathing and focus on sensory perceptions can help you to return from your head back to your body and to ground yourself in the present moment.",
+      "alternative": "For further relief from anxiety, give a try to our counting exercise or maybe find a guided meditation on the Internet.",
+      "link": "Counting"
+    },
+    "steps": [
+      {
+        "text": "Breathe in deeply and let the senses to guide you back into the present. We will go through them one by one and you'll see for yourself how you are feeling at the end.",
+        "description": "First, focus on your vision. Look around with attention and name 5 things around you which you see with your eyes. You can say them aloud, or silently count them down in your mind.",
+        "button": "Done. What's next?"
+      },
+      {
+        "text": "Excellent! Now, we focus on your sense of hearing.",
+        "description": "Take a deep breath in and listen to the sounds around you. Name 4 things you can hear. You can say them aloud, or silently count them down in your mind.",
+        "button": "Sounds carefully listed. We can continue."
+      },
+      {
+        "text": "Great job! Now, we focus on the sense of touch.",
+        "description": "Try to notice 3 things which you can now sense through your touch. This could be a fabric of your clothes, the surface of your chair, or anything you are in contact through your sense of touch. You can say them aloud, or silently count them down in your mind.",
+        "button": "Counted down. Let's continue."
+      },
+      {
+        "text": "Excellent! Let's focus on your sense of smell now!",
+        "description": "Try to sense 2 smells or fragrances currently surrounding you. They can be pleasant, or bothersome. Say them aloud, or silently count them down in your mind.",
+        "button": "Done. To the big finale!"
+      },
+      {
+        "text": "It is time for the last remaining sense - the taste.",
+        "description": "Try to name that 1 taste you are currently sensing in your mouth. Name it aloud, or silently in your mind.",
+        "button": "Done!"
+      }
+    ]
+  },
+  "exercisesPage": "Relaxing Exercises",
+  "exercises": ["Five Senses", "Counting", "Gratitude Journal"],
+  "counting": {
+    "title": "Counting",
+    "subtitle": "Focus on those simple counting exercises.",
+    "description": "Type in your answer and push the ENTER button.",
+    "success": "Excellent! Count again!",
+    "error": "Try it again."
+  },
+  "journal": {
+    "title": "Gratitude journal",
+    "subtitle": "Write down 5 things you are grateful for today.",
+    "text": "Write them down nicely one by one. Even the one small thing that just crossed your mind will do at the beginning.",
+    "label": "Today, I am grateful for:",
+    "addItemButton": "Save",
+    "deleteAllButton": "Delete all"
+  },
+  "bubble": {
+    "inhale": "Breathe in",
+    "exhale": "Breathe out"
+  },
+  "breathPage": "Breathing Exercises",
+  "breath": [
+    {
+      "title": "Restoring Breath",
+      "description": "Breathing technique: 5-5",
+      "info": "(5 s breathe in, 5 s breathe out)",
+      "inhale": "Breathe in",
+      "exhale": "Breathe out",
+      "close": "Finish",
+      "start": "Start"
+    },
+    {
+      "title": "Energizing Breath",
+      "description": "Breathing technique: 4-2",
+      "info": "(4 s breathe in, 2 s breathe out)",
+      "inhale": "Breathe in",
+      "exhale": "Rapid breathe out",
+      "close": "Finish",
+      "start": "Start"
+    },
+    {
+      "title": "Focus",
+      "description": "Breathing technique: 4-4",
+      "info": "(4 s breathe in, 4 s breathe out)",
+      "inhale": "Breathe in",
+      "exhale": "Breathe out",
+      "close": "Finish",
+      "start": "Start"
+    },
+    {
+      "title": "Relaxing Breathing",
+      "description": "Breathing technique: 4-6",
+      "info": "(4 s breathe in, 6 s breathe out)",
+      "inhale": "Breathe in",
+      "exhale": "Slow breathe out",
+      "close": "Finish",
+      "start": "Start"
+    }
+  ],
+  "soundPage": "Relaxing Music",
+  "sound": [
+    {
+      "title": "Energizing Mood"
+    },
+    {
+      "title": "Meditating Symphony"
+    },
+    {
+      "title": "Tones of the Forest"
+    },
+    {
+      "title": "Harmonic Melody"
+    },
+    {
+      "title": "Party Disco"
+    },
+    {
+      "title": "Calming Nature"
+    }
+  ],
+  "soundControl": ["Previous", "Back to Music", "Next"],
+  "breathControl": ["Previous", "Back to Breath", "Next"]
 }

@@ -320,7 +320,7 @@
   "soundPage": "Relaxační hudba",
   "sound": [
     {
-      "title": "Stimulující nálada"
+      "title": "Energická nálada"
     },
     {
       "title": "Meditační symfonie"
@@ -338,9 +338,6 @@
       "title": "Příroda zklidňující mysl"
     }
   ],
-  "soundControl": [
-    "Přechozí",
-    "Zpět na výběr hudby",
-    "Následující"
-  ]
+  "soundControl": ["Přechozí", "Zpět na výběr hudby", "Následující"],
+  "breathControl": ["Přechozí", "Zpět na výběr hudby", "Následující"]
 }
