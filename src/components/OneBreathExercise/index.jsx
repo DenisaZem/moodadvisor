@@ -24,11 +24,11 @@ export const OneBreathExercise = () => {
       <h1 className="breathExercise__title">{t(`breath.${id}.title`)}</h1>
 {/* TADY ZMĚNIT TEXT "SOUNDCONTROL" NA "BREATHCONTROL" A NAPSAT ZPĚT NA VÝBĚR DECHU..NAPŘ */}
       <div className="breathExercise__content--buttons">
-      <a href={`/breath/${Number(id) === 0 ? 5 : Number(id) - 1}`}>
+      <a href={`/breath/${Number(id) === 0 ? 3 : Number(id) - 1}`}>
           {t("soundControl.0")}
         </a>
         <a href="/breath">{t("soundControl.1")}</a>
-        <a href={`/breath/${Number(id) === 5 ? 0 : Number(id) + 1}`}>
+        <a href={`/breath/${Number(id) === 3 ? 0 : Number(id) + 1}`}>
           {t("soundControl.2")}
         </a> 
       </div>
