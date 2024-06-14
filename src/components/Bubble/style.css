@@ -5,18 +5,17 @@
   justify-content: center;
 }
 
-.bubble__logo
- {
+.bubble__logo {
   position: fixed;
   padding: 2px;
   margin-bottom: 20px;
   font-family: Meow Script;
-  font-size: 6rem;
-  color: #314e43; 
+  font-size: 3rem;
+  color: #314e43;
   z-index: 100;
 }
 
-.bubble__content{
+.bubble__content {
   position: fixed;
   display: flex;
   justify-content: center;
@@ -45,9 +44,9 @@
   position: absolute;
   background-color: rgb(48, 75, 57);
   z-index: 0;
-  }
-  
-  .bubble__inside a {
+}
+
+.bubble__inside a {
   font-size: 20px;
 }
 
@@ -89,24 +88,32 @@
   z-index: 20;
 }
 
-
-
-
 @media screen and (max-width: 340px) {
   .bubble__outside {
     width: 190px;
     height: 190px;
   }
-  
+
   .bubble__inside {
     width: 100px;
     height: 100px;
-    }
+  }
 
   .bubble__inside a {
     font-size: 18px;
   }
+}
 
+@media screen and (min-width: 430px) {
+  .bubble__logo {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .bubble__logo {
+    font-size: 6rem;
+  }
 }
 
 @media screen and (min-width: 1500px) {
@@ -114,15 +121,13 @@
     width: 290px;
     height: 290px;
   }
-  
+
   .bubble__inside {
     width: 200px;
     height: 200px;
-    }
-    
+  }
+
   .bubble__inside a {
     font-size: 45px;
   }
-
 }
-
