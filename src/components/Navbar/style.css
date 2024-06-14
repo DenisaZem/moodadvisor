@@ -2,7 +2,7 @@ body.active-modal {
   overflow-y: hidden;
 }
 
-.container__navbar{
+.container__navbar {
   position: fixed;
   display: flex;
   top: 0;
@@ -10,7 +10,6 @@ body.active-modal {
   /* background-color: var(--background-secondary); */
   z-index: 15;
   height: 4rem;
-
 }
 
 .navbar__backgrounds {
@@ -23,7 +22,11 @@ body.active-modal {
   align-items: center;
   width: 100%;
   /* background-color: var(--background-secondary); */
-  background: linear-gradient(to top, rgba(255, 255, 255, 0) 2%, var(--background-secondary)15%);
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0) 2%,
+    var(--background-secondary) 15%
+  );
   z-index: 15;
 }
 
@@ -37,7 +40,7 @@ body.active-modal {
   background: linear-gradient(
     to bottom,
     var(--background-secondary) 50%,
-    var(--background-primary)95%
+    var(--background-primary) 95%
   );
   border-radius: 50%;
   opacity: 0;
@@ -102,7 +105,7 @@ body.active-modal {
   color: transparent;
   max-width: 70%;
   background-color: transparent;
-  font-family:var(--font-title);
+  font-family: var(--font-title);
   font-weight: 100;
 }
 
@@ -145,12 +148,11 @@ ul.navbar__menu {
 .menu--item {
   text-decoration: none;
   color: var(--text);
-  font-size: 1.4rem;
+  font-size: 1rem;
   padding: 10px;
-
 }
 ul.menu.show .menu--item {
-  color:rgb(33 33 33);
+  color: rgb(33 33 33);
   font-weight: 500;
   font-size: 1.2rem;
 }
@@ -172,7 +174,7 @@ a.menu--item {
 }
 
 a.menu--item:hover {
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 
 .navbar__logo,
@@ -180,9 +182,16 @@ a.menu--item:hover {
   padding: 3px;
   text-align: center;
   font-family: Meow Script;
-  font-size: 3rem;
-  color: var(--text); 
+  font-size: 2rem;
+  color: var(--text);
   text-decoration: none;
+}
+
+@media screen and (min-width: 430px) {
+  .navbar__logo,
+  .navbar__logo a {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -202,10 +211,7 @@ a.menu--item:hover {
 }
 
 @media screen and (min-width: 1000px) {
-  .navbar__menu{
+  .navbar__menu {
     gap: 20px;
   }
-
-
 }
-
