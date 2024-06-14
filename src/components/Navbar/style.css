@@ -204,5 +204,11 @@ a.menu--item:hover {
 @media screen and (min-width: 1000px) {
   .navbar__menu{
     gap: 20px;
+  color: rgb(83, 18, 26) ;
+
+  color: rgb(73, 39, 43)
   }
+
+
 }
+

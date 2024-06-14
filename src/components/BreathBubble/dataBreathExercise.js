@@ -20,13 +20,13 @@ export const dataBreathExercise = [
       scale: 1.5,
       text: "breath.1.inhale",
       time: 4,
-      color: "rgb(220, 76, 36)",
+      color: "rgb(83, 18, 26)",
     },
     exhale: {
       scale: 1,
       text: "breath.1.exhale",
       time: 2,
-      color: "rgb(179, 96, 73)",
+      color: " rgb(73, 39, 43)",
     },
   },
   {
@@ -35,13 +35,13 @@ export const dataBreathExercise = [
       scale: 1.5,
       text: "breath.2.inhale",
       time: 4,
-      color: "rgb(37, 105, 107)",
+      color: "rgb(115, 79, 104)",
     },
     exhale: {
       scale: 1,
       text: "breath.2.exhale",
       time: 4,
-      color: "rgb(93, 144, 146)",
+      color: "rgb(48, 36, 44) ",
     },
   },
   {
@@ -56,7 +56,7 @@ export const dataBreathExercise = [
       scale: 1,
       text: "breath.3.exhale",
       time: 6,
-      color: "rgb(173, 153, 21)",
+      color: "rgb(118, 103, 0)",
     },
   },
 ];
