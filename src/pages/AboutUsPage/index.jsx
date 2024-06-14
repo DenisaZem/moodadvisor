@@ -53,7 +53,7 @@ export const AboutUsPage = () => {
           {t("aboutUs.sarka.description")}
         </p>
         <img
-          className="about-us--item about-us--title--img about-us--title--img__sarka"
+          className="about-us--title--img about-us--title--img__sarka"
           src={sarka}
           alt="sarka avatar"
         />
