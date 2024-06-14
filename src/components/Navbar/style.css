@@ -128,10 +128,10 @@ ul.navbar__menu {
 
 .button--toggle-language {
   padding: 5px;
-  border: 1px solid var(--title-secondary);
+  border: none;
   border-radius: 15px;
   background-color: var(--text);
-  color: var(--title-secondary);
+  color: var(--background-secondary);
   font-weight: bold;
   width: 70px;
   /* max-height: 10px ; */
@@ -204,9 +204,6 @@ a.menu--item:hover {
 @media screen and (min-width: 1000px) {
   .navbar__menu{
     gap: 20px;
-  color: rgb(83, 18, 26) ;
-
-  color: rgb(73, 39, 43)
   }
 
 
