@@ -50,7 +50,7 @@ export const dataBreathExercise = [
       scale: 1.5,
       text: "breath.3.inhale",
       time: 4,
-      color: "rgb(156, 141, 40)",
+      color: "rgb(71, 103, 52)",
     },
     exhale: {
       scale: 1,

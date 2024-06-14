@@ -20,10 +20,11 @@ export const OneBreathExercise = () => {
 
   return (
     <div className="container__breathExercise">
+    
+      <h1 className="breathExercise__title">{t(`breath.${id}.title`)}</h1>
       <Link className="breathExercise--back-button" to="/breath">
         {t("backButton")}
       </Link>
-      <h1 className="breathExercise__title">{t(`breath.${id}.title`)}</h1>
       <p className="breathExercise__description">
         {t(`breath.${id}.description`)}
       </p>
@@ -51,7 +52,7 @@ export const OneBreathExercise = () => {
             ></div>
           )}
         </div>
-        <button className="breathExercise__button" onClick={handleButtonClick}>
+        <button className="breathExercise--button" onClick={handleButtonClick}>
           {showBubble ? t(`breath.${id}.close`) : t(`breath.${id}.start`)}
         </button>
       </div>

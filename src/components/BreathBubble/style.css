@@ -1,5 +1,5 @@
 .bubbleBreath__out {
-  background: rgb(209, 179, 179);
+  background: rgb(109, 156, 113);
   width: 300;
   height: 300;
   border-radius: "50%";
@@ -13,7 +13,7 @@
 }
 
 .bubbleBreath__in {
-  background: rgb(157, 110, 160);
+  background: rgb(207, 245, 184);
   width: 200;
   height: 200;
   border: "50%";
@@ -29,4 +29,18 @@
 .breathExercise__info {
   font-size: small;
   font-style: oblique;
+}
+
+@media screen and (max-width: 340px) {
+ 
+  .bubbleBreath__out {
+    width: 400;
+    height: 400;
+  }
+  
+  .bubbleBreath__in {
+    width: 300;
+    height: 300;
+}
+
 }
