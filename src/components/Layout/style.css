@@ -15,6 +15,7 @@
   padding: 0 10px;
   max-width: 750px;
   width: 100%;
+  font-family: sans-serif;
 }
 
 .layout__footer {
@@ -25,12 +26,10 @@
   .layout__content {
     max-width: 1000px;
   }
-
 }
 
 @media screen and (min-width: 1200px) {
   .layout__footer {
     height: 70px;
   }
-
 }
