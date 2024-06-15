@@ -339,5 +339,6 @@
     }
   ],
   "soundControl": ["Přechozí", "Zpět na výběr hudby", "Následující"],
-  "breathControl": ["Přechozí", "Zpět na výběr dechu", "Následující"]
+  "breathControl": ["Přechozí", "Zpět na výběr dechu", "Následující"],
+  "errorMessage": "Něco se nepovedlo! Na této adrese není nic k vidění."
 }

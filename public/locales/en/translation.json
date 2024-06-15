@@ -339,5 +339,6 @@
     }
   ],
   "soundControl": ["Previous", "Back to Music", "Next"],
-  "breathControl": ["Previous", "Back to Breath", "Next"]
+  "breathControl": ["Previous", "Back to Breath", "Next"],
+  "errorMessage": "Something went wrong! There is nothing to see here."
 }
