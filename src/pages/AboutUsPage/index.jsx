@@ -13,11 +13,11 @@ export const AboutUsPage = () => {
           {t("aboutUs.denisa.title")}
         </h2>
         <span className="about-us--item ">
-          <a className="about-us--link" href="https://www.linkedin.com/in/denisa-zemanov%C3%A1-a369ab118/">
+          <a className="about-us--link" href="https://www.linkedin.com/in/denisa-zemanov%C3%A1-a369ab118/" target="_blank">
             LinkedIn
           </a>{" "}
           |{" "}
-          <a className="about-us--link" href="https://github.com/DenisaZem">
+          <a className="about-us--link" href="https://github.com/DenisaZem" target="_blank">
             GitHub
           </a>
         </span>
@@ -38,11 +38,12 @@ export const AboutUsPage = () => {
           <a
             className="about-us--link"
             href="https://www.linkedin.com/in/sarka-flidrova"
+            target="_blank"
           >
             LinkedIn
           </a>{" "}
           |{" "}
-          <a className="about-us--link" href="https://github.com/suffle-girl">
+          <a className="about-us--link" href="https://github.com/suffle-girl" target="_blank">
             GitHub
           </a>
         </span>
