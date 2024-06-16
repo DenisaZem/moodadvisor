@@ -136,6 +136,9 @@ body.active-modal {
 .quiz__lastSentence-menu--link-text {
   font-size: 0.8rem;
   margin: 5px;
+  font-family: var( --font-title);
+  font-size: 0.9rem;
+
 }
 
 @media screen and (min-width: 430px) {
