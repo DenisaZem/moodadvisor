@@ -7,7 +7,6 @@ body.active-modal {
   display: flex;
   top: 0;
   width: 100%;
-  /* background-color: var(--background-secondary); */
   z-index: 15;
   height: 4rem;
 }
@@ -21,7 +20,6 @@ body.active-modal {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* background-color: var(--background-secondary); */
   background: linear-gradient(
     to top,
     rgba(255, 255, 255, 0) 2%,
@@ -126,7 +124,6 @@ ul.navbar__menu {
 .buttons-language {
   display: flex;
   justify-content: center;
-  /* margin: 10px; */
 }
 
 .button--toggle-language {
@@ -137,7 +134,6 @@ ul.navbar__menu {
   color: var(--background-secondary);
   font-weight: bold;
   width: 70px;
-  /* max-height: 10px ; */
 }
 
 .menu li {
@@ -156,10 +152,6 @@ ul.menu.show .menu--item {
   font-weight: 500;
   font-size: 1.2rem;
 }
-
-/* ul.menu.show .menu--item a{
-  padding: 10px;
-} */
 
 .menu--item:visited {
   color: var(--text);

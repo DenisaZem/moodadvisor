@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { IoClose } from "react-icons/io5";
-// instal npm install framer-motion
 
 const Bubble = ({ handleClick }) => {
   const { t } = useTranslation();
@@ -82,9 +81,6 @@ const Bubble = ({ handleClick }) => {
         </motion.div>
 
         <IoClose className="bubble__close-button" onClick={handleClick} />
-        {/* <div className="bubble__close" onClick={handleClick}>
-        Zavřít
-      </div> */}
       </div>
       <div className="bubble__bar">
         <div
@@ -120,4 +116,3 @@ const Bubble = ({ handleClick }) => {
 
 export default Bubble;
 
-// https://codesandbox.io/p/sandbox/framer-motion-keyframes-0fzv21?file=%2Fsrc%2FApp.tsx%3A4%2C1-22%2C2&from-embed=

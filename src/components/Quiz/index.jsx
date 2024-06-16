@@ -207,7 +207,6 @@ const Quiz = () => {
     }
   };
 
-  // Tento useEffect se musí přenést do komponenty, vždy kde bude bublina
   // Proti scrollování během zjevení bubliny
   useEffect(() => {
     if (showBubble) {

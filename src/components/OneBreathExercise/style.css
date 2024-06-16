@@ -36,24 +36,6 @@
   flex-direction: column;
 }
 
-/* .breathExercise--back-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  text-decoration: none;
-  cursor: pointer;
-  background-color: #0b6435bd;
-  text-decoration: none;
-  font-size: 0.7rem;
-  width: 7.5rem;
-  height: 4rem;
-  color: aliceblue;
-  border-radius: 80px;
-  text-align: center;
-  font-family: var(--font-title);
-} */
-
 .breathExercise__content--buttons {
   display: flex;
   flex-wrap: nowrap;

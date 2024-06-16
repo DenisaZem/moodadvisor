@@ -9,19 +9,16 @@ export const OneBreathExercise = () => {
   const { t } = useTranslation();
   const [showBubble, setShowBubble] = useState(false);
   const { id } = useParams();
-  // const [offBubble, setOffBubble] = useState(false);
 
   const handleButtonClick = () => {
     setShowBubble(!showBubble);
   };
 
   const exercise = dataBreathExercise[id];
-  // const breathData = exercise[breathExercise];
 
   return (
     <div className="container__breathExercise">
       <h1 className="breathExercise__title">{t(`breath.${id}.title`)}</h1>
-      {/* TADY ZMĚNIT TEXT "SOUNDCONTROL" NA "BREATHCONTROL" A NAPSAT ZPĚT NA VÝBĚR DECHU..NAPŘ */}
       <div className="breathExercise__content--buttons">
         <a href={`/breath/${Number(id) === 0 ? 3 : Number(id) - 1}`}>
           {t("breathControl.0")}
@@ -36,7 +33,6 @@ export const OneBreathExercise = () => {
         {t(`breath.${id}.description`)}
       </p>
       <p className="breathExercise__info">{t(`breath.${id}.info`)}</p>
-      {/* <h1 className="breathExercise__title">{dataBreathExrecise}</h1> */}
       <div className="breathExercise__content">
         <div className="breathExercise__bubbleSpace">
           {showBubble ? (

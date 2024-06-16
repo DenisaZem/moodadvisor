@@ -2,14 +2,10 @@ import React, { useRef, useState } from "react";
 import { FaPlay, FaPause, FaForward, FaBackward } from "react-icons/fa";
 import "./style.css";
 import { useParams } from "react-router-dom";
-import { musicData } from "../../pages/SoundPage/index.jsx";
 import { Cube } from "../Cube/index.jsx";
 import { useTranslation } from "react-i18next";
 
-// Potřeba importovat ikony --> npm install react-icons
-
 const OneSound = () => {
-  // const ref = useRef(null);
   const { id } = useParams();
   const { t } = useTranslation();
 
