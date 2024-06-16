@@ -68,7 +68,7 @@
 .bubble__bar {
   position: fixed;
   z-index: 50;
-  bottom: 25%;
+  bottom: 17%;
 }
 
 .bar__fixed {
@@ -107,6 +107,10 @@
 @media screen and (min-width: 430px) {
   .bubble__logo {
     font-size: 4rem;
+  }
+
+  .bubble__bar {
+    bottom: 25%;
   }
 }
 
