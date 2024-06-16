@@ -1,5 +1,115 @@
 .error-message {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   padding: 0px 20px;
+}
+
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.container__error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  gap: 30px;
+  background-color: var(--background-primary);
+  padding: 50px 0;
+  border-radius: 10px;
+}
+
+.error-logo {
+  text-align: center;
+  font-family: Meow Script;
+  color: var(--background-secondary);
+  font-size: 3rem;
+  margin: 20px;
+}
+
+.error__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.error__content--recommended {
+  margin: 10px 0 20px 0;
+  font-size: 20px;
+}
+
+.error__content-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 25px;
+  margin: 20px;
+}
+
+.error__content-menu a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  color: rgb(85, 81, 81);
+  width: 50%;
+  margin: 5px;
+}
+
+.error__content-menu a img {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.error__content-menu--link {
+  display: flex;
+  flex-direction: column;
+}
+
+.error__content-menu--link-text {
+  font-size: 0.8rem;
+  margin: 5px;
+  font-family: var(--font-title);
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 430px) {
+  .error__content-menu {
+    flex-direction: row;
+    margin: 10px 5px;
+    gap: 10px;
+  }
+
+  .container__error {
+    margin: 20px 10px;
+    padding: 70px 0px;
+  }
+
+  .error__content-menu a {
+    width: 30%;
+  }
+
+  .error-logo {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container__error {
+    gap: 50px;
+    margin: 25px 0;
+    padding: 120px 0 20px;
+  }
+
+  .error__content-menu--link-text {
+    font-size: 1rem;
+    margin: 20px;
+  }
 }
