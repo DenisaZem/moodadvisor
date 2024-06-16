@@ -13,11 +13,11 @@ export const AboutUsPage = () => {
           {t("aboutUs.denisa.title")}
         </h2>
         <span className="about-us--item ">
-          <a className="about-us--link" href="">
+          <a className="about-us--link" href="https://www.linkedin.com/in/denisa-zemanov%C3%A1-a369ab118/">
             LinkedIn
           </a>{" "}
           |{" "}
-          <a className="about-us--link" href="">
+          <a className="about-us--link" href="https://github.com/DenisaZem">
             GitHub
           </a>
         </span>

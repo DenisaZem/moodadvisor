@@ -23,6 +23,9 @@
 .about-us--link:visited {
   text-decoration: none;
   color: var(--background-secondary);
+  font-family: var( --font-title);
+  font-size: 0.9rem;
+
 }
 
 .about-us--link:hover {
@@ -37,10 +40,16 @@
 
 .about-us--title--name__sarka {
   color: #4a6670;
+  font-family: var( --font-title);
+  font-size: 0.9rem;
+
 }
 
 .about-us--title--name__deni {
   color: #c3b59f;
+  font-family: var( --font-title);
+  font-size: 0.9rem;
+
 }
 
 .about-us--title--img {
@@ -66,6 +75,9 @@
 
 .about-us--title--paragraph {
   color: #320c40;
+  font-family: var( --font-title);
+  font-size: 0.8rem;
+
 }
 
 @media screen and (min-width: 430px) {
