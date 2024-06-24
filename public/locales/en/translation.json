@@ -1,5 +1,5 @@
 {
-  "logo": "MoodAdviser",
+  "logo": "MoodAdvisor",
   "navigation": {
     "home": "Home",
     "breath": "Breath",
@@ -9,7 +9,7 @@
   },
   "footer": {
     "aboutUs": "About Us",
-    "aboutProject": "About MoodAdviser",
+    "aboutProject": "About MoodAdvisor",
     "organization": "Czechitas"
   },
   "backButton": "Back",
@@ -17,7 +17,7 @@
     "last": "You may also like:",
     "questions": [
       {
-        "questionSub": "Welcome to the MoodAdviser!",
+        "questionSub": "Welcome to the MoodAdvisor!",
         "questionText": "How may I help you? How are you feeling today?",
         "answerOptions": [
           {
@@ -206,8 +206,8 @@
     ]
   },
   "about": {
-    "title": "MoodAdviser",
-    "description": "The project of MoodAdviser was created as a final project for the Digital Academy: Web 2024 by Czechitas. It is a web application which advises or reminds the user via a fun clicking quiz of activities and techniques which could help to raise their spirit and improve their current mood. An integral part of the app consists also of a couple of simple relaxing methods and exercises, a music library, and breathing exercises."
+    "title": "MoodAdvisor",
+    "description": "The project of MoodAdvisor was created as a final project for the Digital Academy: Web 2024 by Czechitas. It is a web application which advises or reminds the user via a fun clicking quiz of activities and techniques which could help to raise their spirit and improve their current mood. An integral part of the app consists also of a couple of simple relaxing methods and exercises, a music library, and breathing exercises."
   },
   "aboutUs": {
     "denisa": {

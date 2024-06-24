@@ -33,7 +33,7 @@ const Bubble = ({ handleClick }) => {
 
   return (
     <div className="container__bubble">
-      <h1 className="bubble__logo">MoodAdviser</h1>
+      <h1 className="bubble__logo">MoodAdvisor</h1>
       <div className="bubble__content">
         <motion.div
           className="bubble__outside"

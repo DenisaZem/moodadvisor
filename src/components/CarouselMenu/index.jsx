@@ -37,7 +37,7 @@ export const CarouselMenu = ({ musicData, breathData }) => {
                   <img
                     className="swiper-wrapper__image"
                     src={slide.picture}
-                    alt="Položka menu zobrazující hudbu pro MoodAdviser"
+                    alt="Položka menu zobrazující hudbu pro MoodAdvisor"
                   />
                   <h4 className="swiper-wrapper__title">
                     {" "}
@@ -56,7 +56,7 @@ export const CarouselMenu = ({ musicData, breathData }) => {
                   <img
                     className="swiper-wrapper__image"
                     src={slide.picture}
-                    alt="Položka menu zobrazující dechová cvičení pro MoodAdviser"
+                    alt="Položka menu zobrazující dechová cvičení pro MoodAdvisor"
                   />
                   <h4 className="swiper-wrapper__title">
                     {" "}

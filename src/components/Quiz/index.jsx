@@ -223,7 +223,7 @@ const Quiz = () => {
   return (
     <div className="container__quiz">
       {showBubble && <Bubble handleClick={handleClick} />}
-      <h1 className="quiz-logo">MoodAdviser</h1>
+      <h1 className="quiz-logo">MoodAdvisor</h1>
       {currentQuestion === null ? (
         <div className="quiz__lastSentence">
           <div className="quiz__lastSentence--recommended">

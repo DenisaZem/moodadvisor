@@ -13,7 +13,7 @@ export const ErrorPage = () => {
     <Suspense fallback="loading">
       <Layout>
         <div className="container__error">
-          <h1 className="error-logo">MoodAdviser</h1>
+          <h1 className="error-logo">MoodAdvisor</h1>
           <h2 className="error-message">{t("errorMessage")}</h2>
           <div className="error__content">
             <div className="error__content--recommended">{t("quiz.last")}</div>

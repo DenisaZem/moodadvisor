@@ -1,5 +1,5 @@
 {
-  "logo": "MoodAdviser",
+  "logo": "MoodAdvisor",
   "navigation": {
     "home": "Domů",
     "breath": "Dech",
@@ -9,7 +9,7 @@
   },
   "footer": {
     "aboutUs": "O nás",
-    "aboutProject": "O MoodAdviseru",
+    "aboutProject": "O MoodAdvisoru",
     "organization": "Czechitas"
   },
   "backButton": "Zpět",
@@ -17,7 +17,7 @@
     "last": "Můžete také zkusit:",
     "questions": [
       {
-        "questionSub": "Vítejte na MoodAdviseru!",
+        "questionSub": "Vítejte na MoodAdvisoru!",
         "questionText": "S čím vám můžu pomoci? Jak se dnes cítíte?",
         "answerOptions": [
           {
@@ -206,8 +206,8 @@
     ]
   },
   "about": {
-    "title": "MoodAdviser",
-    "description": "Projekt MoodAdviser vznikl jako závěrečný projekt pro Digitální Akademii: Web 2024 od Czechitas. Jedná se o webovou aplikaci, která uživateli pomocí zábavného klikacího kvízu poradí nebo připomene aktivity a techniky, které by mu mohly pomoci se zvládnutím jejich aktuální nálady. Důležitou součástí aplikace je také několik jednoduchých relaxačních metod a cvičení, knihovna relaxační hudby a dechová cvičení."
+    "title": "MoodAdvisor",
+    "description": "Projekt MoodAdvisor vznikl jako závěrečný projekt pro Digitální Akademii: Web 2024 od Czechitas. Jedná se o webovou aplikaci, která uživateli pomocí zábavného klikacího kvízu poradí nebo připomene aktivity a techniky, které by mu mohly pomoci se zvládnutím jejich aktuální nálady. Důležitou součástí aplikace je také několik jednoduchých relaxačních metod a cvičení, knihovna relaxační hudby a dechová cvičení."
   },
   "aboutUs": {
     "denisa": {
