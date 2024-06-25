@@ -7,15 +7,14 @@ body.active-modal {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   margin: 10px 0;
   gap: 30px;
   background-color: var(--background-primary);
-  padding: 50px 0;
   border-radius: 10px;
 }
 
 .quiz-logo {
-  text-align: center;
   font-family: Meow Script;
   color: var(--background-secondary);
   font-size: 3rem;
@@ -71,6 +70,10 @@ body.active-modal {
   border-radius: 50px;
 }
 
+.quiz__QaA-section {
+  display: flex;
+}
+
 .question-count {
   font-size: 10px;
   margin: 20px;
@@ -82,13 +85,19 @@ body.active-modal {
   justify-content: center;
   align-items: center;
   width: 100%;
+  min-height: 200px;
   font-size: 45px;
   flex-wrap: wrap;
   text-align: center;
+  /* background-color: rgb(131, 158, 130); */
+  border: 5px solid rgb(40, 84, 58) ;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
 }
 
 .quiz__question-section-subtitle {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .question-text {
@@ -103,16 +112,20 @@ body.active-modal {
   justify-content: center;
   align-items: center;
   width: 100%;
+  min-height: 200px;
   flex-wrap: wrap;
-  margin: 30px 0;
-  border-top: 20px solid #b9cbc2;
-  padding-top: 30px;
+  /* border: 2px solid #b9cbc2; */
+  /* background-color: rgb(123, 159, 120); */
+  border: 5px solid rgb(40, 84, 58) ;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
 }
 
 .quiz__answer-section--button {
   background-color: var(--background-secondary);
   min-width: 80px;
-  min-height: 50px;
+  min-height:90px;
   max-width: 250px;
   max-height: 250px;
   border: 1px solid var(--text);
@@ -140,8 +153,12 @@ body.active-modal {
 
 @media screen and (min-width: 430px) {
   .question-text {
-    margin: 30px 30px 0;
-    font-size: 1.2rem;
+    /* margin: 30px 30px 0; */
+    font-size: 2.2rem;
+  }
+
+  .quiz__question-section-subtitle {
+    font-size: 2.2rem;
   }
 
   .quiz__lastSentence-menu {
@@ -160,13 +177,19 @@ body.active-modal {
   }
 
   .quiz-logo {
-    font-size: 4rem;
+    font-size: 5rem;
+    margin-bottom: 50px;
   }
+
+
 }
 
 @media screen and (min-width: 800px) {
   .quiz__answer-section--button {
     width: 30%;
+    min-width: 130px;
+    min-height:130px;
+    font-size: 25px;
   }
 
   .quiz__answer-section--button:hover {
@@ -174,9 +197,9 @@ body.active-modal {
   }
 
   .container__quiz {
-    gap: 50px;
-    margin: 25px 0;
-    padding: 120px 0 20px;
+    margin: 40px 0;
+    height: 800px;
+    background-color: rgb(218, 230, 225);
   }
 
   .quiz__lastSentence-menu--link-text {
@@ -194,4 +217,11 @@ body.active-modal {
     width: 100%;
     gap: 15px;
   }
+
+  .quiz__question-section {
+    font-size: 50px;
+    min-height: 500px;
+  }
+
+
 }

@@ -14,16 +14,22 @@
 
 .journal--back-button,
 .journal--back-button:visited {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  background-color: white;
-  padding: 5px 9px;
-  border-radius: 5px;
-  font-size: small;
-  border: 1px solid #4a6670;
-  color: var(--background-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
+  cursor: pointer;
+  background-color: #0b6435bd;
+  text-decoration: none;
+  height: 3rem;
+  width: 5rem;
+  color: aliceblue;
+  border-radius: 80px;
+  text-align: center;
+  font-family: var(--font-title);
+  margin-top: 15px;
+  font-size: 1rem;
+  border: none;
 }
 
 .journal__title {
@@ -32,13 +38,33 @@
 
 .journal--add-button,
 .journal--delete-button {
-  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #0b6435bd;
+  text-decoration: none;
+  height: 3rem;
+  width: 6rem;
+  color: aliceblue;
+  border-radius: 80px;
+  text-align: center;
+  font-family: var(--font-title);
+  margin-top: 15px;
+  font-size: 1rem;
+  border: none;
 }
 
-.journal__form--textarea {
-  width: 80vw;
-  height: 40vw;
-}
+/* .journal__form--textarea {
+  height: 200px;
+  width: 400px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+} */
 
 .logs {
   margin: 20px auto;
@@ -69,6 +95,11 @@
   .journal-form--textarea {
     height: 200px;
     width: 400px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
   }
 
   .journal__text {

@@ -135,6 +135,9 @@ ul.navbar__menu {
   font-weight: bold;
   width: 70px;
 }
+.menu-one-item {
+  padding: 10px;
+}
 
 .menu li {
   font-size: 1rem;

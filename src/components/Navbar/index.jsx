@@ -101,12 +101,12 @@ export const Navbar = () => {
           <GiHamburgerMenu className="menu-icon" onClick={toggleMenu} />
         )}
         <ul className={`navbar__menu ${showMenu ? "show" : ""}`}>
-          <li>
+          <li className="menu-one-item">
             <Link onClick={toggleMenuHome} className="menu--item" to="/">
               {t("navigation.home")}
             </Link>
           </li>
-          <li>
+          <li className="menu-one-item">
             <Link
               onClick={showMenu ? toggleMenu : null}
               className="menu--item"
@@ -115,7 +115,7 @@ export const Navbar = () => {
               {t("navigation.breath")}
             </Link>
           </li>
-          <li>
+          <li className="menu-one-item">
             <Link
               onClick={showMenu ? toggleMenu : null}
               className="menu--item"
@@ -124,7 +124,7 @@ export const Navbar = () => {
               {t("navigation.music")}
             </Link>
           </li>
-          <li>
+          <li className="menu-one-item">
             <Link
               onClick={showMenu ? toggleMenu : null}
               className="menu--item"
@@ -134,7 +134,7 @@ export const Navbar = () => {
             </Link>
           </li>
           <div className="buttons-language">
-            <li>
+            <li className="menu-one-item">
               <button
                 className="button--toggle-language"
                 onClick={toggleLanguage}
